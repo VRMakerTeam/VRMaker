@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Source Files\composite">
+      <UniqueIdentifier>{665b6a79-44fe-4c2c-9ef7-3f5f789267a5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\pluginBucket\pluginBucket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\pluginBucket\BucketActions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BucketBus.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PackageManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ControllerGlobal.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BucketCompositeCore.h">
+      <Filter>Source Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BucketCompositePicker.h">
+      <Filter>Source Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BucketCompositeAssets.h">
+      <Filter>Source Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\pluginBucket\BucketUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BucketCompositePanel.h">
+      <Filter>Source Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PluginBucketLogger.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BucketCompositeGroup.h">
+      <Filter>Source Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BucketCompositeCard.h">
+      <Filter>Source Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\pluginBucket\BucketModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BucketCompositeWall.h">
+      <Filter>Source Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BucketCompositeTag.h">
+      <Filter>Source Files\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\UGCManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\pluginBucket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BucketActions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BucketBus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PackageManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ControllerGlobal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\obj\GeneratedFiles\qrc_pluginBucket.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BucketCompositeCore.cpp">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BucketCompositePicker.cpp">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BucketCompositeAssets.cpp">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BucketUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BucketCompositePanel.cpp">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BucketCompositeGroup.cpp">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BucketCompositeCard.cpp">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BucketModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BucketCompositeWall.cpp">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\AudioUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BucketCompositeTag.cpp">
+      <Filter>Source Files\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\UGCManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\res\pluginBucket.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\res\img\music_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\scroll_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\scroll_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\audio_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\audio_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\edit_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\edit_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\store_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\store_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\wave.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\play.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\stop.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\record_off.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\record_on.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\library_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\library_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\library_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\zone_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\delete_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\edit_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\prologue_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\create_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\edit_brief_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\edit_brief_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\new_brief_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\new_brief_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\edit_edge_line.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\line_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\line_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\edit_alias.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\back_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\finish_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\finish_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\reset_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\reset_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\turnleft_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\turnleft_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\turnright_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\turnright_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\brief_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\brief_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\edge_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\edge_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\prologue_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\prologue_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\title_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\title_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\action_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\agent_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\animation_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\camera_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\caption_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\create_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\delete_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\delete_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\music_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\play_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\publish_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\time_down_x1_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\time_down_x1_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\time_down_x2_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\time_down_x2_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\time_down_x3_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\time_down_x3_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\time_up_x1_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\time_up_x1_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\time_up_x2_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\time_up_x2_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\time_up_x3_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\time_up_x3_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\voice_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\weather_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\zone_down.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\down_arrow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\actioncell_zone.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\animation_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\caption_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\voice_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\play_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\publish_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\zone_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\agent_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\action_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\weather_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\camera_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\create_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\back_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\default_stage.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\default_storyboard_unit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\default_works_unit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\logo-small.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\close_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\minimal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\minimal_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\point.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\point_mask.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\res\img\mask.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

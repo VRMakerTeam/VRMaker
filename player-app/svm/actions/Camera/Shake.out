@@ -1,0 +1,28 @@
+local callback = {}
+local var = {}
+local API = CS.SVMAPI
+
+function onExecute(_params, _finish)
+    callback.finish = _finish
+    local parser = API.Parser
+    var.duration = parser.toNumber(_params, 'duration', 1.0)
+    var.shakelevel = parser.toNumber(_params, 'level', 0.2)
+
+    --摄像机初始旋转
+    var.rotCamera = API.Camera.transform().rotation
+    
+    var.camera = API.Camera.transform()
+    
+    var.time = os.clock()
+end
+
+function onUpdate()
+    local now = os.clock()
+    if (now - var.time >= var.duration)
+    then
+        var.camera.rotation = var.rotCamera
+        callback.finish()
+    end
+    local vector3 = var.rotCamera.eulerAngles + API.Math.GetRandomVector3() * var.shakelevel
+    var.camera.rotation = API.Math.EulerQuaternion(vector3)
+end

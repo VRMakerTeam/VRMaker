@@ -1,0 +1,35 @@
+local callback = {}
+local var = {}
+local API = CS.SVMAPI
+
+function onExecute(_params, _finish)
+    callback.finish = _finish
+    local parser = API.Parser
+    var.duration = parser.toNumber(_params, 'duration', 1.0)
+    var.posx = parser.toNumber(_params, 'posx', 0.0)
+    var.posy = parser.toNumber(_params, 'posy', 0.0)
+    var.posz = parser.toNumber(_params, 'posz', 0.0)
+    var.rotx = parser.toNumber(_params, 'rotx', 0.0)
+    var.roty = parser.toNumber(_params, 'roty', 0.0)
+    var.rotz = parser.toNumber(_params, 'rotz', 0.0)
+    
+    var.posTarget = API.Math.NewVector3(var.posx, var.posy, var.posz)
+    var.rotCamera = API.Math.EulerQuaternion(var.rotx, var.roty, var.rotz)
+    
+    var.posCamera = API.Camera.transform().position
+    var.rotCamera = API.Camera.transform().rotation
+    var.camera = API.Camera.transform()
+    
+    var.time = os.clock()
+end
+
+function onUpdate()
+    local now = os.clock()
+    if (now - var.time >= var.duration)
+    then
+        callback.finish()
+    end
+
+    var.camera.position = API.Math.LerpVector3(var.posCamera, var.posTarget, (now-var.time)/var.duration)
+    var.camera.rotation = API.Math.LerpQuaternion(var.rotCamera, var.rotCamera, (now-var.time)/var.duration)
+end

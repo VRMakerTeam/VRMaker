@@ -1,0 +1,266 @@
+#ifndef __SCREENPLAYACTIONS_H__
+#define __SCREENPLAYACTIONS_H__
+
+#include "Dispatcher.h"
+
+namespace ScreenplayActions
+{
+	//////////////////////////////////////////////////////////////////////////
+	// create a new slate
+	//////////////////////////////////////////////////////////////////////////
+	class OnVXImportFinishAction : public IAction
+	{
+	public:
+	};
+
+	class OnVXImportFinishReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// create a new slate
+	//////////////////////////////////////////////////////////////////////////
+	class NewSlateAction : public IAction
+	{
+	public:
+	};
+
+	class NewSlateReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// delete a slate
+	//////////////////////////////////////////////////////////////////////////
+	class DeleteSlateAction : public IAction
+	{
+	public:
+		QString uuid;
+	};
+
+	class DeleteSlateReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	//  rename a slate
+	//////////////////////////////////////////////////////////////////////////
+	class RenameSlateAction : public IAction
+	{
+	public:
+		QString uuid;
+		QString alias;
+	};
+
+	class RenameSlateReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// select a slate
+	//////////////////////////////////////////////////////////////////////////
+	class SelectSlateAction : public IAction
+	{
+	public:
+		QString uuid;
+	};
+
+	class SelectSlateReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// On pick asset
+	//////////////////////////////////////////////////////////////////////////
+	class OnPickAssetAction : public IAction
+	{
+	public:
+		QString assetGUID;
+		QString invoker;
+	};
+
+	class OnPickAssetReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// delete a preload
+	//////////////////////////////////////////////////////////////////////////
+	class DeletePreloadAction : public IAction
+	{
+	public:
+		QString uuid;
+	};
+
+	class DeletePreloadReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// Switch Inspector to agent
+	//////////////////////////////////////////////////////////////////////////
+	class SwitchInspectorToAgentAction : public IAction
+	{
+	public:
+		QString invoker;
+	};
+
+	class SwitchInspectorToAgentReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// Switch Inspector to diagram
+	//////////////////////////////////////////////////////////////////////////
+	class SwitchInspectorToDiagramAction : public IAction
+	{
+	public:
+	};
+
+	class SwitchInspectorToDiagramReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// OnNewBean
+	// bind to BeanActions::OnNewBean
+	//////////////////////////////////////////////////////////////////////////
+	class OnNewBeanReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// reload 
+	// bind to BeanActions::EditBeanAction
+	//////////////////////////////////////////////////////////////////////////
+	class OnReloadBeanReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// encode the astronomy as a json file
+	//////////////////////////////////////////////////////////////////////////
+	class CompileReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+
+	//////////////////////////////////////////////////////////////////////////
+	// 
+	// bind to UnityActions::MessageFromUnityAction
+	//////////////////////////////////////////////////////////////////////////
+	class MessageFromUnityReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// bind to DiagramActions::OnTriggerNewAction
+	//////////////////////////////////////////////////////////////////////////
+	class OnTriggerAddReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// bind to DiagramActions::OnTriggerDeleteAction
+	//////////////////////////////////////////////////////////////////////////
+	class OnTriggerRemoveReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// bind to DiagramActions::OpPipeAddAction
+	//////////////////////////////////////////////////////////////////////////
+	class OnPipeAddReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// bind to DiagramActions::OpPipeRemoveAction
+	//////////////////////////////////////////////////////////////////////////
+	class OnPipeRemoveReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	//////////////////////////////////////////////////////////////////////////
+	// 
+	//////////////////////////////////////////////////////////////////////////
+	class UpdateClonePositionAction : public IAction
+	{
+	public:
+		QString uuid;
+		double x;
+		double y;
+		double z;
+	};
+	class UpdateClonePositionReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	class UpdateCloneRotationAction : public IAction
+	{
+	public:
+		QString uuid;
+		double x;
+		double y;
+		double z;
+	};
+	class UpdateCloneRotationReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	class UpdateCloneScaleAction : public IAction
+	{
+	public:
+		QString uuid;
+		double x;
+		double y;
+		double z;
+	};
+	class UpdateCloneScaleReceiver : public IReceiver
+	{
+	public:
+		virtual void Receive(IAction* _action);
+	};
+
+	
+}
+
+#endif

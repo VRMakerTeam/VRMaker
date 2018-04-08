@@ -1,0 +1,15 @@
+{ 
+  "guid": "7129c6dd-6d8a-4ea6-9e47-62903c68398e", 
+  "group": "agent/test", 
+  "alias": "Robot", 
+  "files": [ 
+    { 
+      "file": "a09051aa-e636-44b2-bb38-fb678b8dadaf", 
+      "tags": [ 
+          "Robot",
+          "Agent"
+        ], 
+      "alias": "Robot 1"
+      }
+    ]
+  }

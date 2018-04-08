@@ -1,0 +1,23 @@
+local callback = {}
+local var = {}
+local API = CS.SVMAPI
+
+function onExecute(_params, _finish)
+    callback.finish = _finish
+    local parser = API.Parser
+    var.duration = parser.toNumber(_params, 'duration', 1.0)
+    var.posTarget = API.VR.reticleTarget().position
+    var.posCamera = API.Camera.transform().position
+    var.camera = API.Camera.transform()
+    var.time = os.clock()
+end
+
+function onUpdate()
+    local now = os.clock()
+    if (now - var.time >= var.duration)
+    then
+        callback.finish()
+    end
+
+    var.camera.position = API.Math.LerpVector3(var.posCamera, var.posTarget, (now-var.time)/var.duration)
+end

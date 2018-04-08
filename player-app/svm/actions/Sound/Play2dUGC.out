@@ -1,0 +1,13 @@
+local API = CS.SVMAPI
+local callback = {}
+local var = {}
+
+function onExecute(_params, _finish)
+    callback.finish = _finish
+    
+    local parser = API.Parser
+    var.cache_asset = parser.toString(_params, "cache_asset", "")
+    var.track = parser.toInteger(_params, "track", 0)
+    
+    API.Sound.Play2dUGC(var.cache_asset, var.track, callback.finish)
+end

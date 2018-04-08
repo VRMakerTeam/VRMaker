@@ -1,0 +1,100 @@
+local API = CS.SVMAPI
+local callback = {}
+local gameobject = nil
+local var = {}
+local color = {}
+
+local duration = 2.0
+local position = {}
+local transform = {}
+
+function onExecute(_params, _finish)
+    callback.finish = _finish
+    local parser = API.Parser
+    
+    var.text = parser.toString(_params, "text", "")
+    var.size = parser.toInteger(_params, 'size', 30)
+    var.animation = parser.toString(_params, 'animation', "None")
+    
+    color.fnr = parser.toInteger(_params, 'font:color:r', 0)
+    color.fng = parser.toInteger(_params, 'font:color:g', 0)
+    color.fnb = parser.toInteger(_params, 'font:color:b', 0)
+    color.fna = parser.toInteger(_params, 'font:color:a', 255)
+    color.bgr = parser.toInteger(_params, 'background:color:r', 255)
+    color.bgg = parser.toInteger(_params, 'background:color:g', 255)
+    color.bgb = parser.toInteger(_params, 'background:color:b', 255)
+    color.bga = parser.toInteger(_params, 'background:color:a', 255)
+    
+    transform.x = parser.toNumber(_params, 'posx', 0.0)
+    transform.y = parser.toNumber(_params, 'posy', 0.0)
+    transform.z = parser.toNumber(_params, 'posz', 6.0)
+    transform.w = parser.toNumber(_params, 'width', 260.0)
+    transform.h = parser.toNumber(_params, 'high', 400.0)
+   
+    gameobject = API.Ui.New3DText("test3DText")
+    API.Ui.Modify3DTextText(gameobject, var.text)
+    API.Ui.Modify3DTextFontSize(gameobject, var.size)
+    API.Ui.Modify3DTextFontColor(gameobject, color.fnr, color.fng, color.fnb, color.fna)
+    API.Ui.Modify3DTextColor(gameobject, color.bgr, color.bgg, color.bgb, color.bga)
+    API.Ui.Modify3DTextPosition(gameobject, transform.x, transform.y, transform.z)
+    API.Ui.Modify3DTextSize(gameobject, transform.w, transform.h)
+   
+    if(var.animation == "FadeIn" or var.animation == "淡入")
+    then
+        API.Ui.Modify3DTextFontColor(gameobject, color.fnr, color.fng, color.fnb, 0)
+        API.Ui.Modify3DTextColor(gameobject, color.bgr, color.bgg, color.bgb, 0)
+    end
+    
+    if(var.animation == "PushIn" or var.animation == "拉近")
+    then
+        position.x = gameobject.transform.position.x
+        position.y = gameobject.transform.position.y
+        position.z = gameobject.transform.position.z
+        API.Ui.Modify3DTextPosition(gameobject, position.x, position.y, 50.0);
+    end
+    
+    
+    var.startTime = os.clock()
+end
+
+function onUpdate()
+    local now = os.clock()
+    local timeScale = (now - var.startTime) / duration
+    if(now - var.startTime >= duration)
+    then
+        callback.finish()
+    end
+    
+    if(var.animation == "None" or var.animation == "无")
+    then
+         callback.finish()
+    end
+    
+    --FadeIn
+    if(var.animation == "FadeIn" or var.animation == "淡入")
+    then
+        local fnalpha = API.Math.RoundToInt(timeScale * color.fna)
+        local bgalpha = API.Math.RoundToInt(timeScale * color.bga)
+
+        if(fnalpha >= color.fna)
+        then
+            API.Ui.Modify3DTextFontColor(gameobject, color.fnr, color.fng, color.fnb, color.fna)
+        end
+        
+        if(bgalpha >= color.bga)
+        then
+            API.Ui.Modify3DTextColor(gameobject, color.bgr, color.bgg, color.bgb, color.bga)
+        end
+        
+        API.Ui.Modify3DTextFontColor(gameobject, color.fnr, color.fng, color.fnb, fnalpha)
+        API.Ui.Modify3DTextColor(gameobject, color.bgr, color.bgg, color.bgb, bgalpha)
+    end
+    
+    --PushIn
+    if(var.animation == "PushIn" or var.animation == "拉近")
+    then
+        local posz = API.Math.RoundToInt(50 - (50 *timeScale))        
+        API.Ui.Modify3DTextPosition(gameobject, position.x, position.y, posz + position.z)
+    end
+
+end    

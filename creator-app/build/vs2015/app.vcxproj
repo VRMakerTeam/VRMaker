@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25123.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>..\..\obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+    <OutDir>..\..\bin\</OutDir>
+    <IntDir>..\..\obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_WEBSOCKETS_LIB;QT_WEBENGINEWIDGETS_LIB;QT_UITOOLS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets;.\..\..\obj\GeneratedFiles\$(ConfigurationName);.\..\..\obj\GeneratedFiles;.\..\..\src\;..\..\inc\interface;.\..\..\..\creator-library\inc\plugins;.\..\..\..\creator-library\inc;$(QTDIR)\include\QtMultimedia;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWebEngineWidgets;$(QTDIR)\include\QtUiTools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(TargetName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\..\..\creator-library\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Networkd.lib;Qt5Widgetsd.lib;pluginBean_d.lib;pluginUnity_d.lib;pluginScreenplay_d.lib;pluginDiagram_d.lib;pluginBucket_d.lib;pluginStore_d.lib;Qt5Multimediad.lib;Qt5WebSocketsd.lib;Qt5WebEngineWidgetsd.lib;Qt5UiToolsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_WEBSOCKETS_LIB;QT_WEBENGINEWIDGETS_LIB;QT_UITOOLS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets;.\..\..\obj\GeneratedFiles\$(ConfigurationName);.\..\..\obj\GeneratedFiles;.\..\..\src\;..\..\inc\interface;.\..\..\..\creator-library\inc\plugins;.\..\..\..\creator-library\inc;$(QTDIR)\include\QtMultimedia;$(QTDIR)\include\QtWebSockets;$(QTDIR)\include\QtWebEngineWidgets;$(QTDIR)\include\QtUiTools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(TargetName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;..\..\..\creator-library\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Network.lib;Qt5Widgets.lib;pluginBean.lib;pluginUnity.lib;pluginScreenplay.lib;pluginDiagram.lib;pluginStore.lib;pluginBucket.lib;Qt5Multimedia.lib;Qt5WebSockets.lib;Qt5WebEngineWidgets.lib;Qt5UiTools.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\obj\GeneratedFiles\Debug\moc_ClickWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\obj\GeneratedFiles\Release\moc_ClickWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lapi.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lauxlib.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lbaselib.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lbitlib.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lcode.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lcorolib.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lctype.c" />
+    <ClCompile Include="..\..\src\3rd\lua\ldblib.c" />
+    <ClCompile Include="..\..\src\3rd\lua\ldebug.c" />
+    <ClCompile Include="..\..\src\3rd\lua\ldo.c" />
+    <ClCompile Include="..\..\src\3rd\lua\ldump.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lfunc.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lgc.c" />
+    <ClCompile Include="..\..\src\3rd\lua\linit.c" />
+    <ClCompile Include="..\..\src\3rd\lua\liolib.c" />
+    <ClCompile Include="..\..\src\3rd\lua\llex.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lmathlib.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lmem.c" />
+    <ClCompile Include="..\..\src\3rd\lua\loadlib.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lobject.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lopcodes.c" />
+    <ClCompile Include="..\..\src\3rd\lua\loslib.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lparser.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lstate.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lstring.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lstrlib.c" />
+    <ClCompile Include="..\..\src\3rd\lua\ltable.c" />
+    <ClCompile Include="..\..\src\3rd\lua\ltablib.c" />
+    <ClCompile Include="..\..\src\3rd\lua\ltm.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lundump.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lutf8lib.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lvm.c" />
+    <ClCompile Include="..\..\src\3rd\lua\lzio.c" />
+    <ClCompile Include="..\..\src\API\CanvasAPI.cpp" />
+    <ClCompile Include="..\..\src\API\CoreAPI.cpp" />
+    <ClCompile Include="..\..\src\API\DiagramAPI.cpp" />
+    <ClCompile Include="..\..\src\App.cpp" />
+    <ClCompile Include="..\..\src\AppActions.cpp" />
+    <ClCompile Include="..\..\src\AppCore.cpp" />
+    <ClCompile Include="..\..\src\AppUtil.cpp" />
+    <ClCompile Include="..\..\src\Composite.cpp" />
+    <ClCompile Include="..\..\src\ConfigUtil.cpp" />
+    <ClCompile Include="..\..\src\DeviceUtil.cpp" />
+    <ClCompile Include="..\..\src\DragDropWidget.cpp" />
+    <ClCompile Include="..\..\src\flowlayout.cpp" />
+    <ClCompile Include="..\..\src\HttpUtil.cpp" />
+    <ClCompile Include="..\..\src\SVM.cpp" />
+    <ClCompile Include="..\..\src\MemDB.cpp" />
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\MemDBUtil.cpp" />
+    <ClCompile Include="..\..\src\NotifyBox.cpp" />
+    <ClCompile Include="..\..\src\PathUtil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\interface\AES.h" />
+    <ClInclude Include="..\..\inc\interface\AppActions.h" />
+    <ClInclude Include="..\..\inc\interface\AppCore.h" />
+    <ClInclude Include="..\..\inc\interface\AppUtil.h" />
+    <ClInclude Include="..\..\inc\interface\ConfigUtil.h" />
+    <ClInclude Include="..\..\inc\interface\DeviceUtil.h" />
+    <ClInclude Include="..\..\inc\interface\SVM.h" />
+    <ClInclude Include="..\..\inc\interface\NotifyBox.h" />
+    <ClInclude Include="..\..\inc\interface\PathUtil.h" />
+    <ClInclude Include="..\..\inc\interface\UDPUtil.h" />
+    <ClInclude Include="..\..\obj\GeneratedFiles\ui_Notify.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lapi.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lauxlib.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lcode.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lctype.h" />
+    <ClInclude Include="..\..\src\3rd\lua\ldebug.h" />
+    <ClInclude Include="..\..\src\3rd\lua\ldo.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lfunc.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lgc.h" />
+    <ClInclude Include="..\..\src\3rd\lua\llex.h" />
+    <ClInclude Include="..\..\src\3rd\lua\llimits.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lmem.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lobject.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lopcodes.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lparser.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lprefix.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lstate.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lstring.h" />
+    <ClInclude Include="..\..\src\3rd\lua\ltable.h" />
+    <ClInclude Include="..\..\src\3rd\lua\ltm.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lua.h" />
+    <ClInclude Include="..\..\src\3rd\lua\luaconf.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lualib.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lundump.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lvm.h" />
+    <ClInclude Include="..\..\src\3rd\lua\lzio.h" />
+    <ClInclude Include="..\..\src\API\CanvasAPI.h" />
+    <ClInclude Include="..\..\src\API\CoreAPI.h" />
+    <ClInclude Include="..\..\src\API\DiagramAPI.h" />
+    <ClInclude Include="..\..\src\API\LuaUtil.h" />
+    <ClInclude Include="..\..\src\UiLoader.h" />
+    <ClInclude Include="resource.h" />
+    <CustomBuild Include="..\..\inc\interface\ClickWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ClickWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\obj\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\obj\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_WEBSOCKETS_LIB -DQT_WEBENGINEWIDGETS_LIB -DQT_UITOOLS_LIB  "-I." "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWidgets" "-I.\..\..\obj\GeneratedFiles\$(ConfigurationName)\." "-I.\..\..\obj\GeneratedFiles" "-I.\..\..\src" "-I.\..\..\inc\interface" "-I.\..\..\..\creator-library\inc\plugins" "-I.\..\..\..\creator-library\inc" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtWebSockets" "-I$(QTDIR)\include\QtWebEngineWidgets" "-I$(QTDIR)\include\QtUiTools"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ClickWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\obj\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\..\..\obj\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_WEBSOCKETS_LIB -DQT_WEBENGINEWIDGETS_LIB -DQT_UITOOLS_LIB  "-I." "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWidgets" "-I.\..\..\obj\GeneratedFiles\$(ConfigurationName)\." "-I.\..\..\obj\GeneratedFiles" "-I.\..\..\src" "-I.\..\..\inc\interface" "-I.\..\..\..\creator-library\inc\plugins" "-I.\..\..\..\creator-library\inc" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtWebSockets" "-I$(QTDIR)\include\QtWebEngineWidgets" "-I$(QTDIR)\include\QtUiTools"</Command>
+    </CustomBuild>
+    <ClInclude Include="..\..\inc\interface\Composite.h" />
+    <ClInclude Include="..\..\inc\interface\Dispatcher.h" />
+    <CustomBuild Include="..\..\inc\interface\DragDropWidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+    </CustomBuild>
+    <ClInclude Include="..\..\inc\interface\flowlayout.h" />
+    <ClInclude Include="..\..\inc\interface\HandleBus.hxx" />
+    <ClInclude Include="..\..\inc\interface\HttpUtil.h" />
+    <ClInclude Include="..\..\inc\interface\IPlugin.h" />
+    <ClInclude Include="..\..\inc\interface\MemDB.h" />
+    <ClInclude Include="..\..\inc\interface\Logx.h" />
+    <ClInclude Include="..\..\inc\interface\MemDBMacro.h" />
+    <ClInclude Include="..\..\inc\interface\MemDBUtil.h" />
+    <ClInclude Include="..\..\inc\interface\Model.h" />
+    <ClInclude Include="..\..\inc\interface\Settings.h" />
+    <ClInclude Include="..\..\inc\interface\StoreMacro.h" />
+    <ClInclude Include="..\..\inc\interface\Utils.h" />
+    <ClInclude Include="..\..\src\App.h" />
+    <ClInclude Include="..\..\src\HeaderWidget.h" />
+    <ClInclude Include="..\..\src\PluginFactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="creator.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\res\Notify.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\obj\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\..\..\obj\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\obj\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\..\..\obj\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\..\..\obj\GeneratedFiles\$(ConfigurationName)" UicDir=".\..\..\obj\GeneratedFiles" RccDir=".\..\..\obj\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="msvc2015" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

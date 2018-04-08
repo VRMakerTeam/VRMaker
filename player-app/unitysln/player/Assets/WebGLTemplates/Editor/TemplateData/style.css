@@ -1,0 +1,2 @@
+.webgl-content * {border: 0; margin: 0; padding: 0; width:100%; height:100%}
+.webgl-content {position: absolute; top: 50%; left: 50%; width:100%; height:100%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}

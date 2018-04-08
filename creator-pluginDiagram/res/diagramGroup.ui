@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UiDiagramGroup</class>
+ <widget class="QWidget" name="UiDiagramGroup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>249</width>
+    <height>776</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget[accessibleName=&quot;color:2d2d30&quot;]{
+	background-color: rgb(45, 45, 48);
+}
+QWidget[accessibleName=&quot;color:252526&quot;]{
+	background-color: rgb(37, 37, 38);
+}
+
+QScrollArea#scrollArea{
+	border:0;
+}
+
+QRadioButton[accessibleName=&quot;group:tab&quot;]{
+	min-width:68;
+	min-height:32;
+	max-width:68;
+	max-height:32;
+	background-color: rgb(70, 175, 255);
+	border-radius: 8;
+	color: rgb(255, 255, 255);
+	font: 11pt;
+	padding: 0 0 0 5;
+}
+QRadioButton[accessibleName=&quot;group:tab&quot;]::indicator:unchecked {
+    width: 10;
+    height: 0;
+}
+QRadioButton[accessibleName=&quot;group:tab&quot;]::indicator:checked {
+    width: 10;
+    height: 10;
+	border-radius: 5;
+	background-color: rgb(255, 93, 185);
+}
+QRadioButton[accessibleName=&quot;group:tab&quot;]:unchecked{
+	background-color: rgb(116, 116, 116);
+}
+QRadioButton[accessibleName=&quot;group:tab&quot;]:checked {
+	background-color: rgb(72, 144, 216);
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="__containerTab" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="accessibleName">
+      <string notr="true">color:2d2d30</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout"/>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>249</width>
+        <height>758</height>
+       </rect>
+      </property>
+      <property name="accessibleName">
+       <string notr="true">color:252526</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="DragDropWidget" name="__containerBlock" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>641</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DragDropWidget</class>
+   <extends>QWidget</extends>
+   <header>dragdropwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

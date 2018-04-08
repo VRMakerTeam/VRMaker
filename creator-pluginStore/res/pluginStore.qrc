@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/simple">
+    <file alias="store_down">img/store_down.png</file>
+    <file alias="store_normal">img/store_normal.png</file>
+  </qresource>
+</RCC>

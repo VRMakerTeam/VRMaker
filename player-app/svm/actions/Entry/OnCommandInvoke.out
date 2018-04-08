@@ -1,0 +1,4 @@
+function onExecute(_params, _finish)
+    print('execute Entry:OnCommandInvoke')
+    _finish()
+end

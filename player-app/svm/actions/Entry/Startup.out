@@ -1,0 +1,4 @@
+function onExecute(_params, _finish)
+    print('execute Entry:Startup')
+    _finish()
+end

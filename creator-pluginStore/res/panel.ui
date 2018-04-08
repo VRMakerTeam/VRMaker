@@ -1,0 +1,1663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PluginStorePanel</class>
+ <widget class="QWidget" name="PluginStorePanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1063</width>
+    <height>702</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1063</width>
+    <height>702</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/************************************************
+
+*
+* ZCreator Style Sheet
+*
+* Author: Limiko Liu
+*
+************************************************/
+
+/*---------------------------------------------------------
+*----------------------------------------------------------
+*
+* 标题栏
+*
+*----------------------------------------------------------
+*--------------------------------------------------------*/
+
+/* 深色背景 */
+QWidget[accessibleName=&quot;titlebar_dark&quot;] {
+	background-color: rgb(44,44,44);
+}
+
+/* 灰色背景 */
+QWidget[accessibleName=&quot;titlebar_grey&quot;] {
+	background-color: rgb(63,63,63);
+}
+/*半透明灰色背景 */
+QWidget[accessibleName=&quot;bg_grey&quot;] {
+	background-color: rgba(44,44,44,210);
+}
+
+/*全透明灰色背景 */
+QWidget[accessibleName=&quot;bg_greyall&quot;] {
+	background-color: rgba(44,44,44,0);
+    border:0px;
+}
+
+/*全透明灰色背景 */
+QWidget[accessibleName=&quot;bg_noborder&quot;] {
+    border:0px;
+}
+
+
+/* 灰色背景 */
+QWidget[accessibleName=&quot;titlebar:bg:5d5d5d&quot;] {
+	background-color: rgb(93,93,93);
+}
+
+/* 浅灰白色背景 */
+QWidget[accessibleName=&quot;titlebar:bg:d7d7d7&quot;] {
+	background-color: rgb(215,215,215);
+}
+/* 深灰白色背景 */
+QWidget[accessibleName=&quot;titlebar:bg:a1a1a1&quot;] {
+	background-color: rgb(161,161,161);
+}
+/* 标签背景 */
+QWidget[accessibleName=&quot;titlebar:bg:666666&quot;] {
+	background-color: rgb(102,102,102);
+}
+
+/* 文字 */
+QLabel[accessibleName=&quot;titlebar_font&quot;] {
+	color: rgb(255,255,255);
+	font: 19px;
+	
+}
+/* 下载别名显示文字 */
+QLabel[accessibleName=&quot;titlealias_font&quot;] {
+	color: rgb(255,255,255);
+	font: 28px;
+	
+}
+/* 文字及背景 */
+QLabel[accessibleName=&quot;font_bg&quot;] {
+	color: rgb(255,255,255);
+	font: 19px;
+    background-color: rgb(22,155,213);
+
+}
+/* 返回按钮*/
+QPushButton[accessibleName=&quot;titlebar_back&quot;]{
+	background-image: url(:/simple/back_normal);
+	border: 0px;
+}
+QPushButton[accessibleName=&quot;titlebar_back&quot;]:pressed{
+	background-image: url(:/simple/back_pressed);
+	border: 0px;
+}
+/* 关闭按钮 */
+QPushButton[accessibleName=&quot;titlebar_close&quot;]{
+	background-image: url(:/simple/close);
+	border: 0px;
+}
+QPushButton[accessibleName=&quot;titlebar_close&quot;]:pressed{
+	background-image: url(:/simple/close_pressed);
+}
+/* 最小化按钮 */
+QPushButton[accessibleName=&quot;titlebar_minimal&quot;]{
+	background-image: url(:/simple/minimal);
+	border: 0px;
+}
+QPushButton[accessibleName=&quot;titlebar_minimal&quot;]:pressed{
+	background-image: url(:/simple/minimal_pressed);
+}
+
+/*---------------------------------------------------------
+*----------------------------------------------------------
+*
+* 左部工具条
+*
+*----------------------------------------------------------
+*--------------------------------------------------------*/
+/* 字体 */
+QLabel[accessibleName=&quot;prologue_toolbar_font&quot;] {
+	color: rgb(255,255,255);
+	font: 19px;
+}
+/* 底图 */
+QWidget#panel_left{
+	background-color: rgba(63, 63, 63);
+}
+
+/*---------------------------------------------------------
+*----------------------------------------------------------
+*
+* 作品工具条
+*
+*----------------------------------------------------------
+*--------------------------------------------------------*/
+
+/** 新建作品按钮 **/
+QPushButton#pb_append_works{
+	border-image: url(:/simple/create_normal);
+}
+QPushButton#pb_append_works:pressed{
+	border-image: url(:/simple/create_down);
+}
+
+/** 编辑作品按钮 **/
+QPushButton#pb_edit_works{
+	border-image: url(:/simple/edit_normal);
+}
+QPushButton#pb_edit_works:pressed{
+	border-image: url(:/simple/edit_down);
+}
+/** 删除作品按钮 **/
+QPushButton#pb_remove_works{
+	border-image: url(:/simple/delete_normal);
+}
+QPushButton#pb_remove_works:pressed{
+	border-image: url(:/simple/delete_down);
+}
+/** 预览作品按钮 **/
+QPushButton#pb_play_works{
+	border-image: url(:/simple/play_normal);
+}
+QPushButton#pb_play_works:pressed{
+	border-image: url(:/simple/play_down);
+}
+/** 分享作品按钮 **/
+QPushButton#pb_publish_works{
+	border-image: url(:/simple/publish_normal);
+}
+QPushButton#pb_publish_works:pressed{
+	border-image: url(:/simple/publish_down);
+}
+
+/*---------------------------------------------------------
+*----------------------------------------------------------
+*
+* 作品面板
+*
+*----------------------------------------------------------
+*--------------------------------------------------------*/
+/* 作品单元按钮*/
+QPushButton[accessibleName=&quot;button:works:unit&quot;]{
+	background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #32383d;
+	font: 12px;
+	color:#32383d;
+}
+QPushButton[accessibleName=&quot;button:works:unit&quot;]:pressed{
+	background-color: rgba(0, 0, 0, 10);
+}
+/* 作品名 */
+QLabel[accessibleName=&quot;label:works:unit&quot;] {
+	color: rgb(255, 255, 255);
+	font: bold 21px;
+}
+/* 作品单元容器 */
+QScrollArea[accessibleName=&quot;scrollarea:works:frame&quot;]{
+    border: 0px;
+}
+
+/*---------------------------------------------------------
+*----------------------------------------------------------
+*
+* 剧情工具条
+*
+*----------------------------------------------------------
+*--------------------------------------------------------*
+
+/** 编辑场景按钮 **/
+QPushButton#pb_select_zone{
+	border-image: url(:/simple/zone_normal);
+}
+QPushButton#pb_select_zone:pressed{
+	border-image: url(:/simple/zone_down);
+}
+QPushButton#pb_select_zone:disabled{
+	border-image: url(:/simple/zone_disable);
+}
+
+/** 新建分镜按钮 **/
+QPushButton#pb_append_story{
+	border-image: url(:/simple/create_normal);
+}
+QPushButton#pb_append_story:pressed{
+	border-image: url(:/simple/create_down);
+}
+QPushButton#pb_append_story:disabled{
+	border-image: url(:/simple/create_disable);
+}
+/** 编辑分镜按钮 **/
+QPushButton#pb_edit_story{
+	border-image: url(:/simple/edit_normal);
+}
+QPushButton#pb_edit_story:pressed{
+	border-image: url(:/simple/edit_down);
+}
+QPushButton#pb_edit_story:disabled{
+	border-image: url(:/simple/edit_disable);
+}
+/** 删除分镜按钮 **/
+QPushButton#pb_remove_story{
+	border-image: url(:/simple/delete_normal);
+}
+QPushButton#pb_remove_story:pressed{
+	border-image: url(:/simple/delete_down);
+}
+QPushButton#pb_remove_story:disabled{
+	border-image: url(:/simple/delete_disable);
+}
+/** 编辑片头按钮 **/
+QPushButton#pb_edit_prologue{
+	border-image: url(:/simple/prologue_normal);
+}
+QPushButton#pb_edit_prologue:pressed{
+	border-image: url(:/simple/prologue_down);
+}
+QPushButton#pb_edit_prologue:disabled{
+	border-image: url(:/simple/prologue_disable);
+}
+/**资源仓库按钮**/
+
+QPushButton#pb_source_hub{
+	border-image: url(:/simple/library_normal);
+}
+QPushButton#pb_source_hub:pressed{
+	border-image: url(:/simple/library_down);
+}
+QPushButton#pb_source_hub:disabled{
+	border-image: url(:/simple/library_disablel);
+}
+/**商城按钮**/
+
+QPushButton#pb_shop{
+	border-image: url(:/simple/store_normal);
+}
+QPushButton#pb_shop:pressed{
+	border-image: url(:/simple/store_down);
+}
+
+/*---------------------------------------------------------
+*----------------------------------------------------------
+*
+* 剧情面板
+*
+*----------------------------------------------------------
+*--------------------------------------------------------*
+/* 作品名输入框 */
+QLineEdit[accessibleName=&quot;scrollarea:alias:work:input&quot;]{
+    border: 0px;
+	background-color: rgb(104,172,240);
+	color: rgb(255, 255, 255);
+	font: 18pt;
+}
+/* 分镜单元按钮 */
+QPushButton[accessibleName=&quot;button:storyboard:unit&quot;]{
+	background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #32383d;
+	font: 12px;
+	color:#32383d;
+}
+QPushButton[accessibleName=&quot;button:storyboard:unit&quot;]:pressed{
+	background-color: rgba(0, 0, 0, 10);
+}
+/* 分镜名 */
+QLabel[accessibleName=&quot;label:storyboard:unit&quot;] {
+	color: rgb(255, 255, 255);
+	font: bold 21px;
+}
+/* 分镜单元容器 */
+QScrollArea[accessibleName=&quot;scrollarea:storyboard:frame&quot;]{
+    border: 0px;
+}
+
+/*---------------------------------------------------------
+*----------------------------------------------------------
+*
+* 分镜面板
+*
+*----------------------------------------------------------
+*--------------------------------------------------------*/
+/*分镜名输入*/
+QLineEdit[accessibleName=&quot;scrollarea:alias:story:input&quot;]{
+    border: 0px;
+	background-color: rgb(104,172,240);
+	color: rgb(255, 255, 255);
+	font: bold 18pt;
+}
+/* 分镜场景人物预览 */
+QFrame[accessibleName=&quot;frame:story:zone&quot;]{
+	background-image: url(:/simple/default_stage);
+}
+
+/**************************************************
+	增加Action时间
+**************************************************/
+QPushButton#pb_add_action_seconds_100{
+	border-image: url(:/simple/time_up_x3_normal);
+}
+QPushButton#pb_add_action_seconds_100:pressed{
+	border-image: url(:/simple/time_up_x3_down);
+}
+QPushButton#pb_add_action_seconds_10{
+	border-image: url(:/simple/time_up_x2_normal);
+}
+QPushButton#pb_add_action_seconds_10:pressed{
+	border-image: url(:/simple/time_up_x2_down);
+}
+QPushButton#pb_add_action_seconds_1{
+	border-image: url(:/simple/time_up_x1_normal);
+}
+QPushButton#pb_add_action_seconds_1:pressed{
+	border-image: url(:/simple/time_up_x1_down);
+}
+/**************************************************
+	减少Action时间
+**************************************************/
+QPushButton#pb_cut_action_seconds_100{
+	border-image: url(:/simple/time_down_x3_normal);
+}
+QPushButton#pb_cut_action_seconds_100:pressed{
+	border-image: url(:/simple/time_down_x3_down);
+}
+QPushButton#pb_cut_action_seconds_10{
+	border-image: url(:/simple/time_down_x2_normal);
+}
+QPushButton#pb_cut_action_seconds_10:pressed{
+	border-image: url(:/simple/time_down_x2_down);
+}
+QPushButton#pb_cut_action_seconds_1{
+	border-image: url(:/simple/time_down_x1_normal);
+}
+QPushButton#pb_cut_action_seconds_1:pressed{
+	border-image: url(:/simple/time_down_x1_down);
+}
+
+/*时间标签*/
+QLabel[accessibleName=&quot;action:time&quot;]{
+	font: 18pt;
+	background-color: rgb(0, 66, 134);
+	color: rgb(255, 255, 255);
+}
+
+/*删除行为按钮*/
+QPushButton#pb_delete_action{
+	border-image: url(:/simple/delete_normal);
+}
+QPushButton#pb_delete_action:pressed{
+	border-image: url(:/simple/delete_down);
+}
+
+/*行为输入框*/
+QLineEdit[accessibleName=&quot;action:input&quot;]{
+    border: 0px;
+	background-color: rgb(104, 172, 239);
+	color: rgb(255, 255, 255);
+	font: 18pt;
+}
+
+/*重置角色按钮*/
+QPushButton#btn_reset{
+	border-image: url(:/simple/reset_normal);
+}
+QPushButton#btn_reset::pressed{
+	border-image: url(:/simple/reset_down);
+}
+
+/*角色逆转按钮*/
+QPushButton#btn_turn_left{
+	border-image: url(:/simple/turnleft_normal);
+}
+QPushButton#btn_turn_left::pressed{
+	border-image: url(:/simple/turnleft_down);
+}
+
+/*角色顺转按钮*/
+QPushButton#btn_turn_right{
+	border-image: url(:/simple/turnright_normal);
+}
+QPushButton#btn_turn_right::pressed{
+	border-image: url(:/simple/turnright_down);
+}
+
+/* 场景事件按钮 */
+QPushButton#pb_zone{
+	border-image: url(:/simple/zone_normal);
+}
+QPushButton#pb_zone:pressed{
+	border-image: url(:/simple/zone_down);
+}
+
+/* 角色容器背景 */
+QWidget[accessibleName=&quot;action:bg:868686&quot;]{
+	border: 0px;
+	background-color: rgba(134, 134, 134);
+}
+
+/* 分镜容器背景 */
+QWidget[accessibleName=&quot;action:bg:7e7e7e&quot;]{
+	border: 0px;
+	background-color: rgba(126, 126, 126);
+}
+
+/* 预览背景 */
+QWidget[accessibleName=&quot;action:bg:c2c2c2&quot;]{
+	border: 0px;
+	background-color: rgba(194, 194, 194);
+}
+
+/* 插入动作按钮 */
+QPushButton#pb_action_animation{
+	border-image: url(:/simple/animation_normal);
+}
+QPushButton#pb_action_animation:pressed{
+	border-image: url(:/simple/animation_down);
+}
+/* 插入对白按钮 */
+QPushButton#pb_action_caption{
+	border-image: url(:/simple/caption_normal);
+}
+QPushButton#pb_action_caption:pressed{
+	border-image: url(:/simple/caption_down);
+}
+/* 插入语音按钮 */
+QPushButton#pb_action_voice{
+	border-image: url(:/simple/voice_normal);
+}
+QPushButton#pb_action_voice:pressed{
+	border-image: url(:/simple/voice_down);
+}
+/* 插入音乐按钮 */
+QPushButton#pb_action_music{
+	border-image: url(:/simple/music_normal);
+}
+QPushButton#pb_action_music:pressed{
+	border-image: url(:/simple/music_down);
+}
+
+
+/**************************************************
+	下拉选框
+**************************************************/
+QComboBox {
+	border: 0px;
+	background-color: rgb(104, 172, 240);
+	color: rgb(255, 255, 255);
+	font: 15pt;
+	padding: 0px 15px 0px 15px;
+}
+QComboBox::drop-down {
+    border:0px;
+	width:32px;
+	padding: 0px 15px 0px 15px;
+}
+QComboBox::down-arrow {
+	image: url(:/simple/down_arrow);
+}
+
+/*行为列表容器背景*/
+QWidget#widget_action_cells{
+	background-color: rgb(244, 244, 244);
+}
+
+/*行为工具条背景*/
+QGroupBox[accessibleName=&quot;action:toolbar:bg&quot;]{
+	background-color: rgb(224, 224, 224);
+}
+
+/*----------------------------------------------------*/
+/*----------------* 资源仓库面板*---------------------*/
+/*----------------------------------------------------*/
+
+/*自定义按钮*/
+QPushButton#pb_source_self{
+	border-image: url(:/simple/edit_normal);
+}
+QPushButton#pb_source_self:pressed{
+	border-image: url(:/simple/edit_down);
+}
+/*商店按钮*/
+QPushButton#pb_local_source{
+	border-image: url(:/simple/title_normal);
+}
+QPushButton#pb_local_source:pressed{
+	border-image: url(:/simple/title_down);
+}
+
+
+/*----------------------------------------------------*/
+/*----------------* 资源仓库面板之自定义面板*------------*/
+/*----------------------------------------------------*/
+
+/*---------------------右部工具条-----------*/
+/*声音*/
+QPushButton#pb_audio{
+	border-image: url(:/simple/audio_normal);
+}
+QPushButton#pb_audio:pressed{
+	border-image: url(:/simple/audio_down);
+}
+
+/**--------------------中间按钮------------*/
+/*录音按钮*/
+QPushButton#pb_record{
+	border-image: url(:/simple/record_off);
+}
+QPushButton#pb_record:pressed{
+	border-image: url(:/simple/record_on);
+}
+
+/** 播放录音按钮 **/
+QPushButton#pb_play_record{
+	border-image: url(:/simple/play);
+}
+QPushButton#pb_play_record:pressed{
+	border-image: url(:/simple/stop);
+}
+
+/**删除声音文件按钮 **/
+QPushButton#pb_del_record{
+	border-image: url(:/simple/delete_normal);
+}
+QPushButton#pb_del_record:pressed{
+	border-image: url(:/simple/delete_down);
+}
+QPushButton#pb_del_record:disabled{
+	border-image: url(:/simple/delete_disable);
+}
+
+
+/*----------------------------------------------------*/
+/*----------------* 资源仓库面板之商店面板*------------*/
+/*----------------------------------------------------*/
+
+
+QCheckBox[accessibleName=&quot;tag&quot;]{
+	color: rgb(255, 255, 255);
+	font: 9pt;
+		
+	background-color: rgba(255, 255, 255,0);
+
+	border-radius:10;
+}
+
+
+QCheckBox::indicator {
+	width:96;
+	height:36;
+	border-radius:10
+}
+
+QCheckBox::indicator:unchecked {
+   
+
+background-color: rgb(102, 102, 102);
+}
+
+QCheckBox::indicator:checked {
+   background-color: rgb(22, 155, 213);
+}
+
+/*右部工具条*/
+
+/*场景按钮*/
+QPushButton#pb_scene{
+	border-image: url(:/simple/zone_normal);
+}
+QPushButton#pb_scene:pressed{
+	border-image: url(:/simple/zone_down);
+}
+/*开场按钮*/
+QPushButton#pb_start{
+	border-image: url(:/simple/scroll_normal);
+}
+QPushButton#pb_start:pressed{
+	border-image: url(:/simple/scroll_down);
+}
+/*声音按钮*/
+QPushButton#pb_music{
+	border-image: url(:/simple/music_normal);
+}
+
+/*语音按钮*/
+QPushButton#pb_voice{
+	border-image: url(:/simple/audio_normal);
+}
+QPushButton#pb_voice:pressed{
+	border-image: url(:/simple/audio_down);
+}
+/*动作按钮*/
+QPushButton#pb_action{
+	border-image: url(:/simple/animation_normal);
+}
+QPushButton#pb_action:pressed{
+	border-image: url(:/simple/animation_down);
+}
+/*动作模型*/
+QPushButton#pb_model{
+	border-image: url(:/simple/brief_normal);
+}
+QPushButton#pb_model:pressed{
+	border-image: url(:/simple/brief_down);
+}
+
+/*----------------------------------------------------*/
+/*----------------------* 商城面板*-------------------*/
+/*----------------------------------------------------*/
+
+
+
+/*右部工具条*/
+
+/*场景按钮*/
+QPushButton#pb_store_scene_3{
+	border-image: url(:/simple/zone_normal);
+}
+QPushButton#pb_store_scene_3:pressed{
+	border-image: url(:/simple/zone_down);
+}
+/*开场按钮*/
+QPushButton#pb_store_start_3{
+	border-image: url(:/simple/scroll_normal);
+}
+QPushButton#pb_store_start_3:pressed{
+	border-image: url(:/simple/scroll_down);
+}
+
+
+/*声音按钮*/
+QPushButton#pb_store_music_3{
+	border-image: url(:/simple/music_normal);
+}
+/*语音按钮*/
+QPushButton#pb_store_voice_3{
+	border-image: url(:/simple/audio_normal);
+}
+QPushButton#pb_store_voice_3:pressed{
+	border-image: url(:/simple/audio_down);
+}
+/*动作按钮*/
+QPushButton#pb_store_action_3{
+	border-image: url(:/simple/animation_normal);
+}
+QPushButton#pb_store_action_3:pressed{
+	border-image: url(:/simple/animation_down);
+}
+/*动作模型*/
+QPushButton#pb_store_model_3{
+	border-image: url(:/simple/brief_normal);
+}
+QPushButton#pb_store_model_3:pressed{
+	border-image: url(:/simple/brief_down);
+}
+
+/* 文字及背景 */
+QLabel[accessibleName=&quot;font_bg&quot;] {
+	color: rgb(255,255,255);
+	font: 19px;
+    background-color: rgb(22,155,213);
+
+}
+/* 下载按钮*/
+QPushButton[accessibleName=&quot;download_back&quot;]{
+	color: rgb(255,255,255);
+	font: 19px;
+}
+
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_4">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget_store">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page_store_classify">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="panle_left_2" native="true">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="accessibleName">
+          <string notr="true">titlebar_grey</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_57" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_68">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="pb_store_scene_3">
+                 <property name="maximumSize">
+                  <size>
+                   <width>55</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_70">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>18</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>18</height>
+                </size>
+               </property>
+               <property name="accessibleName">
+                <string notr="true">titlebar_font</string>
+               </property>
+               <property name="text">
+                <string>场景</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_58" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_69">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="pb_store_start_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>55</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_71">
+               <property name="accessibleName">
+                <string notr="true">titlebar_font</string>
+               </property>
+               <property name="text">
+                <string>开场</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_59" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_71">
+               <item>
+                <widget class="QPushButton" name="pb_store_music_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>55</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>55</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_72">
+               <property name="accessibleName">
+                <string notr="true">titlebar_font</string>
+               </property>
+               <property name="text">
+                <string>音乐</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_60" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_72">
+               <item>
+                <widget class="QPushButton" name="pb_store_action_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>55</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>55</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_73">
+               <property name="accessibleName">
+                <string notr="true">titlebar_font</string>
+               </property>
+               <property name="text">
+                <string>动作</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_61" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_74">
+               <item>
+                <widget class="QPushButton" name="pb_store_model_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>55</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>55</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_74">
+               <property name="accessibleName">
+                <string notr="true">titlebar_font</string>
+               </property>
+               <property name="text">
+                <string>模型</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_62" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_10">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_75">
+               <item>
+                <widget class="QPushButton" name="pb_store_voice_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>55</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>55</width>
+                   <height>55</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_75">
+               <property name="accessibleName">
+                <string notr="true">titlebar_font</string>
+               </property>
+               <property name="text">
+                <string>语音</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>88</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QScrollArea" name="scrollAreaStore_2">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaStoreWidgetContents_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>942</width>
+              <height>676</height>
+             </rect>
+            </property>
+            <property name="accessibleName">
+             <string notr="true">bg_noborder</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="2" column="0">
+              <widget class="QWidget" name="widget_65" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>160</width>
+                 <height>160</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>260</width>
+                 <height>260</height>
+                </size>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_78">
+                <item>
+                 <widget class="QPushButton" name="pushButton_12">
+                  <property name="text">
+                   <string>PushButton</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QWidget" name="widget_66" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>160</width>
+                 <height>160</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>260</width>
+                 <height>260</height>
+                </size>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_79">
+                <item>
+                 <widget class="QPushButton" name="pushButton_13">
+                  <property name="text">
+                   <string>PushButton</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QWidget" name="widget_63" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>160</width>
+                 <height>160</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>260</width>
+                 <height>260</height>
+                </size>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_76">
+                <item>
+                 <widget class="QPushButton" name="pushButton_10">
+                  <property name="text">
+                   <string>PushButton</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QWidget" name="widget_64" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>160</width>
+                 <height>160</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>260</width>
+                 <height>260</height>
+                </size>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_77">
+                <item>
+                 <widget class="QPushButton" name="pushButton_11">
+                  <property name="text">
+                   <string>PushButton</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QScrollArea" name="scrollArea">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="accessibleName">
+            <string/>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents_3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>959</width>
+              <height>58</height>
+             </rect>
+            </property>
+            <property name="accessibleName">
+             <string notr="true">titlebar:bg:a1a1a1</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QCheckBox" name="checkBox">
+               <property name="accessibleName">
+                <string notr="true">tag</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_download">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>1063</width>
+        <height>702</height>
+       </size>
+      </property>
+      <property name="accessibleName">
+       <string notr="true">bg_grey</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>20</number>
+         </property>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>968</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pb_close_downLoad_2">
+           <property name="minimumSize">
+            <size>
+             <width>55</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>55</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">titlebar_close</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>103</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>60</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="widget_68" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>400</width>
+             <height>200</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>200</height>
+            </size>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">titlebar:bg:d7d7d7</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>2</number>
+            </property>
+            <property name="topMargin">
+             <number>2</number>
+            </property>
+            <property name="rightMargin">
+             <number>2</number>
+            </property>
+            <property name="bottomMargin">
+             <number>2</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="widget_pic_2">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>396</width>
+                <height>196</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="accessibleName">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <property name="leftMargin">
+             <number>18</number>
+            </property>
+            <property name="rightMargin">
+             <number>70</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_alias_2">
+              <property name="accessibleName">
+               <string notr="true">titlealias_font</string>
+              </property>
+              <property name="text">
+               <string>alias</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_author_2">
+              <property name="accessibleName">
+               <string notr="true">titlebar_font</string>
+              </property>
+              <property name="text">
+               <string>author</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_version_2">
+              <property name="accessibleName">
+               <string notr="true">titlebar_font</string>
+              </property>
+              <property name="text">
+               <string>version</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_date_2">
+              <property name="accessibleName">
+               <string notr="true">titlebar_font</string>
+              </property>
+              <property name="text">
+               <string>date</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pb_downLoad_2">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="accessibleName">
+               <string notr="true">download_back</string>
+              </property>
+              <property name="text">
+               <string>免  费</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>64</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QScrollArea" name="scrollArea_downLoad_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>220</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="accessibleName">
+          <string notr="true">bg_greyall</string>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetdownloadContents_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>100</width>
+            <height>220</height>
+           </rect>
+          </property>
+          <property name="accessibleName">
+           <string notr="true">bg_greyall</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QPushButton" name="pushButton_14">
+             <property name="maximumSize">
+              <size>
+               <width>340</width>
+               <height>240</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="pluginStore.qrc"/>
+  <include location="pluginStore.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,18 @@
+local var = {}
+local callback = {}
+local API = CS.SVMAPI
+
+function onExecute(_parmas, _finish)
+    callback.finish = _finish;
+    local parser = API.Parser
+    var.duration = parser.toNumber(_parmas, 'duration', 1.0)
+    var.time = os.clock()
+end
+
+function onUpdate()
+    local now = os.clock()
+    if(now - var.time >= var.duration)
+    then
+        callback.finish()
+    end
+end

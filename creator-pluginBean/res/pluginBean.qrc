@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/pluginBean/button">
+        <file>img/prologue_down.png</file>
+        <file>img/prologue_normal.png</file>
+        <file>img/edit_disable.png</file>
+        <file>img/edit_down.png</file>
+        <file>img/edit_normal.png</file>
+        <file>img/create_disable.png</file>
+        <file>img/create_down.png</file>
+        <file>img/create_normal.png</file>
+        <file>img/delete_disable.png</file>
+        <file>img/delete_down.png</file>
+        <file>img/delete_normal.png</file>
+        <file>img/play_down.png</file>
+        <file>img/play_normal.png</file>
+        <file>img/publish_down.png</file>
+        <file>img/publish_normal.png</file>
+        <file>img/install_down.png</file>
+        <file>img/install_normal.png</file>
+        <file>img/publish_mark.png</file>
+    </qresource>
+    <qresource prefix="/pluginBean/img">
+        <file>img/selectedslatecard.png</file>
+        <file>img/fail.png</file>
+        <file>img/success.png</file>
+        <file>img/default_storyboard_unit.png</file>
+        <file>img/VR.png</file>
+    </qresource>
+    <qresource prefix="/pluginBean/anim">
+        <file alias="wait">img/loading.gif</file>
+    </qresource>
+    <qresource prefix="/pluginBean/source">
+        <file alias="vr">img/source/VR.png</file>
+    </qresource>
+</RCC>

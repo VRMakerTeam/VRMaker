@@ -1,0 +1,12 @@
+local var = {}
+local API = CS.SVMAPI
+
+function onExecute(_params, _finish)
+    local parser = API.Parser
+    var.x = parser.toNumber(_params, 'x', 0)
+    var.y = parser.toNumber(_params, 'y', 0)
+    var.z = parser.toNumber(_params, 'z', 0)
+    API.Camera.ModifyPosition(var.x, var.y, var.z)
+    _finish()
+end
+    

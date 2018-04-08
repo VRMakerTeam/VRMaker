@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Source Files\Composite">
+      <UniqueIdentifier>{e59c04cb-dc59-44a2-8a6e-34c82f791740}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\inc\PluginBean\PluginBean.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PluginBeanLogger.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BeanCompositeSource.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BeanCompositePicker.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\PluginBean\BeanActions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BeanCompositeCore.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BeanCompositeCard.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BeanCompositeToolbar.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BeanCompositePanel.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\PluginBean\BeanModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BeanNotifyContent.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BeanCompositeWall.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\PluginBean.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BeanActions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BeanCompositeSource.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BeanCompositePicker.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BeanCompositeCore.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BeanCompositeCard.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BeanCompositeToolbar.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BeanCompositePanel.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BeanModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BeanNotifyContent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BeanCompositeWall.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\obj\GeneratedFiles\qrc_pluginBean.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\res\pluginBean.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

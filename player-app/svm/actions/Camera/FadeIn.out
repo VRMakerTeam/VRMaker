@@ -1,0 +1,30 @@
+local callback = {}
+local var = {}
+local API = CS.SVMAPI
+
+function onExecute(_params, _finish)
+    callback.finish = _finish
+    local parser = API.Parser
+    
+    var.r = parser.toInteger(_params, 'color:r', 0)
+    var.g = parser.toInteger(_params, 'color:g', 0)
+    var.b = parser.toInteger(_params, 'color:b', 0)
+    var.duration = parser.toNumber(_params, 'duration', 1.0)
+        
+    API.Canvas.ToggleMask(true)
+    API.Canvas.ModifyMaskColor(var.r, var.g, var.b, 255)
+    var.time = os.clock()
+end
+
+function onUpdate()
+    local now = os.clock()
+    if (now - var.time >= var.duration)
+    then
+        API.Canvas.ToggleMask(false)
+        callback.finish()
+    end
+    
+    local alpha = 255 - ((now - var.time)/var.duration * 255)
+    API.Canvas.ModifyMaskColor(var.r, var.g, var.b, API.Math.RoundToInt(alpha))
+end
+

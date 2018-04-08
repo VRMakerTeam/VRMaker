@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{c17497e2-dd4c-4028-8c22-ec49dd00d485}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{380006ca-60ac-4c43-b955-9f4fbe3c0ab6}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Source Files\3rd">
+      <UniqueIdentifier>{04a34646-1542-4c8f-b1f0-30932f96ff2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3rd\lua">
+      <UniqueIdentifier>{ac3f88bf-3856-4878-9437-09bfd6cfcc93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\API">
+      <UniqueIdentifier>{4d28d77c-3906-4f1a-be56-68116bb2242c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\AppCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\AppActions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Composite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\obj\GeneratedFiles\Debug\moc_ClickWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\obj\GeneratedFiles\Release\moc_ClickWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\flowlayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\DragDropWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\MemDB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\MemDBUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\HttpUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ConfigUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\DeviceUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PathUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\AppUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\NotifyBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lapi.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lauxlib.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lbaselib.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lbitlib.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lcode.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lcorolib.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lctype.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\ldblib.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\ldebug.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\ldo.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\ldump.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lfunc.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lgc.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\linit.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\liolib.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\llex.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lmathlib.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lmem.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\loadlib.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lobject.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lopcodes.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\loslib.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lparser.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lstate.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lstring.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lstrlib.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\ltable.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\ltablib.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\ltm.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lundump.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lutf8lib.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lvm.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\lua\lzio.c">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\SVM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\API\DiagramAPI.cpp">
+      <Filter>Source Files\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\API\CanvasAPI.cpp">
+      <Filter>Source Files\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\API\CoreAPI.cpp">
+      <Filter>Source Files\API</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\inc\interface\ClickWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\inc\interface\DragDropWidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\Notify.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\App.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\HeaderWidget.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PluginFactory.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\AppCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\IPlugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\Dispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\AppActions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\HandleBus.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\Composite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\flowlayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\Logx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\MemDB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\MemDBUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\HttpUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\Settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\MemDBMacro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\StoreMacro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\AES.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\ConfigUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\DeviceUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\UDPUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\PathUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\AppUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\obj\GeneratedFiles\ui_Notify.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\NotifyBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lapi.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lauxlib.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lcode.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lctype.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\ldebug.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\ldo.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lfunc.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lgc.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\llex.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\llimits.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lmem.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lobject.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lopcodes.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lparser.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lprefix.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lstate.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lstring.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\ltable.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\ltm.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lua.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\luaconf.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lualib.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lundump.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lvm.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\lua\lzio.h">
+      <Filter>Source Files\3rd\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\interface\SVM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\API\DiagramAPI.h">
+      <Filter>Source Files\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\API\CanvasAPI.h">
+      <Filter>Source Files\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\API\LuaUtil.h">
+      <Filter>Source Files\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\API\CoreAPI.h">
+      <Filter>Source Files\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\UiLoader.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="creator.rc" />
+  </ItemGroup>
+</Project>

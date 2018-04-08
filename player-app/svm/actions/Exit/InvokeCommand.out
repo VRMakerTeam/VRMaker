@@ -1,0 +1,28 @@
+local API = CS.SVMAPI
+
+function onExecute(_params, _finish)
+    _finish()
+    local parser = API.Parser
+    if (not parser.has(_params, 'command'))
+    then
+        print('miss command')
+        return
+    end
+
+    local param_path = parser.toString(_params, 'path', "")
+    local param_command = parser.toString(_params, 'command', "")
+    local actions = API.Action.List(param_path)
+
+    for i,action in pairs(actions)
+    do
+        local actionName = API.Action.GetName(action)
+        print(actionName)
+        if 'Entry:OnCommandInvoke' == actionName
+        then
+            if param_command == API.Action.GetParam(action, 'command')
+            then
+                API.Action.Execute(action)
+            end
+        end
+    end
+end

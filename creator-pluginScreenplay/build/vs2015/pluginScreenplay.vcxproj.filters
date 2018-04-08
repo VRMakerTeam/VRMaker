@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Source Files\Composite">
+      <UniqueIdentifier>{e0d30808-8d9a-49a4-be41-887cb0bbbcb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{a00368eb-e08c-4161-8b9f-0b2e73142c97}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{13d5e493-9564-4504-b81e-a2ae92795b08}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\ScreenplayCompositeCore.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ScreenplayCompositePlayer.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ScreenplayCompositePanel.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ScreenplayCompositeSlate.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ScreenplayCompositePreload.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PluginScreenplayLogger.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\defines.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ScreenplayCompositeSlateCard.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ScreenplayCompositePreloadCard.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\PluginScreenplay\pluginScreenplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\PluginScreenplay\ScreenplayActions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\inc\PluginScreenplay\ScreenplayModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ScreenplayCompositeAgentInspector.h">
+      <Filter>Source Files\Composite</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\pluginScreenplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\obj\GeneratedFiles\qrc_pluginScreenplay.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ScreenplayActions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ScreenplayCompositePanel.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ScreenplayCompositePlayer.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ScreenplayCompositeCore.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ScreenplayCompositeSlate.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ScreenplayCompositePreload.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ScreenplayModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ScreenplayCompositeSlateCard.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ScreenplayCompositePreloadCard.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ScreenplayCompositeAgentInspector.cpp">
+      <Filter>Source Files\Composite</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\res\pluginScreenplay.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

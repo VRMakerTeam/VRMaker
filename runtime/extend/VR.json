@@ -1,0 +1,6 @@
+{
+    "alias":"VR",
+    "properties":{
+        "extends":["VR"]
+    }
+}

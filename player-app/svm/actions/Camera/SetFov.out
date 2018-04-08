@@ -1,0 +1,9 @@
+local value = nil
+local API = CS.SVMAPI
+
+function onExecute(_params, _finish)
+    local parser = API.Parser
+    value = parser.toNumber(_params, 'fov', 0)
+    API.Camera.ModifyFOV(value)
+    _finish()
+end

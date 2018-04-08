@@ -1,0 +1,15 @@
+local API = CS.SVMAPI
+local callback = {}
+local var = {}
+
+function onExecute(_params, _finish)
+    callback.finish = _finish
+    
+    local parser = API.Parser
+    
+    var.package = parser.toString(_params, "package", "")
+    var.file = parser.toString(_params, "file", "")
+    var.track = parser.toInteger(_params, "track", 0)
+    
+    API.Sound.Play2D(var.package, var.file, var.track, callback.finish)
+end

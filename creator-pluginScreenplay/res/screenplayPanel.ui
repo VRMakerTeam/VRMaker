@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PluginAstronomyPanel</class>
+ <widget class="QWidget" name="PluginAstronomyPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1084</width>
+    <height>824</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#tabbar{
+	background-color: rgb(51,51,55);
+}
+
+QWidget#blank{
+	background-color: rgb(37, 37, 38);
+}
+
+QWidget#__slotDiagramProperty{
+	background-color: rgb(37, 37, 38);
+}
+
+QWidget#__slotAgentProperty{
+	background-color: rgb(37, 37, 38);
+}
+
+
+QRadioButton[accessibleName=&quot;radio:segment&quot;]{
+	max-width:46;
+	max-height:46;
+	min-width:46;
+	min-height:46;
+}
+QRadioButton[accessibleName=&quot;radio:segment&quot;]::indicator{
+	width:38;
+	height:38;
+	margin: 4;
+}
+QRadioButton[accessibleName=&quot;radio:segment&quot;]::checked{
+	background-color: rgb(116, 116, 116);
+	
+}
+QRadioButton[accessibleName=&quot;radio:segment&quot;]::unchecked{
+}
+
+QCheckBox[accessibleName=&quot;check:segment&quot;]{
+	max-width:46;
+	max-height:46;
+	min-width:46;
+	min-height:46;
+}
+QCheckBox[accessibleName=&quot;check:segment&quot;]::indicator{
+	width:38;
+	height:38;
+	margin: 4;
+}
+QCheckBox[accessibleName=&quot;check:segment&quot;]::checked{
+	background-color: rgb(116, 116, 116);
+	
+}
+QCheckBox[accessibleName=&quot;check:segment&quot;]::unchecked{
+}
+
+
+
+QRadioButton#__preloadsTab::indicator::unchecked {
+	border: 0px;
+	background-repeat: none;
+	background-position: center;
+	background-image: url(:/pluginScreenplay/button/img/Preload.png);
+}
+QRadioButton#__preloadsTab::indicator::checked {
+	 border: 0px;
+	 background-repeat: none;
+	 background-position: center;
+     background-image: url(:/pluginScreenplay/button/img/Preload.png);
+}
+
+QRadioButton#__slatesTab::indicator::unchecked {
+	border: 0px;
+	 background-repeat: none;
+	 background-position: center;
+	 background-image: url(:/pluginScreenplay/button/img/Slate.png);
+}
+QRadioButton#__slatesTab::indicator::checked {
+	 border: 0px;
+	 background-repeat: none;
+	 background-position: center;
+    background-image: url(:/pluginScreenplay/button/img/Slate.png);;
+}
+
+QRadioButton#__blocksTab::indicator::unchecked {
+	 border: 0px;
+	 background-repeat: none;
+	 background-position: center;
+    background-image: url(:/pluginScreenplay/button/img/Diagram.png);
+}
+QRadioButton#__blocksTab::indicator::checked {
+	 border: 0px;
+	 background-repeat: none;
+	 background-position: center;
+    background-image: url(:/pluginScreenplay/button/img/Diagram.png);
+}
+
+QRadioButton#__triggersTab::indicator::unchecked {
+	 border: 0px;
+	 background-repeat: none;
+	 background-position: center;
+    background-image: url(:/pluginScreenplay/button/img/Trigger.png);
+}
+QRadioButton#__triggersTab::indicator::checked {
+	 border: 0px;
+	 background-repeat: none;
+	 background-position: center;
+    background-image: url(:/pluginScreenplay/button/img/Trigger.png);
+}
+
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widgetLeft" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>240</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>240</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="tabbar" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>48</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>48</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QRadioButton" name="__slatesTab">
+           <property name="toolTip">
+            <string>分镜</string>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">radio:segment</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="__preloadsTab">
+           <property name="toolTip">
+            <string>场景</string>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">radio:segment</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="__triggersTab">
+           <property name="toolTip">
+            <string>触发器</string>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">radio:segment</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="__blocksTab">
+           <property name="toolTip">
+            <string>行为</string>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">radio:segment</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>141</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="__pages">
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <widget class="QWidget" name="__slotSlate">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="__slotPreload">
+         <layout class="QVBoxLayout" name="verticalLayout_12">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="__slotBlock">
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="__slotTrigger">
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="page"/>
+     <widget class="QWidget" name="page_2">
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QSplitter" name="splitter">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <widget class="QWidget" name="__slotPlayer" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="__slotDiagramFlow" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="__inspector">
+     <property name="minimumSize">
+      <size>
+       <width>240</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>240</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <widget class="QWidget" name="blank"/>
+     <widget class="QWidget" name="__slotDiagramProperty">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="__slotAgentProperty">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="pluginScreenplay.qrc"/>
+ </resources>
+ <connections/>
+</ui>

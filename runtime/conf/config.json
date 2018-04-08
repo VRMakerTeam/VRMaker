@@ -1,0 +1,6 @@
+{
+    "device.name":"cardboard",
+    "device.platform":"android",
+    "device.android.persistentpath.cardboard":"/mnt/sdcard/Android/data/com.vrmaker.vplayer/files",
+    "svm.format":"lua"
+}

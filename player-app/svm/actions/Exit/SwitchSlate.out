@@ -1,0 +1,9 @@
+local API = CS.SVMAPI
+
+function onExecute(_params, _finish)
+    print('execute Exit:SwitchSlate')
+    _finish()
+    local parser = API.Parser
+    local param_slate= parser.toString(_params, 'slate', "")
+    API.Slate.Switch(param_slate)
+end
