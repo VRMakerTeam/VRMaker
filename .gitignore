@@ -27,3 +27,4 @@ player-app/unitysln/player/*.csproj
 *.sdf
 *.VC.db
 *.VC.opendb
+*.code-workspace
