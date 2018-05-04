@@ -22,6 +22,8 @@ player-app/unitysln/player/.vs/
 player-app/unitysln/player/.vscode/
 player-app/unitysln/player/*.sln
 player-app/unitysln/player/*.csproj
+pkg-maker/Library/
+pkg-maker/Temp/
 
 *.suo
 *.sdf
