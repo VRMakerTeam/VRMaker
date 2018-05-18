@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>235</width>
-    <height>44</height>
+    <width>230</width>
+    <height>56</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>0</width>
-    <height>44</height>
+    <width>230</width>
+    <height>56</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>16777215</width>
-    <height>44</height>
+    <width>230</width>
+    <height>56</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -30,44 +30,31 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget[accessibleName=&quot;bg:normal&quot;]{
-	background-color: rgb(85, 170, 255);
+	border-image: url(:/pluginDiagram/buttons/img/tab_normal.png);
 }
 
 QWidget[accessibleName=&quot;bg:light&quot;]{
-	background-color: rgb(85, 170, 127);
-}
-
-QPushButton[accessibleName=&quot;button:28x28&quot;]{
-	min-width:28;
-	min-height:28;
-	max-width:28;
-	max-height:28;
+	border-image: url(:/pluginDiagram/buttons/img/tab_down.png);
 }
 
 QPushButton#__btnDelete{
-	border: 0px;
-	background-repeat: none;
-	background-position: center;
-	background-image: url(:/pluginDiagram/buttons/img/Trash.png);
+	border-image: url(:/pluginDiagram/buttons/img/delete_small_normal.png);
 }
 QPushButton#__btnDelete:pressed{
-	border: 0px;
-	background-repeat: none;
-	background-position: center;
-	background-image: url(:/pluginDiagram/buttons/img/Trash_down.png);
+	border-image: url(:/pluginDiagram/buttons/img/delete_small_down.png);
 }
 
 
 QCheckBox#__toggleTrash::indicator {
-	image: url(:/pluginDiagram/buttons/img/Remove.png);
+	image: url(:/pluginDiagram/buttons/img/remove_small_normal.png);
 }
 QCheckBox#__toggleTrash::indicator::checked {
-	image: url(:/pluginDiagram/buttons/img/Remove_down.png);
+	image: url(:/pluginDiagram/buttons/img/remove_small_down.png);
 }
 
 QLabel {
 	font: 11pt;
-	color: rgb(255, 255, 255);
+	color: #00487f;
 }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
@@ -89,8 +76,11 @@ QLabel {
    <item>
     <widget class="ClickWidget" name="__clickwidget" native="true">
      <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
       <property name="topMargin">
-       <number>0</number>
+       <number>8</number>
       </property>
       <property name="bottomMargin">
        <number>0</number>
@@ -189,7 +179,7 @@ QLabel {
   <customwidget>
    <class>ClickWidget</class>
    <extends>QWidget</extends>
-   <header>clickwidget.h</header>
+   <header>ClickWidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

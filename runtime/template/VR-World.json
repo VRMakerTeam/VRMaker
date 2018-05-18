@@ -1,6 +1,0 @@
-{
-    "alias":"VR-World",
-    "properties":{
-        "extends":["VR"]
-    }
-}

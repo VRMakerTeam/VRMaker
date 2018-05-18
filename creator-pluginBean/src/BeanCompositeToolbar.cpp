@@ -39,6 +39,7 @@ void Bean::ToolbarView::setupUI()
 	ui_->btnPublishBean = ui_->root->findChild<QPushButton*>("__btnPublishBean");
 	ui_->btnExport = ui_->root->findChild<QPushButton*>("__btnExport");
 	
+	ui_->btnExport->setVisible(false);
 
 	ToggleEditor(false);
 

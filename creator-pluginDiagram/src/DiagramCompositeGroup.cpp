@@ -73,8 +73,7 @@ void Diagram::GroupView::onUpdate(const QString& _tag)
 		MemDB* memDB = DiagramModel::Runtime::GetMemDB();
 		QList<QString> groups = DiagramModel::Runtime::Sets::Query::diagram_groups(memDB);
 
-		//把Entry放到第一个，Exit放到第二个，第三个留空
-		groups.insert(0, "");
+		//把Entry放到第一个，Exit放到第二个
 		groups.removeAll(GROUP_EXIT);
 		groups.insert(0, GROUP_EXIT);
 		groups.removeAll(GROUP_ENTRY);
@@ -97,7 +96,7 @@ void Diagram::GroupView::onUpdate(const QString& _tag)
 				action->group = group;
 				INVOKE_ACTION(DiagramActions::FilterGroupAction, action);
 			});
-			gridLayout->addWidget(btn, i / 3, i % 3);
+			gridLayout->addWidget(btn, i / 2, i % 2);
 			tabs.append(btn);
 		}
 	}

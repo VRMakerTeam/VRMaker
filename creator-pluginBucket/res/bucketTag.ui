@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>143</width>
+    <width>131</width>
     <height>661</height>
    </rect>
   </property>
@@ -17,33 +17,32 @@
    <string notr="true">color:252526</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget[accessibleName=&quot;color:252526&quot;]{
-	background-color: rgb(37, 37, 38);
+   <string notr="true">QWidget#BucketTagClass{
+	background-color:#ffffff;
+	border: solid;
+	border-left-width:2px;
+	border-color: #094371;
 }
 
+
 QCheckBox[accessibleName=&quot;group:tab&quot;]{
-	background-color: rgb(70, 175, 255);
-	border-radius: 8;
-	color: rgb(255, 255, 255);
+	color: #0d436f;
 	font: 11pt;
-	padding: 0 0 0 5;
+	padding: 5 0 0 20;
 }
-QCheckBox[accessibleName=&quot;group:tab&quot;]::indicator:unchecked {
-    width: 10;
+
+QCheckBox[accessibleName=&quot;group:tab&quot;]::indicator {
+    width: 0;
     height: 0;
 }
-QCheckBox[accessibleName=&quot;group:tab&quot;]::indicator:checked {
-    width: 10;
-    height: 10;
-	border-radius: 5;
-	background-color: rgb(255, 93, 185);
-}
+
 QCheckBox[accessibleName=&quot;group:tab&quot;]:unchecked{
-	background-color: rgb(116, 116, 116);
+	border-image: url(:/pluginBucket/simple/img/tab.png);
 }
 QCheckBox[accessibleName=&quot;group:tab&quot;]:checked {
-	background-color: rgb(72, 144, 216);
+	border-image: url(:/pluginBucket/simple/img/tab.png);
 }
+
 
 
 QScrollArea{
@@ -54,6 +53,17 @@ QScrollArea{
 QScrollArea QWidget{
 	background-color:transparent;
 }
+
+
+QScrollBar:vertical {
+     border: 0;
+     background: #cddbe6;
+     width: 5px;
+ }
+ QScrollBar::handle:vertical {
+     background: #06447f;
+     min-height: 20px;
+ }
 </string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
@@ -97,7 +107,7 @@ QScrollArea QWidget{
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>143</width>
+        <width>131</width>
         <height>661</height>
        </rect>
       </property>
@@ -136,14 +146,14 @@ QScrollArea QWidget{
            <widget class="QCheckBox" name="__tpl">
             <property name="minimumSize">
              <size>
-              <width>0</width>
-              <height>32</height>
+              <width>109</width>
+              <height>42</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>16777215</width>
-              <height>32</height>
+              <width>109</width>
+              <height>42</height>
              </size>
             </property>
             <property name="accessibleName">
@@ -176,6 +186,8 @@ QScrollArea QWidget{
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="pluginBucket.qrc"/>
+ </resources>
  <connections/>
 </ui>

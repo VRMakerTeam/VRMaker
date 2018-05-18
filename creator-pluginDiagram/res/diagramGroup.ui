@@ -14,11 +14,11 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget[accessibleName=&quot;color:2d2d30&quot;]{
-	background-color: rgb(45, 45, 48);
+   <string notr="true">QWidget#UiDiagramGroup {
+	background: #ffffff;
 }
-QWidget[accessibleName=&quot;color:252526&quot;]{
-	background-color: rgb(37, 37, 38);
+QWidget#__containerTab {
+	background: #cddbe6;
 }
 
 QScrollArea#scrollArea{
@@ -26,33 +26,30 @@ QScrollArea#scrollArea{
 }
 
 QRadioButton[accessibleName=&quot;group:tab&quot;]{
-	min-width:68;
-	min-height:32;
-	max-width:68;
-	max-height:32;
-	background-color: rgb(70, 175, 255);
-	border-radius: 8;
-	color: rgb(255, 255, 255);
+	min-width:100;
+	min-height:38;
+	max-width:100;
+	max-height:38;
+	color: #174060;
 	font: 11pt;
-	padding: 0 0 0 5;
+	padding: 4 0 0 14;
+}
+
+QRadioButton[accessibleName=&quot;group:tab&quot;]:unchecked {
+	border-image: url(:/pluginDiagram/buttons/img/entry_normal.png);
+}
+QRadioButton[accessibleName=&quot;group:tab&quot;]:checked {
+	border-image: url(:/pluginDiagram/buttons/img/entry_down.png);
 }
 QRadioButton[accessibleName=&quot;group:tab&quot;]::indicator:unchecked {
-    width: 10;
+    width: 12;
     height: 0;
 }
 QRadioButton[accessibleName=&quot;group:tab&quot;]::indicator:checked {
-    width: 10;
-    height: 10;
-	border-radius: 5;
-	background-color: rgb(255, 93, 185);
-}
-QRadioButton[accessibleName=&quot;group:tab&quot;]:unchecked{
-	background-color: rgb(116, 116, 116);
-}
-QRadioButton[accessibleName=&quot;group:tab&quot;]:checked {
-	background-color: rgb(72, 144, 216);
-}
-</string>
+    width: 12;
+    height: 13;
+	image: url(:/pluginDiagram/icons/img/entry_mark.png)
+}</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="spacing">
@@ -87,7 +84,7 @@ QRadioButton[accessibleName=&quot;group:tab&quot;]:checked {
      <property name="accessibleName">
       <string notr="true">color:2d2d30</string>
      </property>
-     <layout class="QGridLayout" name="gridLayout"/>
+     <layout class="QGridLayout" name="gridLayout" columnstretch="0"/>
     </widget>
    </item>
    <item>
@@ -156,6 +153,8 @@ QRadioButton[accessibleName=&quot;group:tab&quot;]:checked {
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="pluginDiagram.qrc"/>
+ </resources>
  <connections/>
 </ui>

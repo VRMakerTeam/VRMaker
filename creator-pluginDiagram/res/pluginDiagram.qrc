@@ -3,6 +3,10 @@
     <file>img/blocks_pict_thumb.png</file>
   </qresource>
   <qresource prefix="/pluginDiagram/icons">
+    <file>img/entry_mark.png</file>
+    <file alias="color">img/txt_color.png</file>
+    <file alias="name">img/txt_name.png</file>
+    <file alias="type">img/txt_type.png</file>
     <file alias="vr-trigger-0">img/vr-icon-eye.png</file>
     <file alias="vr-trigger-2">img/vr-icon-foot.png</file>
     <file alias="vr-trigger-1">img/vr-icon-voice.png</file>
@@ -11,6 +15,23 @@
     <file>img/trigger_card_bg.png</file>
   </qresource>
   <qresource prefix="/pluginDiagram/buttons">
+    <file>img/entry_down.png</file>
+    <file>img/entry_normal.png</file>
+    <file>img/delete_40_down.png</file>
+    <file>img/delete_40_normal.png</file>
+    <file>img/remove_40_down.png</file>
+    <file>img/remove_40_normal.png</file>
+    <file>img/remove_small_down.png</file>
+    <file>img/remove_small_normal.png</file>
+    <file>img/tab_down.png</file>
+    <file>img/tab_normal.png</file>
+    <file>img/delete_normal.png</file>
+    <file>img/delete_down.png</file>
+    <file>img/remove_down.png</file>
+    <file>img/remove_normal.png</file>
+    <file>img/Trash_normal.png</file>
+    <file>img/add_track_down.png</file>
+    <file>img/add_track_normal.png</file>
     <file>img/add_spot.png</file>
     <file>img/add_spot_down.png</file>
     <file>img/stop_normal.png</file>
@@ -23,11 +44,10 @@
     <file>img/Target_down.png</file>
     <file>img/Spot.png</file>
     <file>img/Spot_down.png</file>
-    <file>img/Remove_down.png</file>
     <file>img/Trash_down.png</file>
-    <file>img/Remove.png</file>
+    <file>img/delete_small_down.png</file>
+    <file>img/delete_small_normal.png</file>
     <file>img/Plus.png</file>
     <file>img/Plus_down.png</file>
-    <file>img/Trash.png</file>
   </qresource>
 </RCC>

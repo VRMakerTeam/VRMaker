@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>254</width>
-    <height>204</height>
+    <height>206</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,19 +15,19 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QCheckBox#__record{
-	min-width:128;
-	min-height:128;
-	max-width:128;
-	max-height:128;
+	min-width:121;
+	min-height:121;
+	max-width:121;
+	max-height:121;
 }
 QCheckBox#__record::indicator:unchecked {
-    width: 128;
-    height: 128;
+    width: 121;
+    height: 121;
 	border-image: url(:/pluginDiagram/buttons/img/green_recorder.png);
 }
 QCheckBox#__record::indicator:checked {
-    width: 128;
-    height: 128;
+    width: 121;
+    height: 121;
 	border-image: url(:/pluginDiagram/buttons/img/red_recorder.png);
 }
 
@@ -47,8 +47,8 @@ QCheckBox#__play::indicator:checked {
 }
 
 QPushButton#__play {
-	width: 24;
-    height: 24;
+	width: 40;
+    height: 41;
 	border-image: url(:/pluginDiagram/buttons/img/play_normal.png);
 }
 QPushButton#__play:pressed {
@@ -56,8 +56,8 @@ QPushButton#__play:pressed {
 }
 
 QPushButton#__stop {
-	width: 24;
-    height: 24;
+	width: 40;
+    height: 41;
 	border-image: url(:/pluginDiagram/buttons/img/stop_normal.png);
 }
 QPushButton#__stop:pressed {
@@ -66,30 +66,30 @@ QPushButton#__stop:pressed {
 
 
 QPushButton#__trash {
-	width: 24;
-    height: 24;
-	border-image: url(:/pluginDiagram/buttons/img/Trash.png);
+	width: 40;
+    height: 41;
+	border-image: url(:/pluginDiagram/buttons/img/delete_40_normal.png);
 }
 
 QPushButton#__trash:pressed {
-	border-image: url(:/pluginDiagram/buttons/img/Trash_down.png);
+	border-image: url(:/pluginDiagram/buttons/img/delete_40_down.png);
 }
 
 QCheckBox#__delete{
-	min-width:24;
-	min-height:24;
-	max-width:24;
-	max-height:24;
+	min-width:40;
+	min-height:41;
+	max-width:40;
+	max-height:41;
 }
 QCheckBox#__delete::indicator:unchecked {
-    width: 24;
-    height: 24;
-	border-image: url(:/pluginDiagram/buttons/img/Remove.png);
+    width: 40;
+    height: 41;
+	border-image: url(:/pluginDiagram/buttons/img/remove_40_normal.png);
 }
 QCheckBox#__delete::indicator:checked {
-    width: 24;
-    height: 24;
-	border-image: url(:/pluginDiagram/buttons/img/Remove_down.png);
+    width: 40;
+    height: 41;
+	border-image: url(:/pluginDiagram/buttons/img/remove_40_down.png);
 }
 </string>
   </property>
@@ -113,14 +113,14 @@ QCheckBox#__delete::indicator:checked {
       <widget class="QCheckBox" name="__record">
        <property name="minimumSize">
         <size>
-         <width>128</width>
-         <height>128</height>
+         <width>121</width>
+         <height>121</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>128</width>
-         <height>128</height>
+         <width>121</width>
+         <height>121</height>
         </size>
        </property>
        <property name="text">

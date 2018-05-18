@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="/pluginBucket/simple">
+    <file>img/tab.png</file>
     <file>img/default_asset_card.png</file>
     <file>img/import_image_down.png</file>
     <file>img/import_sound_down.png</file>
@@ -12,6 +13,13 @@
     <file>img/ugc_audio.png</file>
   </qresource>
   <qresource prefix="/pluginBucket/buttons">
+    <file>img/section_down.png</file>
+    <file>img/section_normal.png</file>
+    <file>img/ok_disable.png</file>
+    <file>img/cancel_down.png</file>
+    <file>img/cancel_normal.png</file>
+    <file>img/ok_down.png</file>
+    <file>img/ok_normal.png</file>
     <file>img/play_down.png</file>
     <file>img/play_normal.png</file>
     <file>img/stop_down.png</file>

@@ -115,7 +115,7 @@ QPushButton:pressed{
             </size>
            </property>
            <property name="text">
-            <string>确   定</string>
+            <string>OK</string>
            </property>
            <property name="flat">
             <bool>false</bool>

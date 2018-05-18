@@ -1,25 +1,39 @@
 <RCC>
   <qresource prefix="/pluginScreenplay/button">
+    <file>img/diagram_disabled.png</file>
+    <file>img/diagram_down.png</file>
+    <file>img/preload_down.png</file>
+    <file>img/preload_disabled.png</file>
+    <file>img/slate_disabled.png</file>
+    <file>img/slate_down.png</file>
+    <file>img/trigger_disabled.png</file>
+    <file>img/trigger_down.png</file>
+    <file>img/diagram_disabled.png</file>
+    <file>img/diagram_normal.png</file>
+    <file>img/preload_normal.png</file>
+    <file>img/slate_disabled.png</file>
+    <file>img/slate_normal.png</file>
+    <file>img/trigger_disabled.png</file>
+    <file>img/trigger_normal.png</file>
+    <file>img/add_preload.png</file>
+    <file>img/add_slate.png</file>
     <file>img/install_down.png</file>
     <file>img/install_normal.png</file>
     <file>img/play_down.png</file>
     <file>img/play_normal.png</file>
     <file>img/publish_down.png</file>
     <file>img/publish_normal.png</file>
-    <file>img/Trigger.png</file>
     <file>img/Target.png</file>
     <file>img/Target_down.png</file>
     <file>img/Plus.png</file>
     <file>img/Plus_down.png</file>
     <file>img/Trash_down.png</file>
     <file>img/Trash_normal.png</file>
-    <file>img/Diagram.png</file>
-    <file>img/Preload.png</file>
-    <file>img/Slate.png</file>
-    <file>img/addres.png</file>
     <file>img/selectedslatecard.png</file>
   </qresource>
   <qresource prefix="/pluginScreenplay/simple">
+    <file>img/preloadcard.png</file>
+    <file>img/toolbar-bg.png</file>
     <file>img/aspect_43.png</file>
     <file>img/aspect_169.png</file>
     <file>img/aspect_free.png</file>

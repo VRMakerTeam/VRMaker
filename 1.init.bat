@@ -1,5 +1,6 @@
 RD /Q/S runpath
 MD runpath
+MD tools
 
 copy /Y c:\Windows\SysWOW64\msvcp140.dll runpath\
 copy /Y c:\Windows\SysWOW64\vcruntime140.dll runpath\
@@ -7,6 +8,10 @@ copy /Y c:\Windows\SysWOW64\vcruntime140.dll runpath\
 copy /Y ..\creator-library\3rd\adb\adb.exe runpath\
 copy /Y ..\creator-library\3rd\adb\AdbWinApi.dll runpath\
 copy /Y ..\creator-library\3rd\adb\AdbWinUsbApi.dll runpath\
+
+copy /Y ..\creator-library\3rd\adb\adb.exe tools\
+copy /Y ..\creator-library\3rd\adb\AdbWinApi.dll tools\
+copy /Y ..\creator-library\3rd\adb\AdbWinUsbApi.dll tools\
 
 copy /Y %QT_ROOT%\bin\Qt5Core.dll runpath\
 copy /Y %QT_ROOT%\bin\Qt5Cored.dll runpath\

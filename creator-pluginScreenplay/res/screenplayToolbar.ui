@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>184</width>
-    <height>48</height>
+    <width>733</width>
+    <height>56</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -73,14 +73,14 @@ QPushButton#__install::pressed{
     <widget class="QPushButton" name="__play">
      <property name="minimumSize">
       <size>
-       <width>48</width>
-       <height>48</height>
+       <width>231</width>
+       <height>56</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
-       <width>48</width>
-       <height>48</height>
+       <width>231</width>
+       <height>56</height>
       </size>
      </property>
      <property name="accessibleName">
@@ -95,14 +95,14 @@ QPushButton#__install::pressed{
     <widget class="QPushButton" name="__publish">
      <property name="minimumSize">
       <size>
-       <width>48</width>
-       <height>48</height>
+       <width>231</width>
+       <height>56</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
-       <width>48</width>
-       <height>48</height>
+       <width>231</width>
+       <height>56</height>
       </size>
      </property>
      <property name="accessibleName">
@@ -117,14 +117,14 @@ QPushButton#__install::pressed{
     <widget class="QPushButton" name="__install">
      <property name="minimumSize">
       <size>
-       <width>48</width>
-       <height>48</height>
+       <width>231</width>
+       <height>56</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
-       <width>48</width>
-       <height>48</height>
+       <width>231</width>
+       <height>56</height>
       </size>
      </property>
      <property name="accessibleName">

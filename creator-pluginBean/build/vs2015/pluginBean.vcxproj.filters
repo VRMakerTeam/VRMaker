@@ -103,9 +103,4 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\..\res\pluginBean.qrc">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
-  </ItemGroup>
 </Project>

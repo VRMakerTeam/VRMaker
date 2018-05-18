@@ -99,9 +99,6 @@
     <ClCompile Include="..\..\src\DiagramCompositeBlock.cpp">
       <Filter>Source Files\Composite</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\obj\GeneratedFiles\qrc_pluginDiagram.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\BlockUiTemplateBuilder.cpp">
       <Filter>Source Files\Composite</Filter>
     </ClCompile>
@@ -123,10 +120,5 @@
     <ClCompile Include="..\..\src\DiagramCompositeTrigger.cpp">
       <Filter>Source Files\Composite</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\..\res\pluginDiagram.qrc">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
   </ItemGroup>
 </Project>

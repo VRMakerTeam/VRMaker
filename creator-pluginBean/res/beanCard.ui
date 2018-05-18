@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>320</width>
-    <height>180</height>
+    <width>355</width>
+    <height>215</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>320</width>
-    <height>180</height>
+    <width>355</width>
+    <height>215</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>320</width>
-    <height>180</height>
+    <width>355</width>
+    <height>215</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -27,9 +27,9 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QLineEdit#__input_alias {
-	background-color: rgba(0, 0, 0, 120);
+	background: transparent;
 	font: 11pt;
-	color: rgb(255, 255, 255);
+	color: #174060;
 }
 QPushButton#__publishMark {
 	border-image: url(:/pluginBean/button/img/publish_mark.png);
@@ -58,8 +58,8 @@ QPushButton#__publishMark {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>320</width>
-        <height>180</height>
+        <width>355</width>
+        <height>215</height>
        </rect>
       </property>
       <property name="text">
@@ -75,8 +75,8 @@ QPushButton#__publishMark {
      <widget class="QLabel" name="__selectedMark">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>0</y>
+        <x>289</x>
+        <y>27</y>
         <width>50</width>
         <height>50</height>
        </rect>
@@ -91,8 +91,8 @@ QPushButton#__publishMark {
      <widget class="QLineEdit" name="__input_alias">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>140</y>
+        <x>20</x>
+        <y>160</y>
         <width>321</width>
         <height>41</height>
        </rect>
@@ -122,8 +122,8 @@ QPushButton#__publishMark {
       </property>
       <property name="geometry">
        <rect>
-        <x>5</x>
-        <y>5</y>
+        <x>30</x>
+        <y>30</y>
         <width>24</width>
         <height>24</height>
        </rect>

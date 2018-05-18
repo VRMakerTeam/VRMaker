@@ -83,6 +83,9 @@ void Screenplay::PreloadCardView::onUpdate(const QString& _tag)
 	QString slate = ScreenplayModel::Runtime::KV::Query::screenplay_slate_alive_uuid(runtimeDB);
 	QString asset = ScreenplayModel::Persistent::KV::Query::screenplay_slate_guid_1_preload_guid_2_asset_file(persistentDB, slate, componentUUID_);
 	QString imgPath = BucketUtils::QueryFileThumbPath(asset);
+	if (imgPath.isNull() || imgPath.isEmpty())
+		return;
+
 	ui_->thumb->setIcon(QPixmap(imgPath));
 }
 

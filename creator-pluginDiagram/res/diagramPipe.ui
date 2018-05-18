@@ -21,26 +21,23 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget[accessibleName=&quot;pipe:normal&quot;]{
-	background-color: rgb(62, 62, 66);
+	background-color: #004886;
 }
 QWidget[accessibleName=&quot;pipe:light&quot;]{
 	background-color: rgb(0, 83, 125);
 }
 QPushButton#__btnRemove{
-	border: none;
-	background-image: url(:/pluginDiagram/buttons/img/Trash.png);
-	background-repeat: none;
-	background-position: center;
+	border-image: url(:/pluginDiagram/buttons/img/delete_normal.png);
 }
 QPushButton#__btnRemove::pressed {
-	background-image: url(:/pluginDiagram/buttons/img/Trash_down.png);
+	border-image: url(:/pluginDiagram/buttons/img/delete_down.png);
 }
 
 QCheckBox#__toggleSetting::indicator {
-	image: url(:/pluginDiagram/buttons/img/Remove.png);
+	image: url(:/pluginDiagram/buttons/img/remove_normal.png);
 }
 QCheckBox#__toggleSetting::indicator::checked {
-	image: url(:/pluginDiagram/buttons/img/Remove_down.png);
+	image: url(:/pluginDiagram/buttons/img/remove_down.png);
 }</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
@@ -76,6 +73,18 @@ QCheckBox#__toggleSetting::indicator::checked {
       </property>
       <item>
        <widget class="QCheckBox" name="__toggleSetting">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -106,14 +115,14 @@ QCheckBox#__toggleSetting::indicator::checked {
           <widget class="QPushButton" name="__btnRemove">
            <property name="minimumSize">
             <size>
-             <width>24</width>
-             <height>24</height>
+             <width>104</width>
+             <height>40</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>24</width>
-             <height>24</height>
+             <width>104</width>
+             <height>40</height>
             </size>
            </property>
            <property name="text">

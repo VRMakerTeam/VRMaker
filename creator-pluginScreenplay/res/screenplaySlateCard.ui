@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>220</width>
-    <height>124</height>
+    <width>225</width>
+    <height>207</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>220</width>
-    <height>124</height>
+    <width>225</width>
+    <height>207</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>220</width>
-    <height>124</height>
+    <width>225</width>
+    <height>207</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -56,8 +56,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>220</width>
-        <height>124</height>
+        <width>225</width>
+        <height>207</height>
        </rect>
       </property>
       <property name="text">
@@ -76,10 +76,10 @@
      <widget class="QLabel" name="__selectMark">
       <property name="geometry">
        <rect>
-        <x>165</x>
-        <y>0</y>
-        <width>55</width>
-        <height>55</height>
+        <x>174</x>
+        <y>6</y>
+        <width>46</width>
+        <height>47</height>
        </rect>
       </property>
       <property name="text">
@@ -95,21 +95,21 @@
      <widget class="QLineEdit" name="__inputAlias">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>90</y>
-        <width>220</width>
+        <x>4</x>
+        <y>157</y>
+        <width>216</width>
         <height>36</height>
        </rect>
       </property>
       <property name="minimumSize">
        <size>
-        <width>220</width>
+        <width>216</width>
         <height>36</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>220</width>
+        <width>216</width>
         <height>36</height>
        </size>
       </property>

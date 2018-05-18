@@ -22,15 +22,15 @@ private:
 //-----------------------------------------------------------------------
 void AppInternal::Initialize(QApplication* _application)
 {
-
-	//load Font
-	//int loadedFontID = QFontDatabase::addApplicationFont(":/CN/SourceHanSansCN-Medium.otf");
-	//QStringList strList(QFontDatabase::applicationFontFamilies(loadedFontID));
-	//QFont fontThis(strList.at(0));
-	//_application->setFont(fontThis);
-
 	AppCore::LoadTS("app");
 	AppCore::LoadRCC("app");
+
+	//load Font
+	int loadedFontID = QFontDatabase::addApplicationFont(":/app/fonts/default");
+	QStringList strList(QFontDatabase::applicationFontFamilies(loadedFontID));
+	QFont fontThis(strList.at(0));
+	_application->setFont(fontThis);
+
 	mainWindow = dynamic_cast<QMainWindow*>(AppCore::CreateUI("app"));
 	mainWindow->setWindowFlags(Qt::FramelessWindowHint);
 

@@ -1,0 +1,6 @@
+{
+    "alias":"VR-Campus",
+    "properties":{
+        "extends":["VR"]
+    }
+}

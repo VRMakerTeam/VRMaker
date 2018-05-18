@@ -1,15 +1,20 @@
 <RCC>
-    <qresource prefix="/app/simple">
-        <file alias="logo_small">img/logo-small.png</file>
-        <file>img/back_normal.png</file>
-        <file>img/back_pressed.png</file>
-        <file alias="close">img/close.png</file>
-        <file alias="close_pressed">img/close_pressed.png</file>
-        <file alias="minimal">img/minimal.png</file>
-        <file alias="minimal_pressed">img/minimal_pressed.png</file>
-        <file alias="splash">img/splash.png</file>
-    </qresource>
-    <qresource prefix="/app/__gif">
-        <file alias="loading">img/loading.gif</file>
-    </qresource>
+  <qresource prefix="/app/simple">
+    <file alias="loading">img/loading.png</file>
+    <file alias="copyright">img/copyright.png</file>
+    <file alias="logo_small">img/logo-small.png</file>
+    <file>img/back_normal.png</file>
+    <file>img/back_pressed.png</file>
+    <file alias="close">img/close.png</file>
+    <file alias="close_pressed">img/close_pressed.png</file>
+    <file alias="minimal">img/minimal.png</file>
+    <file alias="minimal_pressed">img/minimal_pressed.png</file>
+    <file alias="splash">img/splash.png</file>
+  </qresource>
+  <qresource prefix="/app/__gif">
+    <file alias="loading">img/loading.gif</file>
+  </qresource>
+  <qresource prefix="/app/fonts">
+    <file alias="default">font/Driod.ttf</file>
+  </qresource>
 </RCC>

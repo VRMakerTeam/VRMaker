@@ -29,43 +29,15 @@
    <string notr="true">card:preload</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">/*--------------------------------------------
-	Component Preloads Group
----------------------------------------------*/
-QWidget[accessibleName=&quot;card:preload&quot;] QLabel{
-	color: rgb(255, 255, 255);
-	font: 11pt;
-	min-height: 24;
-	max-height: 24;
-}
-
-QWidget#w_toolbar {
-	background-color: rgba(0, 0, 0, 180);
-}
-
+   <string notr="true">
 QPushButton#__delete{
-	border: 0px;
-	background-repeat:none;
-	background-position: center;
-	background-image: url(:/pluginScreenplay/button/img/Trash_normal.png);
+	border-image: url(:/pluginScreenplay/button/img/Trash_normal.png);
 }
 QPushButton#__delete:pressed{
-	border: 0px;
-	background-repeat:none;
-	background-position: center;
-	background-image: url(:/pluginScreenplay/button/img/Trash_down.png);
+	border-image: url(:/pluginScreenplay/button/img/Trash_down.png);
 }
-QPushButton#__nav{
-	border: 0px;
-	background-repeat:none;
-	background-position: center;
-	background-image: url(:/pluginScreenplay/button/img/Target.png);
-}
-QPushButton#__nav:pressed{
-border: 0px;
-	background-repeat:none;
-	background-position: center;
-	background-image: url(:/pluginScreenplay/button/img/Target_down.png);
+QPushButton#__thumb{
+	border:0;
 }</string>
   </property>
   <widget class="QPushButton" name="__thumb">
@@ -99,8 +71,8 @@ border: 0px;
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>:/button/img/addres.png</normaloff>:/button/img/addres.png</iconset>
+    <iconset resource="pluginScreenplay.qrc">
+     <normaloff>:/pluginScreenplay/simple/img/preloadcard.png</normaloff>:/pluginScreenplay/simple/img/preloadcard.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -112,67 +84,30 @@ border: 0px;
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QWidget" name="w_toolbar" native="true">
+  <widget class="QPushButton" name="__delete">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>88</y>
-     <width>220</width>
-     <height>36</height>
+     <x>150</x>
+     <y>92</y>
+     <width>54</width>
+     <height>28</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>220</width>
-     <height>36</height>
+     <width>54</width>
+     <height>28</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>220</width>
-     <height>36</height>
+     <width>54</width>
+     <height>28</height>
     </size>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <property name="topMargin">
-     <number>0</number>
-    </property>
-    <property name="bottomMargin">
-     <number>0</number>
-    </property>
-    <item>
-     <spacer name="horizontalSpacer">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>131</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
-     <widget class="QPushButton" name="__delete">
-      <property name="minimumSize">
-       <size>
-        <width>28</width>
-        <height>28</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>28</width>
-        <height>28</height>
-       </size>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-   </layout>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
  </widget>
  <resources>

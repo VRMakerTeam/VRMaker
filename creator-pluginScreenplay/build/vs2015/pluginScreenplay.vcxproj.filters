@@ -82,9 +82,6 @@
     <ClCompile Include="..\..\src\pluginScreenplay.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\obj\GeneratedFiles\qrc_pluginScreenplay.cpp">
-      <Filter>Generated Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\ScreenplayActions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -115,10 +112,5 @@
     <ClCompile Include="..\..\src\ScreenplayCompositeAgentInspector.cpp">
       <Filter>Source Files\Composite</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\..\res\pluginScreenplay.qrc">
-      <Filter>Resource Files</Filter>
-    </CustomBuild>
   </ItemGroup>
 </Project>

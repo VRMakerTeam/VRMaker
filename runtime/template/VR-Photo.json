@@ -1,6 +1,0 @@
-{
-    "alias":"VR-Photo",
-    "properties":{
-        "extends":["VR"]
-    }
-}

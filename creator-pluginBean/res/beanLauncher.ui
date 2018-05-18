@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>94</width>
-    <height>64</height>
+    <width>137</width>
+    <height>56</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>64</width>
-    <height>64</height>
+    <width>131</width>
+    <height>56</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>94</width>
-    <height>64</height>
+    <width>137</width>
+    <height>56</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -28,11 +28,9 @@
   <property name="styleSheet">
    <string notr="true">QCheckBox#__launch::indicator {
 	image: url(:/pluginBean/button/img/prologue_normal.png);
-	background-color: transparent;
 }
 QCheckBox#__launch::indicator::checked {
-	image: url(:/pluginBean/button/img/prologue_normal.png);
-	background-color: rgb(63, 63, 70);
+	image: url(:/pluginBean/button/img/prologue_down.png);
 }
 </string>
   </property>
@@ -54,18 +52,6 @@ QCheckBox#__launch::indicator::checked {
    </property>
    <item>
     <widget class="QCheckBox" name="__launch">
-     <property name="minimumSize">
-      <size>
-       <width>64</width>
-       <height>64</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>64</width>
-       <height>64</height>
-      </size>
-     </property>
      <property name="text">
       <string/>
      </property>

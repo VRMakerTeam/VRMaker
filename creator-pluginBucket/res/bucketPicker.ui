@@ -14,31 +14,30 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget[accessibleName=&quot;color:333337&quot;]{
-	background-color: rgb(51,51,55);
+   <string notr="true">QWidget#widget_4{
+	background-color: #b1c6d7;
 }
 
 QPushButton{
-	border-radius:5;
-	color: rgb(255, 255, 255);
-	font: 12pt;
+	color: transparent;
 }
 
 QPushButton#__btnOK{
-	background-color: rgb(85, 170, 255);
+	border-image: url(:/pluginBucket/buttons/img/ok_normal.png);
 }
 QPushButton#__btnOK:pressed{
-	background-color: rgb(62, 124, 186);
+	border-image: url(:/pluginBucket/buttons/img/ok_down.png);
 }
 QPushButton#__btnOK:disabled{
-	background-color: rgb(148, 148, 148);
+	
+	border-image: url(:/pluginBucket/buttons/img/ok_disable.png);
 }
 
 QPushButton#__btnCancel{
-	background-color: rgb(255, 85, 127);
+	border-image: url(:/pluginBucket/buttons/img/cancel_normal.png);
 }
 QPushButton#__btnCancel:pressed{
-	background-color: rgb(175, 58, 87);
+	border-image: url(:/pluginBucket/buttons/img/cancel_down.png);
 }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
@@ -92,9 +91,6 @@ QPushButton#__btnCancel:pressed{
        <height>64</height>
       </size>
      </property>
-     <property name="accessibleName">
-      <string notr="true">color:333337</string>
-     </property>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <property name="spacing">
        <number>32</number>
@@ -119,14 +115,14 @@ QPushButton#__btnCancel:pressed{
         </property>
         <property name="minimumSize">
          <size>
-          <width>240</width>
-          <height>32</height>
+          <width>256</width>
+          <height>51</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>240</width>
-          <height>32</height>
+          <width>256</width>
+          <height>51</height>
          </size>
         </property>
         <property name="text">
@@ -138,14 +134,14 @@ QPushButton#__btnCancel:pressed{
        <widget class="QPushButton" name="__btnCancel">
         <property name="minimumSize">
          <size>
-          <width>240</width>
-          <height>32</height>
+          <width>256</width>
+          <height>51</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>240</width>
-          <height>32</height>
+          <width>256</width>
+          <height>51</height>
          </size>
         </property>
         <property name="text">
@@ -171,6 +167,8 @@ QPushButton#__btnCancel:pressed{
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="pluginBucket.qrc"/>
+ </resources>
  <connections/>
 </ui>

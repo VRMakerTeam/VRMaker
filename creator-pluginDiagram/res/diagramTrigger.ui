@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>280</width>
-    <height>791</height>
+    <width>211</width>
+    <height>488</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,42 +17,44 @@
    <string notr="true">color:2d2d30</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget[accessibleName=&quot;color:2d2d30&quot;]{
-	background-color: rgb(45, 45, 48);
-}
-QWidget[accessibleName=&quot;color:252526&quot;]{
-	background-color: rgb(37, 37, 38);
+   <string notr="true">QWidget#UiDiagramTrigger {
+	background-color: #ffffff;
 }
 
-QWidget[accessibleName=&quot;color:333337&quot;]{
-	background-color: rgb(51,51,55);
+QWidget#toolbar {
+	background-color: #cddbe6;
+	border: solid;
+	border-top-width: 2px;
+	border-color: #174060;
 }
 
 QScrollArea#scrollArea{
-	border:0;
-}
-QPushButton[accessibleName=&quot;button:28x28&quot;]{
-	min-width:28;
-	min-height:28;
-	max-width:28;
-	max-height:28;
+	background: transparent;
 }
 
+QScrollArea#scrollArea QWidget{
+	background: transparent;
+}
+
+QScrollBar:vertical {
+     border: 0;
+     background: #cddbe6;
+     width: 5px;
+ }
+ QScrollBar::handle:vertical {
+     background: #06447f;
+     min-height: 20px;
+ }
+
 QPushButton#__btnNewGazeTrigger{
-	border: 0px;
-	background-repeat: none;
-	background-position: center;
-	background-image: url(:/pluginDiagram/buttons/img/add_spot.png);
+	border-image: url(:/pluginDiagram/buttons/img/add_spot.png);
 }
 QPushButton#__btnNewGazeTrigger:pressed{
-	border: 0px;
-	background-repeat: none;
-	background-position: center;
-	background-image: url(:/pluginDiagram/buttons/img/add_spot_down.png);
+	border-image: url(:/pluginDiagram/buttons/img/add_spot_down.png);
 }
 
 QCheckBox#__toggleTrash::indicator {
-	image: url(:/pluginDiagram/buttons/img/Trash.png);
+	image: url(:/pluginDiagram/buttons/img/Trash_normal.png);
 }
 QCheckBox#__toggleTrash::indicator::checked {
 	image: url(:/pluginDiagram/buttons/img/Trash_down.png);
@@ -87,14 +89,20 @@ QCheckBox#__toggleTrash::indicator::checked {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>280</width>
-        <height>755</height>
+        <width>211</width>
+        <height>428</height>
        </rect>
       </property>
       <property name="accessibleName">
        <string notr="true">color:252526</string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="leftMargin">
+        <number>4</number>
+       </property>
+       <property name="rightMargin">
+        <number>4</number>
+       </property>
        <item>
         <widget class="QWidget" name="__container" native="true">
          <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -131,17 +139,17 @@ QCheckBox#__toggleTrash::indicator::checked {
     </widget>
    </item>
    <item>
-    <widget class="QWidget" name="widget" native="true">
+    <widget class="QWidget" name="toolbar" native="true">
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>36</height>
+       <height>60</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
-       <height>36</height>
+       <height>60</height>
       </size>
      </property>
      <property name="accessibleName">
@@ -165,8 +173,17 @@ QCheckBox#__toggleTrash::indicator::checked {
       </property>
       <item>
        <widget class="QPushButton" name="__btnNewGazeTrigger">
-        <property name="accessibleName">
-         <string notr="true">button:28x28</string>
+        <property name="minimumSize">
+         <size>
+          <width>81</width>
+          <height>46</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>81</width>
+          <height>46</height>
+         </size>
         </property>
         <property name="text">
          <string/>
@@ -188,6 +205,18 @@ QCheckBox#__toggleTrash::indicator::checked {
       </item>
       <item>
        <widget class="QCheckBox" name="__toggleTrash">
+        <property name="minimumSize">
+         <size>
+          <width>107</width>
+          <height>47</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>107</width>
+          <height>47</height>
+         </size>
+        </property>
         <property name="text">
          <string/>
         </property>

@@ -6,46 +6,39 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>138</width>
+    <width>191</width>
     <height>549</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <property name="accessibleName">
-   <string notr="true">color:252526</string>
-  </property>
   <property name="styleSheet">
-   <string notr="true">QWidget[accessibleName=&quot;color:252526&quot;]{
-	background-color: rgb(37, 37, 38);
+   <string notr="true">QWidget#BucketGroupClass{
+	background-color: #ffffff;
+	border: solid;
+	border-right-width:2px;
+	border-color: #094371;
 }
 
-QRadioButton[accessibleName=&quot;group:tab&quot;]{
-	background-color: rgb(70, 175, 255);
-	border-radius: 8;
-	color: rgb(255, 255, 255);
+QRadioButton[accessibleName=&quot;group:ugc&quot;]{
+	color: #0d436f;
 	font: 11pt;
-	padding: 0 0 0 5;
+	padding: 5 0 0 20;
+	min-width: 153px;
+	max-width: 153px;
 }
 
-QRadioButton[accessibleName=&quot;group:tab&quot;]::indicator:unchecked {
-    width: 10;
+QRadioButton[accessibleName=&quot;group:ugc&quot;]::indicator {
+    width: 0;
     height: 0;
 }
 
-QRadioButton[accessibleName=&quot;group:tab&quot;]::indicator:checked {
-    width: 10;
-    height: 10;
-	border-radius: 5;
-	background-color: rgb(255, 93, 185);
+QRadioButton[accessibleName=&quot;group:ugc&quot;]:unchecked{
+	border-image: url(:/pluginBucket/buttons/img/section_normal.png);
 }
-
-QRadioButton[accessibleName=&quot;group:tab&quot;]:unchecked{
-	background-color: rgb(116, 116, 116);
-}
-QRadioButton[accessibleName=&quot;group:tab&quot;]:checked {
-	background-color: rgb(72, 144, 216);
+QRadioButton[accessibleName=&quot;group:ugc&quot;]:checked {
+	border-image: url(:/pluginBucket/buttons/img/section_down.png);
 }
 
 QPushButton#__import_sound
@@ -79,24 +72,37 @@ QTreeView {
 }
 
 QTreeView::item {
-	color: rgb(255, 255, 255);
-	height: 32px;
-    border-radius: 5;
-	background: rgb(116, 116, 116);
-	margin: 3 0 3 0;
-	padding: 0 5 0 9;
+    width: 173px;
+	height: 45px;
+	color: #0d436f;
+	font: 11pt;
+	padding: 5 0 0 20;
+	border-image: url(:/pluginBucket/buttons/img/section_normal.png);
 }
 
 QTreeView::item:selected {
-	color: rgb(255, 255, 255);
-    background: rgb(72, 144, 216);
+	border-image: url(:/pluginBucket/buttons/img/section_down.png);
 }
 
 QTreeView::branch
 {
 	border-image: none;
 	image: none;
-}</string>
+}
+
+
+
+QScrollBar:vertical {
+     border: 0;
+     background: #cddbe6;
+     width: 5px;
+ }
+ QScrollBar::handle:vertical {
+     background: #06447f;
+     min-height: 20px;
+ }
+
+</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -186,18 +192,18 @@ QTreeView::branch
        <widget class="QRadioButton" name="__tpl">
         <property name="minimumSize">
          <size>
-          <width>0</width>
-          <height>32</height>
+          <width>173</width>
+          <height>45</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>16777215</width>
-          <height>32</height>
+          <width>173</width>
+          <height>45</height>
          </size>
         </property>
         <property name="accessibleName">
-         <string notr="true">group:tab</string>
+         <string notr="true">group:ugc</string>
         </property>
         <property name="text">
          <string>分组模板</string>
@@ -208,18 +214,18 @@ QTreeView::branch
        <widget class="QRadioButton" name="__ugcsound">
         <property name="minimumSize">
          <size>
-          <width>0</width>
-          <height>32</height>
+          <width>173</width>
+          <height>45</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>16777215</width>
-          <height>32</height>
+          <width>173</width>
+          <height>45</height>
          </size>
         </property>
         <property name="accessibleName">
-         <string notr="true">group:tab</string>
+         <string notr="true">group:ugc</string>
         </property>
         <property name="text">
          <string>UGC/SOUND</string>
@@ -230,18 +236,18 @@ QTreeView::branch
        <widget class="QRadioButton" name="__ugcimage">
         <property name="minimumSize">
          <size>
-          <width>0</width>
-          <height>32</height>
+          <width>173</width>
+          <height>45</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>16777215</width>
-          <height>32</height>
+          <width>173</width>
+          <height>45</height>
          </size>
         </property>
         <property name="accessibleName">
-         <string notr="true">group:tab</string>
+         <string notr="true">group:ugc</string>
         </property>
         <property name="text">
          <string>UGC/IMAGE</string>
@@ -250,19 +256,19 @@ QTreeView::branch
       </item>
       <item>
        <widget class="QWidget" name="widget_2" native="true">
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
          <item>
-          <widget class="QPushButton" name="__import_sound">
+          <widget class="QPushButton" name="__import_image">
            <property name="minimumSize">
             <size>
-             <width>48</width>
-             <height>48</height>
+             <width>128</width>
+             <height>63</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>48</width>
-             <height>48</height>
+             <width>128</width>
+             <height>63</height>
             </size>
            </property>
            <property name="text">
@@ -271,17 +277,17 @@ QTreeView::branch
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="__import_image">
+          <widget class="QPushButton" name="__import_sound">
            <property name="minimumSize">
             <size>
-             <width>48</width>
-             <height>48</height>
+             <width>128</width>
+             <height>63</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>48</width>
-             <height>48</height>
+             <width>128</width>
+             <height>63</height>
             </size>
            </property>
            <property name="text">

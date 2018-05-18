@@ -124,7 +124,7 @@
   <customwidget>
    <class>ClickWidget</class>
    <extends>QWidget</extends>
-   <header>clickwidget.h</header>
+   <header>ClickWidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

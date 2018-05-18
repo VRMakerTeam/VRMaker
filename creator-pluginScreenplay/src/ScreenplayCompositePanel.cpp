@@ -79,9 +79,9 @@ void Screenplay::PanelView::setupUI()
 	ui_->pages = ui_->root->findChild<QStackedWidget*>("__pages");
 
 	ui_->pages->setCurrentIndex(0);
-	ui_->tabBlock->setVisible(false);
-	ui_->tabPreload->setVisible(false);
-	ui_->tabTrigger->setVisible(false);
+	ui_->tabBlock->setEnabled(false);
+	ui_->tabPreload->setEnabled(false);
+	ui_->tabTrigger->setEnabled(false);
 
 	QObject::connect(ui_->tabSlate, &QRadioButton::clicked, [=] {
 		ui_->pages->setCurrentIndex(0);
@@ -133,7 +133,7 @@ QWidget* Screenplay::PanelView::GetRoot()
 //-----------------------------------------------------------------------
 void Screenplay::PanelView::TogglePreloadRadio(bool _toggled)
 {
-	ui_->tabPreload->setVisible(_toggled);
+	ui_->tabPreload->setEnabled(_toggled);
 	if (!_toggled)
 	{
 		ui_->pages->setCurrentIndex(0);
@@ -143,7 +143,7 @@ void Screenplay::PanelView::TogglePreloadRadio(bool _toggled)
 
 void Screenplay::PanelView::ToggleBlockRadio(bool _toggled)
 {
-	ui_->tabBlock->setVisible(_toggled);
+	ui_->tabBlock->setEnabled(_toggled);
 	if (!_toggled)
 	{
 		ui_->pages->setCurrentIndex(0);
@@ -154,7 +154,7 @@ void Screenplay::PanelView::ToggleBlockRadio(bool _toggled)
 
 void Screenplay::PanelView::ToggleTriggerRadio(bool _toggled)
 {
-	ui_->tabTrigger->setVisible(_toggled);
+	ui_->tabTrigger->setEnabled(_toggled);
 	if (!_toggled)
 	{
 		ui_->pages->setCurrentIndex(0);

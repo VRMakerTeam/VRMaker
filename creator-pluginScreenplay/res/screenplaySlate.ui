@@ -7,18 +7,16 @@
     <x>0</x>
     <y>0</y>
     <width>240</width>
-    <height>686</height>
+    <height>200</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget#__toolbar{
-	background-color: rgb(51,51,55);
-}
+   <string notr="true">
 QWidget#ScreenplaySlatClass{
-	background-color: rgb(37, 37, 38);
+	background-color: #ffffff;
 }
 
 QScrollArea{
@@ -29,30 +27,47 @@ QScrollArea QWidget{
 	background-color: transparent;
 }
 
+
+QPushButton#__fastAdd{
+	background-image: url(:/pluginScreenplay/button/img/add_slate.png);
+}
+
+QScrollBar:vertical {
+     border: 0;
+     background: #cddbe6;
+     width: 5px;
+ }
+ QScrollBar::handle:vertical {
+     background: #06447f;
+     min-height: 20px;
+ }
+
+
+/*-----------------------------------------------
+* 工具栏
+-----------------------------------------------*/
+QWidget#__toolbar{
+	background-color: #cddbe6;
+	border: solid;
+	border-top-width: 2px;
+	border-color: #174060;
+}
 QPushButton#__add{
-	border: 0px;
-	background-repeat: none;
-	background-position: center;
-	background-image: url(:/pluginScreenplay/button/img/Plus.png);
+	border-image: url(:/pluginScreenplay/button/img/Plus.png);
 }
 QPushButton#__add:pressed{
-	border: 0px;
-	background-repeat: none;
-	background-position: center;
-	background-image: url(:/pluginScreenplay/button/img/Plus_down.png);
+	border-image: url(:/pluginScreenplay/button/img/Plus_down.png);
+}
+QPushButton#__add:disabled{
+	border-image: url(:/pluginScreenplay/button/img/Plus_down.png);
 }
 QPushButton#__delete{
-	 border: 0px;
-	 background-repeat: none;
-	 background-position: center;
-    background-image: url(:/pluginScreenplay/button/img/Trash_normal.png);
+    border-image: url(:/pluginScreenplay/button/img/Trash_normal.png);
 }
 QPushButton#__delete:pressed{
-		 border: 0px;
-	 background-repeat: none;
-	 background-position: center;
-    background-image: url(:/pluginScreenplay/button/img/Trash_down.png);
-}</string>
+    border-image: url(:/pluginScreenplay/button/img/Trash_down.png);
+}
+</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="spacing">
@@ -77,7 +92,7 @@ QPushButton#__delete:pressed{
        <number>0</number>
       </property>
       <property name="leftMargin">
-       <number>0</number>
+       <number>4</number>
       </property>
       <property name="topMargin">
        <number>0</number>
@@ -96,6 +111,9 @@ QPushButton#__delete:pressed{
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
         <property name="horizontalScrollBarPolicy">
          <enum>Qt::ScrollBarAlwaysOff</enum>
         </property>
@@ -110,8 +128,8 @@ QPushButton#__delete:pressed{
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>240</width>
-           <height>650</height>
+           <width>233</width>
+           <height>235</height>
           </rect>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -119,7 +137,7 @@ QPushButton#__delete:pressed{
            <number>6</number>
           </property>
           <property name="leftMargin">
-           <number>8</number>
+           <number>0</number>
           </property>
           <property name="topMargin">
            <number>8</number>
@@ -153,13 +171,13 @@ QPushButton#__delete:pressed{
             <property name="minimumSize">
              <size>
               <width>0</width>
-              <height>135</height>
+              <height>207</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
               <width>16777215</width>
-              <height>135</height>
+              <height>207</height>
              </size>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_12">
@@ -188,28 +206,18 @@ QPushButton#__delete:pressed{
                </property>
                <property name="minimumSize">
                 <size>
-                 <width>204</width>
-                 <height>115</height>
+                 <width>225</width>
+                 <height>207</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
-                 <width>204</width>
-                 <height>115</height>
+                 <width>225</width>
+                 <height>207</height>
                 </size>
                </property>
                <property name="text">
                 <string/>
-               </property>
-               <property name="icon">
-                <iconset resource="pluginScreenplay.qrc">
-                 <normaloff>:/pluginScreenplay/button/img/addres.png</normaloff>:/pluginScreenplay/button/img/addres.png</iconset>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>204</width>
-                 <height>115</height>
-                </size>
                </property>
                <property name="autoRepeat">
                 <bool>false</bool>
@@ -244,13 +252,13 @@ QPushButton#__delete:pressed{
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>36</height>
+       <height>60</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
-       <height>36</height>
+       <height>60</height>
       </size>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_7">
@@ -273,14 +281,14 @@ QPushButton#__delete:pressed{
        <widget class="QPushButton" name="__add">
         <property name="minimumSize">
          <size>
-          <width>28</width>
-          <height>28</height>
+          <width>85</width>
+          <height>46</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>28</width>
-          <height>28</height>
+          <width>85</width>
+          <height>46</height>
          </size>
         </property>
         <property name="text">
@@ -305,14 +313,14 @@ QPushButton#__delete:pressed{
        <widget class="QPushButton" name="__delete">
         <property name="minimumSize">
          <size>
-          <width>28</width>
-          <height>28</height>
+          <width>107</width>
+          <height>46</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>28</width>
-          <height>28</height>
+          <width>28107</width>
+          <height>46</height>
          </size>
         </property>
         <property name="text">

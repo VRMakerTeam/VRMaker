@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>785</width>
+    <width>251</width>
     <height>615</height>
    </rect>
   </property>
@@ -14,27 +14,27 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QWidget[accessibleName=&quot;color:1e1e1e&quot;]{
-	background-color: rgb(30, 30, 30);
-}
-QWidget[accessibleName=&quot;color:282828&quot;]{
-	background-color: rgb(40, 40, 40);
-}
+   <string notr="true">
 QScrollArea#scrollArea{
 	border:0;
 }
 
+QWidget#widget_3 {
+	background-color: #ffffff;
+}
+
+QWidget#toolbar {
+	background-color: #cddbe6;
+	border: solid;
+	border-top-width: 2px;
+	border-color: #174060;
+}
+
 QPushButton#__btnAddPipe{
-	border:0px;
-	background-repeat:none;
-	background-position:center;
-	background-image: url(:/pluginDiagram/buttons/img/Plus.png);
+	border-image: url(:/pluginDiagram/buttons/img/add_track_normal.png);
 }
 QPushButton#__btnAddPipe:pressed{
-	border:0px;
-	background-repeat:none;
-	background-position:center;
-	background-image: url(:/pluginDiagram/buttons/img/Plus_down.png);
+	border-image: url(:/pluginDiagram/buttons/img/add_track_down.png);
 }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -66,12 +66,9 @@ QPushButton#__btnAddPipe:pressed{
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>785</width>
-        <height>579</height>
+        <width>251</width>
+        <height>555</height>
        </rect>
-      </property>
-      <property name="accessibleName">
-       <string notr="true">color:1e1e1e</string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="spacing">
@@ -128,21 +125,18 @@ QPushButton#__btnAddPipe:pressed{
     </widget>
    </item>
    <item>
-    <widget class="QWidget" name="widget" native="true">
+    <widget class="QWidget" name="toolbar" native="true">
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>36</height>
+       <height>60</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
-       <height>36</height>
+       <height>60</height>
       </size>
-     </property>
-     <property name="accessibleName">
-      <string notr="true">color:282828</string>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <property name="topMargin">
@@ -155,14 +149,14 @@ QPushButton#__btnAddPipe:pressed{
        <widget class="QPushButton" name="__btnAddPipe">
         <property name="minimumSize">
          <size>
-          <width>32</width>
-          <height>32</height>
+          <width>227</width>
+          <height>46</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>32</width>
-          <height>32</height>
+          <width>227</width>
+          <height>46</height>
          </size>
         </property>
         <property name="text">

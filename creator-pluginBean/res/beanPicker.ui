@@ -6,94 +6,96 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>968</width>
-    <height>703</height>
+    <width>975</width>
+    <height>726</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <property name="accessibleName">
-   <string notr="true">color:252526</string>
-  </property>
   <property name="styleSheet">
-   <string notr="true">QWidget[accessibleName=&quot;color:1e1e1e&quot;]{
-	background-color: rgb(30,30,30);
+   <string notr="true">QWidget#BeanPickerClass {
+	border-image: url(:/pluginBean/source/img/source/bg.jpg);
 }
-QWidget[accessibleName=&quot;color:252526&quot;]{
-	background-color: rgb(37, 37, 38);
+
+QWidget#widget_3 {
+	background-color: rgb(255, 255, 255);
+	border: solid;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-color:#024478;
 }
-QWidget[accessibleName=&quot;color:2d2d30&quot;]{
-	background-color: rgb(45,45,48);
+
+QStackedWidget#__sourcesSwitcher {
+	background: transparent;
 }
-QWidget[accessibleName=&quot;color:333337&quot;]{
-	background-color: rgb(51,51,55);
+QStackedWidget QWidget {
+	background: transparent;
 }
-QWidget[accessibleName=&quot;color:3e3e42&quot;]{
-	background-color: rgb(62,62,66);
-}
-QWidget[accessibleName=&quot;color:3f3f46&quot;]{
-	background-color: rgb(63,63,70);
-}
-QWidget[accessibleName=&quot;color:686868&quot;]{
-	background-color: rgb(104,104,104);
+
+QLineEdit {
+    border: 2px solid #004882;
+    border-radius: 6px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
 }
 
 /*****************************************************
  OK and Cancel Button
 *****************************************************/
-QPushButton[accessibleName=&quot;button:okcancel&quot;]{
-	border-radius:5;
-	color: rgb(255, 255, 255);
-	font: 12pt;
-}
-
 QPushButton#__btnOK{
-	background-color: rgb(85, 170, 255);
+	color: transparent;
+	border-image: url(:/pluginBean/source/img/source/ok-normal.png);
 }
 QPushButton#__btnOK:pressed{
-	background-color: rgb(62, 124, 186);
+	border-image: url(:/pluginBean/source/img/source/ok-down.png);
 }
 QPushButton#__btnOK:disabled{
-	background-color: rgb(172, 172, 172);
+	border-image: url(:/pluginBean/source/img/source/ok_disable.png);
 }
 
 QPushButton#__btnCancel{
-	background-color: rgb(255, 85, 127);
+	color: transparent;
+	border-image: url(:/pluginBean/source/img/source/cancel-normal.png);
 }
 QPushButton#__btnCancel:pressed{
-	background-color: rgb(175, 58, 87);
+	border-image: url(:/pluginBean/source/img/source/cancel-down.png);
 }
 
 /*****************************************************
  Tab
 *****************************************************/
-
-QRadioButton[accessibleName=&quot;radio:tab&quot;]{
-	min-width:96;
-	min-height:32;
-	max-width:96;
-	max-height:32;
-	background-color: rgb(70, 175, 255);
-	color: rgb(255, 255, 255);
-	font: 11pt;
-	padding: 0 0 0 20;
+QRadioButton#__rbArchetype{
+	color: transparent;
 }
-QRadioButton[accessibleName=&quot;radio:tab&quot;]::indicator:unchecked {
-    width: 10;
+
+QRadioButton#__rbArchetype::indicator{
+	width: 0;
     height: 0;
 }
-QRadioButton[accessibleName=&quot;radio:tab&quot;]::indicator:checked {
-    width: 10;
-    height: 10;
-	border-radius: 5;
-	background-color: rgb(255, 93, 185);
+QRadioButton#__rbArchetype:unchecked{
+	
+	border-image: url(:/pluginBean/source/img/source/archetype.png);
 }
-QRadioButton[accessibleName=&quot;radio:tab&quot;]:unchecked{
-	background-color: rgb(116, 116, 116);
+QRadioButton#__rbArchetype:checked {
+	border-image: url(:/pluginBean/source/img/source/archetype_selected.png);
 }
-QRadioButton[accessibleName=&quot;radio:tab&quot;]:checked {
-	background-color: rgb(72, 144, 216);
+
+
+QRadioButton#__rbClone {
+	color: transparent;
+}
+QRadioButton#__rbClone::indicator{
+	width: 0;
+    height: 0;
+}
+QRadioButton#__rbClone:unchecked{
+	
+	border-image: url(:/pluginBean/source/img/source/clone.png);
+}
+QRadioButton#__rbClone:checked {
+	border-image: url(:/pluginBean/source/img/source/clone_selected.png);
 }
 
 /*****************************************************
@@ -185,11 +187,20 @@ QLabel#__error{
          </item>
          <item>
           <widget class="QRadioButton" name="__rbArchetype">
-           <property name="accessibleName">
-            <string notr="true">radio:tab</string>
+           <property name="minimumSize">
+            <size>
+             <width>196</width>
+             <height>75</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>196</width>
+             <height>75</height>
+            </size>
            </property>
            <property name="text">
-            <string>__rbArchetype</string>
+            <string>__arCh</string>
            </property>
            <property name="checked">
             <bool>true</bool>
@@ -198,11 +209,20 @@ QLabel#__error{
          </item>
          <item>
           <widget class="QRadioButton" name="__rbClone">
-           <property name="accessibleName">
-            <string notr="true">radio:tab</string>
+           <property name="minimumSize">
+            <size>
+             <width>196</width>
+             <height>75</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>196</width>
+             <height>75</height>
+            </size>
            </property>
            <property name="text">
-            <string>__rbClone</string>
+            <string/>
            </property>
           </widget>
          </item>
@@ -221,6 +241,22 @@ QLabel#__error{
          </item>
         </layout>
        </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
       </item>
       <item>
        <widget class="QWidget" name="widget_3" native="true">
@@ -287,12 +323,9 @@ QLabel#__error{
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>968</width>
+                  <width>975</width>
                   <height>360</height>
                  </rect>
-                </property>
-                <property name="accessibleName">
-                 <string notr="true">color:3f3f46</string>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_4">
                  <property name="leftMargin">
@@ -346,9 +379,6 @@ QLabel#__error{
                   <width>100</width>
                   <height>30</height>
                  </rect>
-                </property>
-                <property name="accessibleName">
-                 <string notr="true">color:3f3f46</string>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_7">
                  <property name="leftMargin">
@@ -467,9 +497,6 @@ QLabel#__error{
        <height>64</height>
       </size>
      </property>
-     <property name="accessibleName">
-      <string notr="true">color:333337</string>
-     </property>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <property name="spacing">
        <number>64</number>
@@ -494,21 +521,18 @@ QLabel#__error{
         </property>
         <property name="minimumSize">
          <size>
-          <width>240</width>
-          <height>36</height>
+          <width>256</width>
+          <height>51</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>240</width>
-          <height>36</height>
+          <width>256</width>
+          <height>51</height>
          </size>
         </property>
-        <property name="accessibleName">
-         <string notr="true">button:okcancel</string>
-        </property>
         <property name="text">
-         <string>__btnOK</string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -516,21 +540,18 @@ QLabel#__error{
        <widget class="QPushButton" name="__btnCancel">
         <property name="minimumSize">
          <size>
-          <width>240</width>
-          <height>36</height>
+          <width>256</width>
+          <height>51</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>240</width>
-          <height>36</height>
+          <width>256</width>
+          <height>51</height>
          </size>
         </property>
-        <property name="accessibleName">
-         <string notr="true">button:okcancel</string>
-        </property>
         <property name="text">
-         <string>__btnCancel</string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -550,8 +571,23 @@ QLabel#__error{
      </layout>
     </widget>
    </item>
+   <item>
+    <spacer name="verticalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="pluginBean.qrc"/>
+ </resources>
  <connections/>
 </ui>

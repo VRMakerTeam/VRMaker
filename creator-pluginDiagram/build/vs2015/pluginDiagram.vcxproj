@@ -29,12 +29,6 @@
     <ClInclude Include="..\..\src\PropertyUiTemplateBuilder.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\obj\GeneratedFiles\qrc_pluginDiagram.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      </PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-      </PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="..\..\src\BlocksPipeLayout.cpp" />
     <ClCompile Include="..\..\src\BlockUiTemplateBuilder.cpp" />
     <ClCompile Include="..\..\src\DiagramActions.cpp" />
@@ -49,18 +43,6 @@
     <ClCompile Include="..\..\src\DiagramModel.cpp" />
     <ClCompile Include="..\..\src\PluginDiagram.cpp" />
     <ClCompile Include="..\..\src\PropertyUiTemplateBuilder.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\..\res\pluginDiagram.qrc">
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\..\..\obj\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\..\..\obj\GeneratedFiles\qrc_%(Filename).cpp</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\..\..\obj\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\..\..\obj\GeneratedFiles\qrc_%(Filename).cpp</Command>
-    </CustomBuild>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0F85BCB0-1364-4922-8B0E-CC221CD0FC6B}</ProjectGuid>
@@ -136,7 +118,7 @@
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties MocDir=".\..\..\obj\GeneratedFiles\$(ConfigurationName)" UicDir=".\..\..\obj\GeneratedFiles" RccDir=".\..\..\obj\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="qt580-msvc2015-x86" MocOptions="" />
+      <UserProperties MocDir=".\..\..\obj\GeneratedFiles\$(ConfigurationName)" UicDir=".\..\..\obj\GeneratedFiles" RccDir=".\..\..\obj\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="msvc2015" MocOptions="" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

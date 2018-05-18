@@ -15,11 +15,11 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget#ScreenplayAgentInspectorUI{
-	background: transparent;
+	background: #cddbe6;
 }
 
 QCheckBox {
-	color: rgb(255, 255, 255);
+	color: #054479;
 	font: 11pt;
 }
 
@@ -29,7 +29,20 @@ QLabel[accessibleName=&quot;label:field&quot;]{
 	min-width:86;
 	min-height:32;
 	max-height:32;
-	color: rgb(255, 255, 255);
+	color: #054479;
+}
+
+QWidget#line {
+	background: #054479;
+}
+
+
+QLineEdit {
+    border: 2px solid #004882;
+    border-radius: 6px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
 }</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
@@ -107,9 +120,18 @@ QLabel[accessibleName=&quot;label:field&quot;]{
        </widget>
       </item>
       <item>
-       <widget class="Line" name="line">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+       <widget class="QWidget" name="line" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>2</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>2</height>
+         </size>
         </property>
        </widget>
       </item>
