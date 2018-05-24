@@ -5,16 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "app", "app.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pluginScreenplay", "..\..\..\creator-pluginScreenplay\build\vs2015\pluginScreenplay.vcxproj", "{90683A4C-BA09-43DE-80E4-C072E3FD0CF4}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pluginDiagram", "..\..\..\creator-pluginDiagram\build\vs2015\pluginDiagram.vcxproj", "{0F85BCB0-1364-4922-8B0E-CC221CD0FC6B}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pluginBean", "..\..\..\creator-pluginBean\build\vs2015\pluginBean.vcxproj", "{F42941BF-AC3D-461E-A854-132AB12815B8}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pluginBucket", "..\..\..\creator-pluginBucket\build\vs2015\pluginBucket.vcxproj", "{72520D1D-5B0F-4062-AA3D-A9AE26F68E57}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pluginUnity", "..\..\..\creator-pluginUnity\build\vs2015\pluginUnity.vcxproj", "{89CFCA4D-28CB-453D-B99F-1D0329AF0BDD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,26 +15,6 @@ Global
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x86.Build.0 = Debug|Win32
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x86.ActiveCfg = Release|Win32
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x86.Build.0 = Release|Win32
-		{90683A4C-BA09-43DE-80E4-C072E3FD0CF4}.Debug|x86.ActiveCfg = Debug|Win32
-		{90683A4C-BA09-43DE-80E4-C072E3FD0CF4}.Debug|x86.Build.0 = Debug|Win32
-		{90683A4C-BA09-43DE-80E4-C072E3FD0CF4}.Release|x86.ActiveCfg = Release|Win32
-		{90683A4C-BA09-43DE-80E4-C072E3FD0CF4}.Release|x86.Build.0 = Release|Win32
-		{0F85BCB0-1364-4922-8B0E-CC221CD0FC6B}.Debug|x86.ActiveCfg = Debug|Win32
-		{0F85BCB0-1364-4922-8B0E-CC221CD0FC6B}.Debug|x86.Build.0 = Debug|Win32
-		{0F85BCB0-1364-4922-8B0E-CC221CD0FC6B}.Release|x86.ActiveCfg = Release|Win32
-		{0F85BCB0-1364-4922-8B0E-CC221CD0FC6B}.Release|x86.Build.0 = Release|Win32
-		{F42941BF-AC3D-461E-A854-132AB12815B8}.Debug|x86.ActiveCfg = Debug|Win32
-		{F42941BF-AC3D-461E-A854-132AB12815B8}.Debug|x86.Build.0 = Debug|Win32
-		{F42941BF-AC3D-461E-A854-132AB12815B8}.Release|x86.ActiveCfg = Release|Win32
-		{F42941BF-AC3D-461E-A854-132AB12815B8}.Release|x86.Build.0 = Release|Win32
-		{72520D1D-5B0F-4062-AA3D-A9AE26F68E57}.Debug|x86.ActiveCfg = Debug|Win32
-		{72520D1D-5B0F-4062-AA3D-A9AE26F68E57}.Debug|x86.Build.0 = Debug|Win32
-		{72520D1D-5B0F-4062-AA3D-A9AE26F68E57}.Release|x86.ActiveCfg = Release|Win32
-		{72520D1D-5B0F-4062-AA3D-A9AE26F68E57}.Release|x86.Build.0 = Release|Win32
-		{89CFCA4D-28CB-453D-B99F-1D0329AF0BDD}.Debug|x86.ActiveCfg = Debug|Win32
-		{89CFCA4D-28CB-453D-B99F-1D0329AF0BDD}.Debug|x86.Build.0 = Debug|Win32
-		{89CFCA4D-28CB-453D-B99F-1D0329AF0BDD}.Release|x86.ActiveCfg = Release|Win32
-		{89CFCA4D-28CB-453D-B99F-1D0329AF0BDD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -22,4 +22,4 @@ diagram.blockRegisterProperty(group, template, prop_track, 0)
 
 diagram.blockUiAddText(group, template, core.translate(txt_play2d))
 
-diagram.inspectorUiBindPicker(group, template, prop_asset, {"sound/", "ugc/sound"})
+diagram.inspectorUiBindPicker(group, template, prop_asset, "", {"sound/", "ugc/sound"})
