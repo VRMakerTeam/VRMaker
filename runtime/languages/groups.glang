@@ -1,0 +1,29 @@
+[
+    {
+        "sourcetext":"agent/test",
+        "translators": [
+            {
+                "language":"en_US",
+                "targettext":"Agent/Example"
+            }
+        ]
+    },
+    {
+        "sourcetext":"skybox/test",
+        "translators": [
+            {
+                "language":"en_US",
+                "targettext":"Skybox/Example"
+            }
+        ]
+    },
+    {
+        "sourcetext":"sound/test",
+        "translators": [
+            {
+                "language":"en_US",
+                "targettext":"Sound/Example"
+            }
+        ]
+    }
+]

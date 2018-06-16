@@ -86,10 +86,22 @@ namespace VRXX.Manager
 
             CanvasMgr.Toggle2D(false);
             CanvasMgr.ToggleEvent(false);
+            CameraMgr.ToggleCamera(false);
 
             device_ = new GameObject("__gvr__").transform;
             device_.SetParent(root_);
 
+
+            Transform tsHead = new GameObject("head").transform;
+            tsHead.SetParent(device_);
+
+            Transform tsCamera = new GameObject("camera").transform;
+            tsCamera.tag = "MainCamera";
+            tsCamera.SetParent(tsHead);
+
+            CameraMgr.InjectOuterCamera(tsHead);
+
+           // Transform tsCamera = CameraMgr.camera;
             GvrViewer viewer = device_.gameObject.AddComponent<GvrViewer>();
             viewer.VRModeEnabled = true;
             viewer.DistortionCorrection = GvrViewer.DistortionCorrectionMethod.Native;
@@ -103,13 +115,13 @@ namespace VRXX.Manager
             GvrReticlePointer reticle = reticle_.AddComponent<GvrReticlePointer>();
             reticle.reticleSegments = 20;
             reticle.reticleGrowthSpeed = 8;
-            reticle_.transform.SetParent(Camera.main.transform);
+            reticle_.transform.SetParent(tsCamera);
 
             event_ = new GameObject("EventSystem");
             event_.transform.SetParent(device_.transform);
             event_.AddComponent<GvrPointerManager>();
             event_.AddComponent<GvrPointerInputModule>();
-            CameraMgr.camera.gameObject.AddComponent<PhysicsRaycaster>();
+            tsCamera.gameObject.AddComponent<PhysicsRaycaster>();
 
             //SightTrigger.SupportCardboard();
 #endif

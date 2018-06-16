@@ -72,7 +72,7 @@ public:
 //-----------------------------------------------------------------------
 void PackageManagerInternal::ParseGroupLangFile()
 {
-	QDir dir(PathUtil::PackageLocation());
+	QDir dir = QDir::current();
 	dir.cd("languages");
 	QString filepath = dir.filePath("groups.glang");
 

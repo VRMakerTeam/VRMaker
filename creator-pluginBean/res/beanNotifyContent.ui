@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>397</width>
-    <height>262</height>
+    <width>444</width>
+    <height>366</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">QLabel
 {
-	color: rgb(236, 236, 236);
+	color: #00447f;
 	font: 12pt;
 }</string>
   </property>
@@ -39,7 +39,7 @@
    <item>
     <widget class="QStackedWidget" name="__pages">
      <property name="currentIndex">
-      <number>1</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="page_wait">
       <layout class="QHBoxLayout" name="horizontalLayout_5">
@@ -89,14 +89,14 @@
           <widget class="QLabel" name="label_2">
            <property name="minimumSize">
             <size>
-             <width>168</width>
-             <height>168</height>
+             <width>240</width>
+             <height>240</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>168</width>
-             <height>168</height>
+             <width>240</width>
+             <height>240</height>
             </size>
            </property>
            <property name="text">
@@ -116,7 +116,7 @@
          <item>
           <widget class="QLabel" name="label_5">
            <property name="text">
-            <string>安装成功</string>
+            <string>Success</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -187,21 +187,21 @@
           <widget class="QLabel" name="label_4">
            <property name="minimumSize">
             <size>
-             <width>168</width>
-             <height>168</height>
+             <width>240</width>
+             <height>240</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>168</width>
-             <height>168</height>
+             <width>240</width>
+             <height>240</height>
             </size>
            </property>
            <property name="text">
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="pluginBean.qrc">:/pluginBean/img/img/VR.png</pixmap>
+            <pixmap resource="pluginBean.qrc">:/pluginBean/img/img/fail.png</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -211,7 +211,7 @@
          <item>
           <widget class="QLabel" name="label">
            <property name="text">
-            <string>未检测到设备</string>
+            <string>No device detected</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>

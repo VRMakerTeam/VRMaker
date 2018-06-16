@@ -15,17 +15,21 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget#frame{
-	background-color: rgb(89, 171, 195);
+	background-color: #d8efff;
 	border-radius: 10;
 }
 
+QWidget#line {
+	background-color : #004183;
+}
+
 QPushButton{
-	color : rgb(255, 255, 255);
+	color : #004183;
 	font: 18pt;
 	background-color: rgb(255, 255, 255, 0);
 }
 QPushButton:pressed{
-	color : rgb(200, 200, 200);
+	color : #000000;
 }</string>
   </property>
   <property name="sizeGripEnabled">
@@ -67,6 +71,18 @@ QPushButton:pressed{
       </item>
       <item>
        <widget class="Line" name="line">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>2</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>2</height>
+         </size>
+        </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>

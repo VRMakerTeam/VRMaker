@@ -83,6 +83,7 @@ namespace VRXX.Manager
             GameObject go = new GameObject("Camera");
             go.tag = "MainCamera";
             go.transform.SetParent(root_);
+            go.AddComponent<Camera>();
             go.AddComponent<GUILayer>();
             go.AddComponent<FlareLayer>();
             skyboxCpt = go.AddComponent<Skybox>();
