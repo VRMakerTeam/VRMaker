@@ -1,6 +1,7 @@
 #include <QWidget>
 #include <QLayout>
 #include <QPushButton>
+#include <QDialog>
 #include "Utils.h"
 #include "HandleBus.hxx"
 #include "AppCore.h"
@@ -79,7 +80,8 @@ void Bucket::PickerView::OnCardSelect(const QString& _uuid)
 
 void Bucket::PickerView::Popup()
 {
-	ui_->root->show();
+	QDialog* dialog = static_cast<QDialog*>(ui_->root);
+	dialog->exec();
 }
 
 //////////////////////////////////////////////////////////////////////////

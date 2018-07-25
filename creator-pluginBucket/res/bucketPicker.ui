@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>UiBucketPicker</class>
- <widget class="QWidget" name="UiBucketPicker">
+ <widget class="QDialog" name="UiBucketPicker">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1071</width>
-    <height>524</height>
+    <width>1036</width>
+    <height>609</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Assets</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget#widget_4{

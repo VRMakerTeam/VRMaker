@@ -83,9 +83,19 @@ void BeanActions::PlayBeanReceiver::Receive(IAction* _action)
 			file.flush();
 		}
 		file.close();
+		QDialog* dialog = new QDialog();
+		dialog->setWindowFlags(Qt::FramelessWindowHint);
+		dialog->setWindowFlags(Qt::WindowTitleHint);
+		dialog->setWindowTitle("VPlayer is running ...");
+		dialog->setFixedSize(QSize(240, 1));
 		QProcess* process = new QProcess();
-		process->execute("player/reviewer_pc/reviewer_pc");
-		
+		QObject::connect(process, static_cast<void (QProcess::*)(int)>(&QProcess::finished), [=] {
+			dialog->accept();
+			dialog->deleteLater();
+			process->deleteLater();
+		});
+		process->start("player/reviewer_pc/reviewer_pc");
+		dialog->exec();
 	};
 	NEW_ACTION(BeanActions::CompileBeanAction, action);
 	action->guid = beanGUID;
