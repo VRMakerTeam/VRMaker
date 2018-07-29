@@ -1,0 +1,14 @@
+{ 
+  "guid": "8a5cfbdb-f7c6-4daa-bf08-77d60a4737ab", 
+  "group": "agent/vrworld", 
+  "alias": "Grassland", 
+  "files": [ 
+    { 
+      "file": "823d3fc4-e963-4d87-9819-a2dd0cfcb137", 
+      "tags": [ 
+          "Ground"
+        ], 
+      "alias": "Grassland 3"
+      }
+    ]
+  }

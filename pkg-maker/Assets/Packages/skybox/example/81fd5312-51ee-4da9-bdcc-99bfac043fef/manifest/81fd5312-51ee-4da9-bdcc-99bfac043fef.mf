@@ -1,0 +1,14 @@
+{ 
+  "guid": "81fd5312-51ee-4da9-bdcc-99bfac043fef", 
+  "group": "skybox/skybox", 
+  "alias": "Ice Melting River", 
+  "files": [ 
+    { 
+      "file": "88d27517-c092-4be3-9308-daad53241ecf", 
+      "tags": [ 
+          "Nature"
+        ], 
+      "alias": "Ice Melting River"
+      }
+    ]
+  }

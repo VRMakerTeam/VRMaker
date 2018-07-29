@@ -1,0 +1,14 @@
+{ 
+  "guid": "4c4314ea-59d1-449e-b168-30067310a3fe", 
+  "group": "agent/vrworld", 
+  "alias": "Elephant", 
+  "files": [ 
+    { 
+      "file": "4c4266f8-3e92-49f5-a413-00944c35e240", 
+      "tags": [ 
+          "Ground"
+        ], 
+      "alias": "A corner of the river 01"
+      }
+    ]
+  }

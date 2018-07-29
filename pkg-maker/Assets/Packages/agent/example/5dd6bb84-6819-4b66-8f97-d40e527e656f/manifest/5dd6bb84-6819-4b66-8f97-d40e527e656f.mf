@@ -1,0 +1,14 @@
+{ 
+  "guid": "5dd6bb84-6819-4b66-8f97-d40e527e656f", 
+  "group": "agent/vrworld", 
+  "alias": "Universe", 
+  "files": [ 
+    { 
+      "file": "2b83dbcc-ed70-48d8-980b-0140ad31499b", 
+      "tags": [ 
+          "Plant"
+        ], 
+      "alias": "Pine 1"
+      }
+    ]
+  }

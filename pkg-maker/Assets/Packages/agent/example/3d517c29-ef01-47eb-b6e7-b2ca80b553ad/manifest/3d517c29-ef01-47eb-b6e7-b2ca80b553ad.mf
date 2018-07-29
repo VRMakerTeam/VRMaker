@@ -1,0 +1,14 @@
+{ 
+  "guid": "3d517c29-ef01-47eb-b6e7-b2ca80b553ad", 
+  "group": "agent/vrworld", 
+  "alias": "Mountain", 
+  "files": [ 
+    { 
+      "file": "6a171235-d777-4c32-ae3f-0ad1c4dac7b0", 
+      "tags": [ 
+          "Tool"
+        ], 
+      "alias": "Fence 3"
+      }
+    ]
+  }

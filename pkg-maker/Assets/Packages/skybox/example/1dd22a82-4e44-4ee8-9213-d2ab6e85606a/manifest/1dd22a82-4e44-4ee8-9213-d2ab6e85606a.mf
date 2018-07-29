@@ -1,0 +1,14 @@
+{ 
+  "guid": "1dd22a82-4e44-4ee8-9213-d2ab6e85606a", 
+  "group": "skybox/skybox", 
+  "alias": "Night", 
+  "files": [ 
+    { 
+      "file": "4f2024ce-112d-4016-b583-f0739d433b27", 
+      "tags": [ 
+          "VRWorld"
+        ], 
+      "alias": "Night 1"
+      }
+    ]
+  }

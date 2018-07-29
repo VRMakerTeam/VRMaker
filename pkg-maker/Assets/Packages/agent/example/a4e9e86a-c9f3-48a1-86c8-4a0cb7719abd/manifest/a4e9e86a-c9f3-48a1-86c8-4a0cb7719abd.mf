@@ -1,0 +1,14 @@
+{ 
+  "guid": "a4e9e86a-c9f3-48a1-86c8-4a0cb7719abd", 
+  "group": "agent/vrworld", 
+  "alias": "Green crystal", 
+  "files": [ 
+    { 
+      "file": "7230019a-0e90-4866-88b3-f03b8aaa01d3", 
+      "tags": [ 
+          "Green crystal"
+        ], 
+      "alias": "Green crystal"
+      }
+    ]
+  }

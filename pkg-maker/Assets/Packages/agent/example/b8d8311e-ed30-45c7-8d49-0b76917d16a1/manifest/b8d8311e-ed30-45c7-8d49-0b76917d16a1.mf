@@ -1,0 +1,14 @@
+{ 
+  "guid": "b8d8311e-ed30-45c7-8d49-0b76917d16a1", 
+  "group": "agent/vrworld", 
+  "alias": "Mountain", 
+  "files": [ 
+    { 
+      "file": "ab722b79-a830-46cf-be85-1adac2c7a240", 
+      "tags": [ 
+          "Plant"
+        ], 
+      "alias": "Casuarina 5"
+      }
+    ]
+  }

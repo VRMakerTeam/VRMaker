@@ -1,0 +1,14 @@
+{ 
+  "guid": "1064f814-821e-4cb5-a2f1-918b8f5848b1", 
+  "group": "skybox/skybox", 
+  "alias": "Sunny day", 
+  "files": [ 
+    { 
+      "file": "de0aa3c5-474f-40ec-ba88-d310c66dff5b", 
+      "tags": [ 
+          "VRWorld"
+        ], 
+      "alias": "Sunny day 8"
+      }
+    ]
+  }

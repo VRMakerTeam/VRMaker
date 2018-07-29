@@ -1,0 +1,14 @@
+{ 
+  "guid": "c7f06ed1-0c7b-41e5-bf9b-5383272f3a24", 
+  "group": "agent/vrworld", 
+  "alias": "Mountain", 
+  "files": [ 
+    { 
+      "file": "05dd45f3-c81d-4a2b-9a99-b7cc4a355d2a", 
+      "tags": [ 
+          "Plant"
+        ], 
+      "alias": "Grass 1"
+      }
+    ]
+  }

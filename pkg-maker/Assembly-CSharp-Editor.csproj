@@ -47,6 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\BuildTools.cs" />
+     <None Include="Assets\Packages\agent\example\d6d56d5a-93b1-4c4f-a458-521d53e18440\source\Textures\Normal-Diffuse.shader" />
+     <None Include="Assets\Packages\agent\example\7a787f31-3bd9-4a08-a04f-41d4f4d28205\source\Textures\Normal-Diffuse.shader" />
+     <None Include="Assets\Packages\agent\example\b2a82e34-4122-4c1b-a789-9a049f4bb6a6\source\Textures\Normal-Diffuse.shader" />
+     <None Include="Assets\Packages\agent\example\7019bb6d-0f9a-4cd3-8c14-ce8a70aa620b\source\Textures\Normal-Diffuse 1.shader" />
+     <None Include="Assets\Packages\agent\example\4b2a39f3-567d-497a-8af5-4369ad9e84ad\source\Textures\Normal-Diffuse.shader" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/fpe/Unity-560/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>

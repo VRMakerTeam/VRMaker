@@ -1,0 +1,14 @@
+{ 
+  "guid": "1892568f-ef7a-4136-bb6e-a90f79ecb71d", 
+  "group": "agent/vrworld", 
+  "alias": "Universe", 
+  "files": [ 
+    { 
+      "file": "148bcad1-edb0-462b-9652-1f7a1df46901", 
+      "tags": [ 
+          "Plant"
+        ], 
+      "alias": "Autumn tree 1"
+      }
+    ]
+  }

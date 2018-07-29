@@ -1,0 +1,14 @@
+{ 
+  "guid": "7019bb6d-0f9a-4cd3-8c14-ce8a70aa620b", 
+  "group": "agent/vrworld", 
+  "alias": "Elephant", 
+  "files": [ 
+    { 
+      "file": "7ce75552-7d91-472b-99d9-63b896d0484d", 
+      "tags": [ 
+          "Tool"
+        ], 
+      "alias": "Boat 1"
+      }
+    ]
+  }

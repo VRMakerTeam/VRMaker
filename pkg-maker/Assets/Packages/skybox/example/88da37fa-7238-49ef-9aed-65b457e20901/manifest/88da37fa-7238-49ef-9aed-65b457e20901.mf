@@ -1,0 +1,14 @@
+{ 
+  "guid": "88da37fa-7238-49ef-9aed-65b457e20901", 
+  "group": "skybox/skybox", 
+  "alias": "Tropical Ocean", 
+  "files": [ 
+    { 
+      "file": "e211bb5c-cf77-4519-ad3a-3d65245c3eae", 
+      "tags": [ 
+          "Nature"
+        ], 
+      "alias": "Tropical Ocean"
+      }
+    ]
+  }

@@ -1,0 +1,119 @@
+{ 
+  "guid": "773ef9e0-a033-40e9-bd58-0b46d15c435c", 
+  "group": "sound/sound", 
+  "alias": "Music", 
+  "files": [ 
+    { 
+      "file": "1c780a97-943d-41dd-a448-3a099a1a0437", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Passionate 1"
+      },
+	  { 
+      "file": "36378fe2-aaa9-4220-8378-419e3c39c0a4", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Passionate 2"
+      },
+	  { 
+      "file": "46876133-a6e1-4f81-9496-1eb36d8015c0", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Passionate 3"
+      },
+	  { 
+      "file": "7dad961e-1b7f-4e5e-afd0-5d8bf3446ab2", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Cheerful 1"
+      },
+	  { 
+      "file": "81120ce1-5882-4387-b469-9a7dcb91bce7", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Cheerful 2"
+      },
+	  { 
+      "file": "83bd3509-34e9-4366-8afa-d11b0f3a6496", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Cheerful 3"
+      },
+	  { 
+      "file": "af444ab5-4b2b-4fa9-9356-ff5861c7fb53", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Cheerful 4"
+      },
+	  { 
+      "file": "068c21fd-8c26-4b95-ba86-308780d23682", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Background music 1"
+      },
+	  { 
+      "file": "804e96b0-801b-492c-a2d1-fcbea6749f7b", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Background music 2"
+      },
+	  { 
+      "file": "8d9f8617-6b37-474d-b21c-4a1e648de34c", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Background music 3"
+      },
+	  { 
+      "file": "8f4b3ecd-1f21-49c9-8ef9-6479ee63c3c7", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Background music 4"
+      },
+	  { 
+      "file": "910c27bf-859c-4ee4-8b44-b55e6eedc1bf", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Background music 5"
+      },
+	  { 
+      "file": "a53c32e9-a0c2-4224-ba47-10e95733c2cf", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Background music 6"
+      },
+	  { 
+      "file": "b49ff726-846d-4c18-92df-d74b0c8a1c9d", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Background music 7"
+      },
+	  { 
+      "file": "daf69ec0-94f2-476e-a5fd-c82579e02c93", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Background music 8"
+      },
+	  { 
+      "file": "f291ffa5-402c-48f8-85c0-851b86143d38", 
+      "tags": [ 
+          "Music"
+        ], 
+      "alias": "Background music 9"
+      }
+    ]
+  }

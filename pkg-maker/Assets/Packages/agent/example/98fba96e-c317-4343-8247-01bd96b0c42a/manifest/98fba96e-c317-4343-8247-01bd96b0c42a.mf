@@ -1,0 +1,14 @@
+{ 
+  "guid": "98fba96e-c317-4343-8247-01bd96b0c42a", 
+  "group": "agent/vrworld", 
+  "alias": "Universe", 
+  "files": [ 
+    { 
+      "file": "33c8f418-276f-4c22-95a4-0d96b6a3b491", 
+      "tags": [ 
+          "Plant"
+        ], 
+      "alias": "Grassland"
+      }
+    ]
+  }

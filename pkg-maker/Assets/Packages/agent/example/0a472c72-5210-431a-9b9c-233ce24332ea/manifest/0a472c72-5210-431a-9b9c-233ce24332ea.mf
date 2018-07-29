@@ -1,0 +1,14 @@
+{ 
+  "guid": "0a472c72-5210-431a-9b9c-233ce24332ea", 
+  "group": "agent/vrworld", 
+  "alias": "Elephant", 
+  "files": [ 
+    { 
+      "file": "04369fa7-4dcb-4698-80e7-73a0b6505e35", 
+      "tags": [ 
+          "Animal"
+        ], 
+      "alias": "Elephant"
+      }
+    ]
+  }

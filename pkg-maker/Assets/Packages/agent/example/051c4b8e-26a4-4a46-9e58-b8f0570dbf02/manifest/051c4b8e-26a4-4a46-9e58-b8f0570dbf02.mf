@@ -1,0 +1,14 @@
+{ 
+  "guid": "051c4b8e-26a4-4a46-9e58-b8f0570dbf02", 
+  "group": "agent/vrworld", 
+  "alias": "Elephant", 
+  "files": [ 
+    { 
+      "file": "fe5cfb2b-000e-470f-80d4-a66594d00611", 
+      "tags": [ 
+          "Tool"
+        ], 
+      "alias": "Bridge 4"
+      }
+    ]
+  }

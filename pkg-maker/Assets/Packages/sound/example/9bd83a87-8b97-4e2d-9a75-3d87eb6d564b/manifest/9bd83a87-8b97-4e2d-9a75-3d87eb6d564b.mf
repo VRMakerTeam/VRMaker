@@ -1,0 +1,14 @@
+{ 
+  "guid": "9bd83a87-8b97-4e2d-9a75-3d87eb6d564b", 
+  "group": "sound/sound", 
+  "alias": "The Eiffel Tower", 
+  "files": [ 
+    { 
+      "file": "0642399d-eac7-4d8f-8788-8d4a9be186ee", 
+      "tags": [ 
+          "Tour"
+        ], 
+      "alias": "The Eiffel Tower"
+      }
+    ]
+  }

@@ -1,0 +1,14 @@
+{ 
+  "guid": "756d9ad5-3448-4148-a733-305cfd753546", 
+  "group": "skybox/skybox", 
+  "alias": "Sunset", 
+  "files": [ 
+    { 
+      "file": "d6e681ee-fba2-43d1-909b-87f381b9eb05", 
+      "tags": [ 
+          "VRWorld"
+        ], 
+      "alias": "Sunset 6"
+      }
+    ]
+  }

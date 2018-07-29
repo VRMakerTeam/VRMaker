@@ -1,0 +1,14 @@
+{ 
+  "guid": "e82d221d-b1da-437a-b819-7238d84033ed", 
+  "group": "skybox/skybox", 
+  "alias": "Glow", 
+  "files": [ 
+    { 
+      "file": "cd244e27-b879-49d9-a208-7ff55324cb5c", 
+      "tags": [ 
+          "VRWorld"
+        ], 
+      "alias": "Glow"
+      }
+    ]
+  }

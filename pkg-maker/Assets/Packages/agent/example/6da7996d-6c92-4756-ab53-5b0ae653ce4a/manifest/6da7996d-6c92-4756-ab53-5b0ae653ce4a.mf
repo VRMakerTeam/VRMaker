@@ -1,0 +1,14 @@
+{ 
+  "guid": "6da7996d-6c92-4756-ab53-5b0ae653ce4a", 
+  "group": "agent/vrworld", 
+  "alias": "Universe", 
+  "files": [ 
+    { 
+      "file": "1c6877a7-4813-43be-90fb-1f6ac62dc0c0", 
+      "tags": [ 
+          "Plant"
+        ], 
+      "alias": "Big tree 3"
+      }
+    ]
+  }

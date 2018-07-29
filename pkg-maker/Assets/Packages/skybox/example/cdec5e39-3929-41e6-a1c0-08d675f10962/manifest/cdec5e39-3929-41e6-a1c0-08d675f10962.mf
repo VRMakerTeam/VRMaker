@@ -1,0 +1,14 @@
+{ 
+  "guid": "cdec5e39-3929-41e6-a1c0-08d675f10962", 
+  "group": "skybox/skybox", 
+  "alias": "Paris scenery", 
+  "files": [ 
+    { 
+      "file": "eb226671-320c-478f-abb0-dbb74ac43882", 
+      "tags": [ 
+          "City"
+        ], 
+      "alias": "Paris scenery"
+      }
+    ]
+  }

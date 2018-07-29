@@ -1,0 +1,14 @@
+{ 
+  "guid": "12178720-b53f-40fb-a197-393d92cddb6f", 
+  "group": "skybox/skybox", 
+  "alias": "Cloudy day", 
+  "files": [ 
+    { 
+      "file": "3ebb5902-2aea-4052-beb0-ad9bab848cec", 
+      "tags": [ 
+          "VRWorld"
+        ], 
+      "alias": "Cloudy day 1"
+      }
+    ]
+  }

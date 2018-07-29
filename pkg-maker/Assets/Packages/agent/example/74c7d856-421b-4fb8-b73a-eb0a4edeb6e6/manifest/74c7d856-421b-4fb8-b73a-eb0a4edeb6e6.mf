@@ -1,0 +1,14 @@
+{ 
+  "guid": "74c7d856-421b-4fb8-b73a-eb0a4edeb6e6", 
+  "group": "agent/vrworld", 
+  "alias": "Elephant", 
+  "files": [ 
+    { 
+      "file": "d5de307b-8b8f-4242-a71c-d2249a967d75", 
+      "tags": [ 
+          "Castle"
+        ], 
+      "alias": "House 2"
+      }
+    ]
+  }

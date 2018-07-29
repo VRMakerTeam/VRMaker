@@ -1,0 +1,14 @@
+{ 
+  "guid": "f20a1079-4bfb-4542-9b09-7393462f62c4", 
+  "group": "agent/vrworld", 
+  "alias": "Mountains", 
+  "files": [ 
+    { 
+      "file": "9ba25558-d33a-49f5-a00d-0e4d30721edf", 
+      "tags": [ 
+          "Ground"
+        ], 
+      "alias": "Sun"
+      }
+    ]
+  }

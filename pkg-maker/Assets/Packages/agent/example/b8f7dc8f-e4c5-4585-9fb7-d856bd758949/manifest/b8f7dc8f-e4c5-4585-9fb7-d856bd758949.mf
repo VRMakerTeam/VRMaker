@@ -1,0 +1,14 @@
+{ 
+  "guid": "b8f7dc8f-e4c5-4585-9fb7-d856bd758949", 
+  "group": "agent/vrworld", 
+  "alias": "Mountain", 
+  "files": [ 
+    { 
+      "file": "c9aaaabe-f8ef-41de-bbb5-02a2f56f05c5", 
+      "tags": [ 
+          "Plant"
+        ], 
+      "alias": "Big tree 1"
+      }
+    ]
+  }

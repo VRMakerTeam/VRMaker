@@ -1,0 +1,14 @@
+{ 
+  "guid": "4b2a39f3-567d-497a-8af5-4369ad9e84ad", 
+  "group": "agent/vrworld", 
+  "alias": "Elephant", 
+  "files": [ 
+    { 
+      "file": "b85afd68-ecbf-4736-a1d0-3a01f393e783", 
+      "tags": [ 
+          "Tool"
+        ], 
+      "alias": "Tent"
+      }
+    ]
+  }
