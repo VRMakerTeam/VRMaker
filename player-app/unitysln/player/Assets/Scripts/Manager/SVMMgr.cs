@@ -19,7 +19,8 @@ namespace VRXX.Manager
                 env = new LuaEnv();
                 env.AddLoader((ref string _filename) =>
                 {
-                    string path = System.IO.Path.Combine(VRXX.Platform.GetPersistentDataPath(), string.Format("svm/{0}.out", _filename));
+                    string path = System.IO.Path.Combine(VRXX.Platform.GetStreamingAssetsPath(), string.Format("svm/{0}.out", _filename));
+                    //string path = System.IO.Path.Combine(VRXX.Platform.GetPersistentDataPath(), string.Format("svm/{0}.out", _filename));
                     WWW www = new WWW(path);
 
                     while (www.isDone || null != www.error)

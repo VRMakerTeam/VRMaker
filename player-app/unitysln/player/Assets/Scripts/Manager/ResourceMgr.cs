@@ -377,7 +377,8 @@ namespace VRXX.Manager
             }
             else
             {
-                string path = Path.Combine(VRXX.Platform.GetPersistentDataPath() + "/pkgs/" + VRXX.Platform.Alias, _bundle);
+                string path = Path.Combine(VRXX.Platform.GetStreamingAssetsPath() + "/pkgs/" + VRXX.Platform.Alias, _bundle);
+                //string path = Path.Combine(VRXX.Platform.GetPersistentDataPath() + "/pkgs/" + VRXX.Platform.Alias, _bundle);
                 Log.Debug("ResourceMgr", "load bundle from {0}", path);
                 WWW www = new WWW(path);
                 yield return www;
