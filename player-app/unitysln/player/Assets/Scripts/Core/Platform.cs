@@ -45,14 +45,6 @@ namespace VRXX
             {
                 path = "file://" + path;
             }
-            else if (RuntimePlatform.Android == platform)
-            {
-                path = "jar:file://" + Application.dataPath + "!/assets/";
-            }
-            else if(RuntimePlatform.IPhonePlayer == platform)
-            {
-                path = Application.dataPath + "/Raw";
-            }
             return path;
         }
 

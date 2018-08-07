@@ -33,9 +33,6 @@
 - 使用菜单栏的ReleaseTool编译各平台的Player.
 - Use the Release Tool in the Menu Bar to Compile Platform Players.
 
-- 运行player-app/install-svm.bat安装脚本.
-
-
 # 编译VRMaker | Compiling VR Maker
 - 执行build.bat编译所有文件.
 - Execute build.bat to compile all files.
@@ -48,5 +45,3 @@
 
 - 使用USB连接手机
 - 使用adb安装runpath\player\reviewer_cardboard.apk
-- 运行pkg-maker\push-assets.bat推送资源
-- 运行player-app\push-svm.bat推送脚本

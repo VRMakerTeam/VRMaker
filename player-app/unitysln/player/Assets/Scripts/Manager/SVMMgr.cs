@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using Fangs.Lib.Logger;
+using System.IO;
 using XLua;
 
 namespace VRXX.Manager
@@ -22,17 +23,18 @@ namespace VRXX.Manager
                     string path = System.IO.Path.Combine(VRXX.Platform.GetStreamingAssetsPath(), string.Format("svm/{0}.out", _filename));
                     //string path = System.IO.Path.Combine(VRXX.Platform.GetPersistentDataPath(), string.Format("svm/{0}.out", _filename));
                     WWW www = new WWW(path);
-
-                    while (www.isDone || null != www.error)
-                        break;
-
                     if (null != www.error)
                     {
                         Log.Error("SVMMgr", "load file {0} error: {1}", _filename, www.error);
                         return null;
                     }
+
+                    while (!www.isDone)
+                        continue;
+
                     return www.bytes;
                 });
+
                 Log.Info("SVMMgr", "New agent finish");
             }
 
