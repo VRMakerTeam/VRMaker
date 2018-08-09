@@ -25,6 +25,7 @@ player-app/unitysln/player/*.sln
 player-app/unitysln/player/*.csproj
 pkg-maker/Library/
 pkg-maker/Temp/
+_package/
 
 *.suo
 *.sdf

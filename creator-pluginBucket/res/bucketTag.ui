@@ -37,10 +37,10 @@ QCheckBox[accessibleName=&quot;group:tab&quot;]::indicator {
 }
 
 QCheckBox[accessibleName=&quot;group:tab&quot;]:unchecked{
-	border-image: url(:/pluginBucket/simple/img/tab.png);
+	border-image: url(:/pluginBucket/simple/img/tab_normal.png);
 }
 QCheckBox[accessibleName=&quot;group:tab&quot;]:checked {
-	border-image: url(:/pluginBucket/simple/img/tab.png);
+	border-image: url(:/pluginBucket/simple/img/tab_down.png);
 }
 
 

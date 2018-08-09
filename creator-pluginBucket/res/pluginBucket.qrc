@@ -1,7 +1,8 @@
 <RCC>
   <qresource prefix="/pluginBucket/simple">
-    <file>img/tab.png</file>
     <file>img/default_asset_card.png</file>
+    <file>img/tab_down.png</file>
+    <file>img/tab_normal.png</file>
     <file>img/import_image_down.png</file>
     <file>img/import_sound_down.png</file>
     <file>img/import_image.png</file>
