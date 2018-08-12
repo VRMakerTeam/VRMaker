@@ -20,7 +20,7 @@ public class XGaze : MonoBehaviour {
     void Awake()
     {
         instance = this;
-        circle = this.transform.FindChild("circle").GetComponent<Image>();
+        circle = this.transform.FindChild("adjust/circle").GetComponent<Image>();
         XGaze.instance.gameObject.SetActive(false);
     }
 
@@ -45,7 +45,6 @@ public class XGaze : MonoBehaviour {
         if (!tick)
             return;
 
-        adjust();
         timer += Time.deltaTime;
         circle.fillAmount = timer / duration;
         if (timer >= duration)
@@ -75,7 +74,6 @@ public class XGaze : MonoBehaviour {
         tick = false;
         timer = 0;
         XGaze.instance.gameObject.SetActive(false);
-        VRXX.Manager.VRMgr.ToogleReticle(true);
     }
 
     private void startTick()
@@ -86,14 +84,6 @@ public class XGaze : MonoBehaviour {
         timer = 0;
         tick = true;
         //adjust once before show
-        adjust();
         XGaze.instance.gameObject.SetActive(true);
-        VRXX.Manager.VRMgr.ToogleReticle(false);
-    }
-
-    private void adjust()
-    {
-        this.transform.position = VRXX.Manager.CameraMgr.position + VRXX.Manager.CameraMgr.forward * 6;
-        this.transform.LookAt(VRXX.Manager.CameraMgr.position);
     }
 }
