@@ -11,8 +11,9 @@ local image = "Camera/Camera.png"
 
 local prop_duration = "duration"
 
-local label_duration = {en_US="Duration", zh_CN="时间"}
-local txt_shake = {en_US="Shake", zh_CN="抖动"}
+local label_duration = {en_US="Duration", zh_CN="时间", tw="時間", pt="Duração", fr="Durée", it="Durata", sp="Duración", jp="期間", kr="지속", de="Dauer", ru="продолжительность"} 
+local txt_shake = {en_US="Shake", zh_CN="抖动", tw="抖動", pt="Mexe", fr="Secouer", it="Agitare", sp="Sacudir", jp="振る", kr="떨림", de="Shake", ru="Встряска"}
+
 
 log.info("register "..extend.."."..group.."."..template.." action")
 diagram.registerBlock(extend, group, template)

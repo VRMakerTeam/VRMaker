@@ -99,8 +99,5 @@
     <ClCompile Include="..\..\src\BeanCompositeWall.cpp">
       <Filter>Source Files\Composite</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\obj\GeneratedFiles\qrc_pluginBean.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

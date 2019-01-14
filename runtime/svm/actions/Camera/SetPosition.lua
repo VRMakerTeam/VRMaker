@@ -17,8 +17,9 @@ local label_x = "x"
 local label_y = "y"
 local label_z = "z"
 
-local txt_setposition = {en_US="Set Position", zh_CN="设置位置"}
-local txt_usesnap= {en_US="Snapshot", zh_CN="使用快照"}
+local txt_setposition = {en_US="Set Position", zh_CN="设置位置", tw="設定位置", pt="Definir posição", fr="Définir la perspective", it="Imposta posizione", sp="Posición de ajuste", jp="位置を設定", kr="위치 설정", de="setzen", ru="Установить положение"}
+
+local txt_usesnap= {en_US="Snapshot", zh_CN="使用快照", tw="螢幕截圖", pt="Instantâneo", fr="Définir la perspective", it="istantanea", sp="Instantánea", jp="スナップショット", kr="스냅 사진", de="Schnappschuss", ru="снимок"}
 
 log.info("register "..extend.."."..group.."."..template.." action")
 diagram.registerBlock(extend, group, template)

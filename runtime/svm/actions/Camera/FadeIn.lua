@@ -17,9 +17,9 @@ local prop_duration = "duration"
 local label_r = "R"
 local label_g = "G"
 local label_b = "B"
-local label_duration = {en_US="Duration", zh_CN="时间"}
+local label_duration = {en_US="Duration", zh_CN="时间", tw="時間", pt="Duração", fr="Durée", it="Durata", sp="Duración", jp="期間", kr="지속", de="Dauer", ru="продолжительность"} 
 
-local txt_fadein = {en_US="FadeIn", zh_CN="淡入"}
+local txt_fadein = {en_US="FadeIn", zh_CN="淡入", tw="淡入", pt="Aparecimento gradual", fr="Durée", it="FadeIn", sp="Fundirse", jp="フェードイン", kr="점점 뚜렷해지다", de="Ausblenden", ru="Исчезать"}
 
 log.info("register "..extend.."."..group.."."..template.." action")
 diagram.registerBlock(extend, group, template)

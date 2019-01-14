@@ -396,12 +396,30 @@ QWidget#page_home{
              <number>19</number>
             </property>
             <item>
-             <widget class="QWidget" name="widget" native="true">
+             <widget class="QWidget" name="widget_right" native="true">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>170</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>178</width>
+                <height>55</height>
+               </size>
+              </property>
+              <property name="baseSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
               </property>
               <layout class="QHBoxLayout" name="horizontalLayout">
                <property name="leftMargin">
@@ -416,6 +434,133 @@ QWidget#page_home{
                <property name="bottomMargin">
                 <number>0</number>
                </property>
+               <item>
+                <widget class="QComboBox" name="__combo_language">
+                 <property name="minimumSize">
+                  <size>
+                   <width>53</width>
+                   <height>53</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>53</width>
+                   <height>53</height>
+                  </size>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="currentText">
+                  <string notr="true">US</string>
+                 </property>
+                 <property name="maxCount">
+                  <number>16</number>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
+                 <property name="frame">
+                  <bool>false</bool>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>US</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="App.qrc">
+                    <normaloff>:/app/simple/img/-e-US.png</normaloff>:/app/simple/img/-e-US.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>CN</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="App.qrc">
+                    <normaloff>:/app/simple/img/-e-CN.png</normaloff>:/app/simple/img/-e-CN.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>FR</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="App.qrc">
+                    <normaloff>:/app/simple/img/-e-FR.png</normaloff>:/app/simple/img/-e-FR.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>ES</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="App.qrc">
+                    <normaloff>:/app/simple/img/-e-ES.png</normaloff>:/app/simple/img/-e-ES.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>IT</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="App.qrc">
+                    <normaloff>:/app/simple/img/-e-IT.png</normaloff>:/app/simple/img/-e-IT.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>JP</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="App.qrc">
+                    <normaloff>:/app/simple/img/-e-JP.png</normaloff>:/app/simple/img/-e-JP.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>KR</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="App.qrc">
+                    <normaloff>:/app/simple/img/-e-KR.png</normaloff>:/app/simple/img/-e-KR.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>PT</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="App.qrc">
+                    <normaloff>:/app/simple/img/-e-PT.png</normaloff>:/app/simple/img/-e-PT.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>DE</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="App.qrc">
+                    <normaloff>:/app/simple/img/-e-DE.png</normaloff>:/app/simple/img/-e-DE.png</iconset>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>RU</string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="App.qrc">
+                    <normaloff>:/app/simple/img/-e-RU.png</normaloff>:/app/simple/img/-e-RU.png</iconset>
+                  </property>
+                 </item>
+                </widget>
+               </item>
                <item>
                 <widget class="QPushButton" name="__btn_minimize">
                  <property name="minimumSize">

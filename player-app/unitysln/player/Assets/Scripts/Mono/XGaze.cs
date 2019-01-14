@@ -20,7 +20,7 @@ public class XGaze : MonoBehaviour {
     void Awake()
     {
         instance = this;
-        circle = this.transform.FindChild("adjust/circle").GetComponent<Image>();
+        circle = this.transform.Find("adjust/circle").GetComponent<Image>();
         XGaze.instance.gameObject.SetActive(false);
     }
 

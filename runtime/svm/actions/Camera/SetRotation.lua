@@ -17,8 +17,8 @@ local label_x = "x"
 local label_y = "y"
 local label_z = "z"
 
-local txt_setrotation = {en_US="Set Rotation", zh_CN="设置旋转"}
-local txt_usesnap= {en_US="Snapshot", zh_CN="使用快照"}
+local txt_setrotation = {en_US="Set Rotation", zh_CN="设置旋转", tw="設定旋轉", pt="Definir Rotação", fr="Rotation réglée", it="Imposta rotazione", sp="Fije la rotación", jp="回転を設定", kr="회전 설정", de="einstellen", ru="Установить вращение"}
+local txt_usesnap= {en_US="Snapshot", zh_CN="使用快照", tw="螢幕截圖", pt="Instantâneo", fr="Définir la perspective", it="istantanea", sp="Instantánea", jp="スナップショット", kr="스냅 사진", de="Schnappschuss", ru="снимок"}
 
 log.info("register "..extend.."."..group.."."..template.." action")
 diagram.registerBlock(extend, group, template)

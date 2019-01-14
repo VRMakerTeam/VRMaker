@@ -76,7 +76,7 @@ namespace VRXX.Manager
 
             CameraMgr.InjectOuterCamera(device_);
 
-            XGaze.instance.transform.SetParent(reticle.transform);
+            ///XGaze.instance.transform.SetParent(reticle.transform);
             XGaze.instance.transform.localPosition = Vector3.zero;
             XGaze.instance.transform.localRotation = Quaternion.identity;
             XGaze.instance.transform.localScale = Vector3.one;
@@ -106,6 +106,7 @@ namespace VRXX.Manager
 
             CameraMgr.InjectOuterCamera(tsHead);
 
+            /*
            // Transform tsCamera = CameraMgr.camera;
             GvrViewer viewer = device_.gameObject.AddComponent<GvrViewer>();
             viewer.VRModeEnabled = true;
@@ -129,6 +130,7 @@ namespace VRXX.Manager
             tsCamera.gameObject.AddComponent<PhysicsRaycaster>();
 
             XGaze.instance.transform.SetParent(reticle.transform);
+                        */
             XGaze.instance.transform.localPosition = Vector3.zero;
             XGaze.instance.transform.localRotation = Quaternion.identity;
             XGaze.instance.transform.localScale = Vector3.one;

@@ -138,9 +138,9 @@ namespace VRXX.Manager
                     return;
                 }
 
-                root.FindChild(string.Format("Page_{0}", curPage)).gameObject.SetActive(false);
+                root.Find(string.Format("Page_{0}", curPage)).gameObject.SetActive(false);
                 curPage--;
-                root.FindChild(string.Format("Page_{0}", curPage)).gameObject.SetActive(true);
+                root.Find(string.Format("Page_{0}", curPage)).gameObject.SetActive(true);
 
                 Text_3Ds[uuid] = curPage;
             });
@@ -171,16 +171,16 @@ namespace VRXX.Manager
                 int curPage = Text_3Ds[uuid];
 
                 Transform temp = null;
-                temp = root.FindChild(string.Format("Page_{0}", curPage + 1));
+                temp = root.Find(string.Format("Page_{0}", curPage + 1));
                 if (temp == null)
                 {
                     Debug.Log("It's already the last page...");
                     return;
                 }
 
-                root.FindChild(string.Format("Page_{0}", curPage)).gameObject.SetActive(false);
+                root.Find(string.Format("Page_{0}", curPage)).gameObject.SetActive(false);
                 curPage++;
-                root.FindChild(string.Format("Page_{0}", curPage)).gameObject.SetActive(true);
+                root.Find(string.Format("Page_{0}", curPage)).gameObject.SetActive(true);
                 Text_3Ds[uuid] = curPage;
             });
 
@@ -296,13 +296,13 @@ namespace VRXX.Manager
 
         private static void TogglePaging(GameObject _3dText, bool _value)
         {
-            _3dText.transform.FindChild("up").gameObject.SetActive(_value);
-            _3dText.transform.FindChild("down").gameObject.SetActive(_value);
+            _3dText.transform.Find("up").gameObject.SetActive(_value);
+            _3dText.transform.Find("down").gameObject.SetActive(_value);
         }
 
         private static void ShowPage_Max(GameObject _3dText)
         {
-            Transform page_1 = _3dText.transform.FindChild("Page_1");
+            Transform page_1 = _3dText.transform.Find("Page_1");
             Text page = page_1.GetComponent<Text>();
 
             int PageLineCount = GetPageLineCount(page, _3dText.GetComponent<RectTransform>().sizeDelta.y - buttonHeight);
@@ -329,7 +329,7 @@ namespace VRXX.Manager
                 string name = string.Format("Page_{0}", i + 2);
                 CopyPage(page, name);
 
-                Text text = _3dText.transform.FindChild(name).GetComponent<Text>();
+                Text text = _3dText.transform.Find(name).GetComponent<Text>();
                 string temp = "";
                 for (int j = 0; j < PageLineCount; j++)
                 {

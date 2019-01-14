@@ -13,7 +13,7 @@ local prop_fov = "fov"
 
 local label_fov = "FOV"
 
-local txt_setfov = {en_US="SetFOV", zh_CN="设置视角"}
+local txt_setfov = {en_US="SetFOV", zh_CN="设置视角", tw="設定視角", pt="Definir perspectiva", fr="Définir la perspective", it="Imposta prospettiva", sp="Establecer perspectiva", jp="パースペクティブを設定", kr="원근감 설정", de="einstellen", ru="перспективы"}
 
 log.info("register "..extend.."."..group.."."..template.." action")
 diagram.registerBlock(extend, group, template)

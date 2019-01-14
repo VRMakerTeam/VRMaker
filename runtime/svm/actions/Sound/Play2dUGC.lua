@@ -11,7 +11,7 @@ local image = "Sound/Sound.png"
 local prop_asset = "cache_asset"
 local prop_track = "track"
 
-local txt_play2dugc = {en_US="Play recording", zh_CN="播放2D录音"}
+local txt_play2dugc = {en_US="Play recording", zh_CN="播放2D录音", tw="播放錄音", pt="Reprodução de gravação", fr="Jouer l'enregistrement", it="Riproduci la registrazione", sp="Reproducir grabacion", jp="記録を再生する", kr="녹음 재생", de="Aufnahme abspielen", de="Воспроизвести запись"}
 
 log.info("register "..extend.."."..group.."."..template.." action")
 diagram.registerBlock(extend, group, template)

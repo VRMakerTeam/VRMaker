@@ -3,10 +3,12 @@
 #include <QFontDatabase>
 #include <QApplication>
 #include <QDebug>
+#include <QComboBox>
 #include "HeaderWidget.h"
 #include "Utils.h"
 #include "AppCore.h"
 #include "App.h"
+#include "ConfigUtil.h"
 
 class AppInternal
 {
@@ -40,10 +42,12 @@ void AppInternal::Initialize(QApplication* _application)
 	appCore = new AppCore(_application, mainWindow);
 	appCore->Initialize();
 
+	appCore->NotifyLoadingTip("connect app close button");
 	QPushButton* btnClose = mainWindow->findChild<QPushButton*>("__btn_close");
 	QObject::connect(btnClose, &QPushButton::clicked, [=] {
 		QApplication::quit();
 	});
+	appCore->NotifyLoadingTip("connect app minimize button");
 	QPushButton* btnMinimize = mainWindow->findChild<QPushButton*>("__btn_minimize");
 	QObject::connect(btnMinimize, &QPushButton::clicked, [=] {
 		if (mainWindow->isMaximized())
@@ -51,18 +55,29 @@ void AppInternal::Initialize(QApplication* _application)
 		else
 			mainWindow->showMaximized();
 	});
+	appCore->NotifyLoadingTip("connect go home button");
 	QPushButton* btnGoHome = mainWindow->findChild<QPushButton*>("__btnGoHome");
 	QObject::connect(btnGoHome, &QPushButton::clicked, [=] {
 		appCore->EnterHomePage();
 	});
 
+	appCore->NotifyLoadingTip("connect language button");
+	QComboBox* comboLanguage = mainWindow->findChild<QComboBox*>("__combo_language");
+	comboLanguage->setCurrentIndex(ConfigUtil::GetLanguage());
+	QObject::connect(comboLanguage, &QComboBox::currentTextChanged, [=] {
+		appCore->ChangeLanguage(comboLanguage->currentIndex());
+	});
+
 }
+
 
 //-----------------------------------------------------------------------
 void AppInternal::Run()
 {
 	mainWindow->show();
 	appCore->Run();
+	appCore->NotifyLoadingTip("app internal run finish");
+
 }
 
 void AppInternal::Release()

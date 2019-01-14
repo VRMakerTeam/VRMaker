@@ -101,7 +101,7 @@ namespace VRXX.Manager
 
         public static Transform FindElement(string _path)
         {
-            return canvas2D_.FindChild(_path);
+            return canvas2D_.Find(_path);
         }
 
         public static void Toggle2D(bool _visible)
@@ -150,7 +150,7 @@ namespace VRXX.Manager
 
         public static Transform FindElement3d(string _uuid)
         {
-            return canvas3D_.FindChild(_uuid);
+            return canvas3D_.Find(_uuid);
         }
 
         public static void Toggle3D(bool _visible)
@@ -236,7 +236,7 @@ namespace VRXX.Manager
 
         public static void TogglePanel(string _path, bool _flag)
         {
-            Transform child = canvas2D_.FindChild(_path);
+            Transform child = canvas2D_.Find(_path);
             if (null != child)
                 child.gameObject.SetActive(_flag);
         }

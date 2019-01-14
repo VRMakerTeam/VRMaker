@@ -62,6 +62,7 @@ public:
 	void NotifyLoadingTip(const QString& _text);
 
 	SVM* GetSVM();
+	void ChangeLanguage( int _languageIndex );
 private:
 	AppCoreInternal* internal_;
 };

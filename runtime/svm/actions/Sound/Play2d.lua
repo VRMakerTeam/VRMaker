@@ -11,7 +11,7 @@ local image = "Sound/Sound.png"
 local prop_asset = "asset"
 local prop_track = "track"
 
-local txt_play2d = {en_US="Play sound", zh_CN="播放2D音效"}
+local txt_play2d = {en_US="Play sound", zh_CN="播放2D音效", tw="播放聲音", pt="Tocar música", fr="Jouer son", it="Riprodurre l'audio", sp="Reproducir sonido", jp="音を出す", kr="소리 재생", de="Ton abspielen", ru="Воспроизвести звук"}
 
 log.info("register "..extend.."."..group.."."..template.." action")
 diagram.registerBlock(extend, group, template)

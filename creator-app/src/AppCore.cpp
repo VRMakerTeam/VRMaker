@@ -163,6 +163,7 @@ void AppCore::Run()
 
 	NotifyLoadingTip(AppCore::Translate("ui.loadingtip.preload_plugins"));
 	PreloadPlugins();
+	NotifyLoadingTip("preload plugins finish");
 }
 
 void AppCore::Release()
@@ -237,7 +238,6 @@ void AppCore::PreloadPlugins()
 
 	PluginUnity* pluginUnity = dynamic_cast<PluginUnity*>(unityPlugin);
 	pluginUnity->LoadH5();
-
 	NotifyLoadingTip(AppCore::Translate("ui.loadingtip.wait_canvas_ready"));
 }
 
@@ -464,4 +464,56 @@ SVM* AppCore::GetSVM()
 {
 	return internal_->svm;
 }
+
+void AppCore::ChangeLanguage(int _languageIndex )
+{
+	QString language;
+	switch (_languageIndex) {
+		/// us
+	case 0:
+	default:
+		language = "en_US";
+		break;
+		/// cn
+	case 1:
+		language = "zh_CN";
+		break;
+
+	case 2:
+		language = "fr";
+		break;
+
+	case 3:
+		language = "sp";
+		break;
+
+	case 4:
+		language = "it";
+		break;
+
+	case 5:
+		language = "jp";
+		break;
+
+	case 6:
+		language = "kr";
+		break;
+
+	case 7:
+		language = "pt";
+		break;
+
+	case 8:
+		language = "de";
+		break;
+
+	case 9:
+		language = "ru";
+		break;
+	}
+
+	ConfigUtil::ChangeLanguage(language);	
+	ConfigUtil::WriteConfig();
+}
+
 

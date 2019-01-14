@@ -28,11 +28,11 @@ public class SightTrigger : MonoBehaviour {
     void Awake()
     {
         triggers.Add(this);
-        circle = this.transform.FindChild("circle").GetComponent<Image>();
-        circleBG = this.transform.FindChild("circle_bg").GetComponent<Image>();
-        alias = this.transform.FindChild("alias").GetComponent<Text>();
-        icon = this.transform.FindChild("icon").GetComponent<Image>();
-        outline = this.transform.FindChild("outline").GetComponent<Image>();
+        circle = this.transform.Find("circle").GetComponent<Image>();
+        circleBG = this.transform.Find("circle_bg").GetComponent<Image>();
+        alias = this.transform.Find("alias").GetComponent<Text>();
+        icon = this.transform.Find("icon").GetComponent<Image>();
+        outline = this.transform.Find("outline").GetComponent<Image>();
     }
 
     public void ToggleAlias(bool _visible)

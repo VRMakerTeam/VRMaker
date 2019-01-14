@@ -140,3 +140,56 @@ void ConfigUtil::parse(const QByteArray& _json)
 	}
 }
 
+void ConfigUtil::ChangeLanguage(const QString& _language) {
+	if (hash["language"].type() == QVariant::String) {
+		hash.insert("language", _language );
+	}
+}
+
+void ConfigUtil::WriteConfig() {
+	QFile fileOut("conf/config.json");
+	if (fileOut.open(QIODevice::WriteOnly | QIODevice::Text))
+	{
+		QJsonDocument json = QJsonDocument::fromVariant(hash);
+		QTextStream out(&fileOut);
+
+		out << json.toJson();
+		fileOut.flush();
+		fileOut.close();
+	}
+}
+
+int ConfigUtil::GetLanguage() {
+	QString language = "";
+	if (!ConfigUtil::FindString("language", language))
+	{
+		language = QLocale::system().name();
+	}
+
+	int _languageIndex = 0;
+	if (language.compare("zh_CN") == 0) {
+		_languageIndex = 1;
+	} else if (language.compare("fr") == 0) {
+		_languageIndex = 2;
+	} else if (language.compare("sp") == 0) {
+		_languageIndex = 3;
+	} else if (language.compare("it") == 0) {
+		_languageIndex = 4;
+	} else if (language.compare("jp") == 0) {
+		_languageIndex = 5;
+	}
+	else if (language.compare("kr") == 0) {
+		_languageIndex = 6;
+	}
+	else if (language.compare("pt") == 0) {
+		_languageIndex = 7;
+	}
+	else if (language.compare("de") == 0) {
+		_languageIndex = 8;
+	}
+	else if (language.compare("ru") == 0) {
+		_languageIndex = 9;
+	}
+	return _languageIndex;
+}
+

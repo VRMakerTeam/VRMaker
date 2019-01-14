@@ -16,6 +16,9 @@ public :
 	static bool FindInt(const QString& _key, int& _value);
 	static bool FindBool(const QString& _key, bool& _value);
 	static bool FindDouble(const QString& _key, double& _value);
+	static void ChangeLanguage(const QString& _language);
+	static int GetLanguage();
+	static void WriteConfig();
 private :
 	static const QByteArray secret;
 	static QHash<QString, QVariant> hash;

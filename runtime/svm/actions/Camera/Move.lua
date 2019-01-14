@@ -23,12 +23,13 @@ local label_posz = "posz"
 local label_rotx = "rotx"
 local label_roty = "roty"
 local label_rotz = "rotz"
-local label_duration = {en_US="Duration", zh_CN="时间"}
+local label_duration = {en_US="Duration", zh_CN="时间", tw="時間", pt="Duração", fr="Durée", it="Durata", sp="Duración", jp="期間", kr="지속", de="Dauer", ru="продолжительность"} 
 
-local txt_move = {en_US="Pan", zh_CN="移动"}
+local txt_move = {en_US="Pan", zh_CN="移动", tw="相機平移", pt="Panela", fr="La poêle", it="Pan", sp="Pan", jp="パン", kr="팬", de="Kameraschwenk", ru="панорамирование"}
 
-local txt_snapposition = {en_US="Snapshot Position", zh_CN="位置快照"}
-local txt_snaprotation = {en_US="Snapshot Rotation", zh_CN="旋转快照"}
+local txt_snapposition = {en_US="Snapshot Position", zh_CN="位置快照", tw="位置快照", pt="Posição de instantâneo", fr="Position de l'instantané", it="Posizione istantanea", sp="Posición instantánea", jp="スナップショット位置", kr="스냅 샷 위치", de="Schnappschussposition", ru="Положение снимка"}
+local txt_snaprotation = {en_US="Snapshot Rotation", zh_CN="旋转快照", tw="旋轉快照", pt="Rotação de instantâneo", fr="Rotation d'instantané", it="Rotazione istantanea", sp="Rotación instantánea", jp="スナップショット回転", kr="스냅 샷 회전", de="Schnappschuss-Rotation", ru="Поворот снимка"}
+
 
 log.info("register "..extend.."."..group.."."..template.." action")
 diagram.registerBlock(extend, group, template)

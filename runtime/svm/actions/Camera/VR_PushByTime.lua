@@ -11,9 +11,8 @@ local image = "Camera/Camera.png"
 
 local prop_duration = "duration"
 
-local label_duration = {en_US="Duration", zh_CN="时间"}
-
-local txt_push = {en_US="Push(Time)", zh_CN="推近（时间）"}
+local label_duration = {en_US="Duration", zh_CN="时间", tw="時間", pt="Duração", fr="Durée", it="Durata", sp="Duración", jp="期間", kr="지속", de="Dauer", ru="продолжительность"} 
+local txt_push = {en_US="Push(Time)", zh_CN="推近（时间）", tw="推進(時間)", pt="Empurre (tempo)", fr="Push (Temps)", it="Push (Time)", sp="Empujar (Tiempo)", jp="プッシュ（時間）", kr="푸시 (시간)", de="drücken(Zeit)", ru="От себя(Время)"}
 
 log.info("register "..extend.."."..group.."."..template.." action")
 diagram.registerBlock(extend, group, template)
