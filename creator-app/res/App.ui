@@ -475,7 +475,7 @@ QWidget#page_home{
                   </property>
                   <property name="icon">
                    <iconset resource="App.qrc">
-                    <normaloff>:/app/simple/img/-e-US.png</normaloff>:/app/simple/img/-e-US.png</iconset>
+                    <normaloff>:/app/simple/en_US</normaloff>:/app/simple/en_US</iconset>
                   </property>
                  </item>
                  <item>
@@ -484,7 +484,7 @@ QWidget#page_home{
                   </property>
                   <property name="icon">
                    <iconset resource="App.qrc">
-                    <normaloff>:/app/simple/img/-e-CN.png</normaloff>:/app/simple/img/-e-CN.png</iconset>
+                    <normaloff>:/app/simple/zh_CN</normaloff>:/app/simple/zh_CN</iconset>
                   </property>
                  </item>
                  <item>
@@ -493,7 +493,7 @@ QWidget#page_home{
                   </property>
                   <property name="icon">
                    <iconset resource="App.qrc">
-                    <normaloff>:/app/simple/img/-e-FR.png</normaloff>:/app/simple/img/-e-FR.png</iconset>
+                    <normaloff>:/app/simple/fr</normaloff>:/app/simple/fr</iconset>
                   </property>
                  </item>
                  <item>
@@ -502,7 +502,7 @@ QWidget#page_home{
                   </property>
                   <property name="icon">
                    <iconset resource="App.qrc">
-                    <normaloff>:/app/simple/img/-e-ES.png</normaloff>:/app/simple/img/-e-ES.png</iconset>
+                    <normaloff>:/app/simple/sp</normaloff>:/app/simple/sp</iconset>
                   </property>
                  </item>
                  <item>
@@ -511,7 +511,7 @@ QWidget#page_home{
                   </property>
                   <property name="icon">
                    <iconset resource="App.qrc">
-                    <normaloff>:/app/simple/img/-e-IT.png</normaloff>:/app/simple/img/-e-IT.png</iconset>
+                    <normaloff>:/app/simple/it</normaloff>:/app/simple/it</iconset>
                   </property>
                  </item>
                  <item>
@@ -520,7 +520,7 @@ QWidget#page_home{
                   </property>
                   <property name="icon">
                    <iconset resource="App.qrc">
-                    <normaloff>:/app/simple/img/-e-JP.png</normaloff>:/app/simple/img/-e-JP.png</iconset>
+                    <normaloff>:/app/simple/jp</normaloff>:/app/simple/jp</iconset>
                   </property>
                  </item>
                  <item>
@@ -529,7 +529,7 @@ QWidget#page_home{
                   </property>
                   <property name="icon">
                    <iconset resource="App.qrc">
-                    <normaloff>:/app/simple/img/-e-KR.png</normaloff>:/app/simple/img/-e-KR.png</iconset>
+                    <normaloff>:/app/simple/kr</normaloff>:/app/simple/kr</iconset>
                   </property>
                  </item>
                  <item>
@@ -538,7 +538,7 @@ QWidget#page_home{
                   </property>
                   <property name="icon">
                    <iconset resource="App.qrc">
-                    <normaloff>:/app/simple/img/-e-PT.png</normaloff>:/app/simple/img/-e-PT.png</iconset>
+                    <normaloff>:/app/simple/pt</normaloff>:/app/simple/pt</iconset>
                   </property>
                  </item>
                  <item>
@@ -547,7 +547,7 @@ QWidget#page_home{
                   </property>
                   <property name="icon">
                    <iconset resource="App.qrc">
-                    <normaloff>:/app/simple/img/-e-DE.png</normaloff>:/app/simple/img/-e-DE.png</iconset>
+                    <normaloff>:/app/simple/de</normaloff>:/app/simple/de</iconset>
                   </property>
                  </item>
                  <item>
@@ -556,7 +556,7 @@ QWidget#page_home{
                   </property>
                   <property name="icon">
                    <iconset resource="App.qrc">
-                    <normaloff>:/app/simple/img/-e-RU.png</normaloff>:/app/simple/img/-e-RU.png</iconset>
+                    <normaloff>:/app/simple/ru</normaloff>:/app/simple/ru</iconset>
                   </property>
                  </item>
                 </widget>

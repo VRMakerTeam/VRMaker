@@ -25,7 +25,7 @@ private:
 void AppInternal::Initialize(QApplication* _application)
 {
 	AppCore::LoadTS("app");
-#if 0
+#if 1
 	QString language = appCore->Language();
 	if (language.compare("de") == 0) {
 		AppCore::LoadRCC("app_de");
