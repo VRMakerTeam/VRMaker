@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BucketTagClass</class>
+ <widget class="QWidget" name="BucketTagClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>131</width>
+    <height>661</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="accessibleName">
+   <string notr="true">color:252526</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#BucketTagClass{
+	background-color:#ffffff;
+	border: solid;
+	border-left-width:2px;
+	border-color: #094371;
+}
+
+
+QCheckBox[accessibleName=&quot;group:tab&quot;]{
+	color: #0d436f;
+	font: 11pt;
+	padding: 5 0 0 20;
+}
+
+QCheckBox[accessibleName=&quot;group:tab&quot;]::indicator {
+    width: 0;
+    height: 0;
+}
+
+QCheckBox[accessibleName=&quot;group:tab&quot;]:unchecked{
+	border-image: url(:/pluginBucket/simple/img/tab_normal.png);
+}
+QCheckBox[accessibleName=&quot;group:tab&quot;]:checked {
+	border-image: url(:/pluginBucket/simple/img/tab_down.png);
+}
+
+
+
+QScrollArea{
+	border: 0;
+	background-color:transparent;
+}
+
+QScrollArea QWidget{
+	background-color:transparent;
+}
+
+
+QScrollBar:vertical {
+     border: 0;
+     background: #cddbe6;
+     width: 5px;
+ }
+ QScrollBar::handle:vertical {
+     background: #06447f;
+     min-height: 20px;
+ }
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="widget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>131</width>
+        <height>661</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="__container" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QCheckBox" name="__tpl">
+            <property name="minimumSize">
+             <size>
+              <width>109</width>
+              <height>42</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>109</width>
+              <height>42</height>
+             </size>
+            </property>
+            <property name="accessibleName">
+             <string notr="true">group:tab</string>
+            </property>
+            <property name="text">
+             <string>标签模板</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>605</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="pluginBucket.qrc"/>
+ </resources>
+ <connections/>
+</ui>

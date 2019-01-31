@@ -37,7 +37,38 @@ public:
 void PluginDiagram::Initialize(AppCore* _appCore)
 {
 	AppCore::LoadTS("pluginDiagram");
-	AppCore::LoadRCC("pluginDiagram");
+	QString language = _appCore->Language();
+	if (language.compare("de") == 0) {
+		AppCore::LoadRCC("pluginDiagram_de");
+	}
+	else if (language.compare("jp") == 0) {
+		AppCore::LoadRCC("pluginDiagram_jp");
+	}
+	else if (language.compare("kr") == 0) {
+		AppCore::LoadRCC("pluginDiagram_kr");
+	}
+	else if (language.compare("it") == 0) {
+		AppCore::LoadRCC("pluginDiagram_it");
+	}
+	else if (language.compare("pt") == 0) {
+		AppCore::LoadRCC("pluginDiagram_pt");
+	}
+	else if (language.compare("sp") == 0) {
+		AppCore::LoadRCC("pluginDiagram_sp");
+	}
+	else if (language.compare("fr") == 0) {
+		AppCore::LoadRCC("pluginDiagram_fr");
+	}
+	else if (language.compare("ru") == 0) {
+		AppCore::LoadRCC("pluginDiagram_ru");
+	}
+	else if (language.compare("zh_CN") == 0) {
+		AppCore::LoadRCC("pluginDiagram_zh_CN");
+	}
+	else {
+		AppCore::LoadRCC("pluginDiagram");
+	}
+
 
 	DiagramModel::Runtime::InitializeModel();
 

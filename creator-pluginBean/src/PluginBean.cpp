@@ -38,7 +38,37 @@ public:
 void PluginBean::Initialize(AppCore* _appCore)
 {
 	AppCore::LoadTS("pluginBean");
-	AppCore::LoadRCC("pluginBean");
+	QString language = _appCore->Language();
+	if (language.compare("de") == 0) {
+		AppCore::LoadRCC("pluginBean_de");
+	}
+	else if (language.compare("jp") == 0) {
+		AppCore::LoadRCC("pluginBean_jp");
+	}
+	else if (language.compare("kr") == 0) {
+		AppCore::LoadRCC("pluginBean_kr");
+	}
+	else if (language.compare("it") == 0) {
+		AppCore::LoadRCC("pluginBean_it");
+	}
+	else if (language.compare("pt") == 0) {
+		AppCore::LoadRCC("pluginBean_pt");
+	}
+	else if (language.compare("sp") == 0) {
+		AppCore::LoadRCC("pluginBean_sp");
+	}
+	else if (language.compare("fr") == 0) {
+		AppCore::LoadRCC("pluginBean_fr");
+	}
+	else if (language.compare("ru") == 0) {
+		AppCore::LoadRCC("pluginBean_ru");
+	}
+	else if (language.compare("zh_CN") == 0) {
+		AppCore::LoadRCC("pluginBean_zh_CN");
+	}
+	else {
+		AppCore::LoadRCC("pluginBean");
+	}
 
 	BeanModel::Runtime::InitializeModel();
 

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScreenplayPlayerClass</class>
+ <widget class="QWidget" name="ScreenplayPlayerClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>984</width>
+    <height>285</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#playerToolbar{
+	background-color: rgb(51,51,55);
+}
+
+QRadioButton[accessibleName=&quot;radio:segment&quot;]{
+	max-width:46;
+	max-height:46;
+	min-width:46;
+	min-height:46;
+}
+QRadioButton[accessibleName=&quot;radio:segment&quot;]::indicator{
+	width:38;
+	height:38;
+	margin: 4;
+}
+QRadioButton[accessibleName=&quot;radio:segment&quot;]::checked{
+	background-color: rgb(116, 116, 116);
+	
+}
+QRadioButton[accessibleName=&quot;radio:segment&quot;]::unchecked{
+}
+
+QCheckBox[accessibleName=&quot;check:segment&quot;]{
+	max-width:46;
+	max-height:46;
+	min-width:46;
+	min-height:46;
+}
+QCheckBox[accessibleName=&quot;check:segment&quot;]::indicator{
+	width:38;
+	height:38;
+	margin: 4;
+}
+QCheckBox[accessibleName=&quot;check:segment&quot;]::checked{
+	background-color: rgb(116, 116, 116);
+	
+}
+QCheckBox[accessibleName=&quot;check:segment&quot;]::unchecked{
+}
+
+QWidget#playerViewContainer{
+	
+	background-color: rgb(0, 0, 0);
+}
+
+
+QCheckBox#toggleEditor::indicator{
+	border-image: url(:/pluginScreenplay/simple/img/hud.png);
+}
+QRadioButton#rb_right::indicator{
+	border-image: url(:/pluginScreenplay/simple/img/cemera_right.png);
+}
+QRadioButton#rb_left::indicator{
+	border-image: url(:/pluginScreenplay/simple/img/cemera_left.png);
+}
+QRadioButton#rb_top::indicator{
+	border-image: url(:/pluginScreenplay/simple/img/cemera_top.png);
+}
+QRadioButton#rb_bottom::indicator{
+	border-image: url(:/pluginScreenplay/simple/img/cemera_bottom.png);
+}
+QRadioButton#rb_front::indicator{
+	border-image: url(:/pluginScreenplay/simple/img/cemera_front.png);
+}
+QRadioButton#rb_back::indicator{
+	border-image: url(:/pluginScreenplay/simple/img/cemera_back.png);
+}
+QRadioButton#rb_free::indicator{
+	border-image: url(:/pluginScreenplay/simple/img/cemera_free.png);
+}
+
+QRadioButton#rb_aspect_free::indicator{
+	border-image: url(:/pluginScreenplay/simple/img/aspect_free.png);
+}
+QRadioButton#rb_aspect_169::indicator{
+	border-image: url(:/pluginScreenplay/simple/img/aspect_169.png);
+}
+QRadioButton#rb_aspect_43::indicator{
+	border-image: url(:/pluginScreenplay/simple/img/aspect_43.png);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="__toolbar">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_5">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QRadioButton" name="rb_free">
+           <property name="toolTip">
+            <string>标准视图</string>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">radio:segment</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rb_front">
+           <property name="toolTip">
+            <string>前视图</string>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">radio:segment</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rb_back">
+           <property name="toolTip">
+            <string>后视图</string>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">radio:segment</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rb_left">
+           <property name="toolTip">
+            <string>左视图</string>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">radio:segment</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rb_right">
+           <property name="toolTip">
+            <string>右视图</string>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">radio:segment</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rb_top">
+           <property name="toolTip">
+            <string>顶视图</string>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">radio:segment</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rb_bottom">
+           <property name="toolTip">
+            <string>底视图</string>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">radio:segment</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="toggleEditor">
+        <property name="toolTip">
+         <string>摄像机信息</string>
+        </property>
+        <property name="accessibleName">
+         <string>check:segment</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>166</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>166</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_6">
+        <property name="accessibleName">
+         <string/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QRadioButton" name="rb_aspect_free">
+           <property name="toolTip">
+            <string>自由分辨率</string>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">radio:segment</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rb_aspect_169">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">radio:segment</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rb_aspect_43">
+           <property name="accessibleName">
+            <string notr="true">radio:segment</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="__slotCanvas" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="pluginScreenplay.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -104,7 +104,38 @@ void PluginScreenplayInternal::HandleMessageFromUnity(IAction* _action)
 void PluginScreenplay::Initialize(AppCore* _appCore)
 {
 	AppCore::LoadTS("pluginScreenplay");
-	AppCore::LoadRCC("pluginScreenplay");
+	QString language = _appCore->Language();
+	if (language.compare("de") == 0) {
+		AppCore::LoadRCC("pluginScreenplay_de");
+	}
+	else if (language.compare("jp") == 0) {
+		AppCore::LoadRCC("pluginScreenplay_jp");
+	}
+	else if (language.compare("kr") == 0) {
+		AppCore::LoadRCC("pluginScreenplay_kr");
+	}
+	else if (language.compare("it") == 0) {
+		AppCore::LoadRCC("pluginScreenplay_it");
+	}
+	else if (language.compare("pt") == 0) {
+		AppCore::LoadRCC("pluginScreenplay_pt");
+	}
+	else if (language.compare("sp") == 0) {
+		AppCore::LoadRCC("pluginScreenplay_sp");
+	}
+	else if (language.compare("fr") == 0) {
+		AppCore::LoadRCC("pluginScreenplay_fr");
+	}
+	else if (language.compare("ru") == 0) {
+		AppCore::LoadRCC("pluginScreenplay_ru");
+	}
+	else if (language.compare("zh_CN") == 0) {
+		AppCore::LoadRCC("pluginScreenplay_zh_CN");
+	}
+	else {
+		AppCore::LoadRCC("pluginScreenplay");
+	}
+
 
 	ScreenplayModel::Runtime::InitializeModel();
 

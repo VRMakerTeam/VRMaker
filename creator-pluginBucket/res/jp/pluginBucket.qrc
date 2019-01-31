@@ -1,0 +1,29 @@
+<RCC>
+  <qresource prefix="/pluginBucket/simple">
+    <file>img/default_asset_card.png</file>
+    <file>img/tab_down.png</file>
+    <file>img/tab_normal.png</file>
+    <file>img/import_image_down.png</file>
+    <file>img/import_sound_down.png</file>
+    <file>img/import_image.png</file>
+    <file>img/import_sound.png</file>
+    <file alias="selectedMark">img/selectedslatecard.png</file>
+    <file alias="library_disable">img/library_disable.png</file>
+    <file alias="library_down">img/library_down.png</file>
+    <file alias="library_normal">img/library_normal.png</file>
+    <file>img/ugc_audio.png</file>
+  </qresource>
+  <qresource prefix="/pluginBucket/buttons">
+    <file>img/section_down.png</file>
+    <file>img/section_normal.png</file>
+    <file>img/ok_disable.png</file>
+    <file>img/cancel_down.png</file>
+    <file>img/cancel_normal.png</file>
+    <file>img/ok_down.png</file>
+    <file>img/ok_normal.png</file>
+    <file>img/play_down.png</file>
+    <file>img/play_normal.png</file>
+    <file>img/stop_down.png</file>
+    <file>img/stop_normal.png</file>
+  </qresource>
+</RCC>

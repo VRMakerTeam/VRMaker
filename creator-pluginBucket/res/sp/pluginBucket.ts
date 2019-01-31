@@ -1,0 +1,10 @@
+﻿{
+    "en_US":{
+        "ui.bucketGroup.__ugcsound":"UGC/Sound",
+        "ui.bucketGroup.__ugcimage":"UGC/Image"
+    },
+    "zh_CN":{
+        "ui.bucketGroup.__ugcsound":"自制/音频",
+        "ui.bucketGroup.__ugcimage":"自制/图片"
+    }
+}

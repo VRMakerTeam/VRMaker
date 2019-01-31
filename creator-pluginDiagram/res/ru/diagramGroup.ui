@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UiDiagramGroup</class>
+ <widget class="QWidget" name="UiDiagramGroup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>249</width>
+    <height>776</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#UiDiagramGroup {
+	background: #ffffff;
+}
+QWidget#__containerTab {
+	background: #cddbe6;
+}
+
+QScrollArea#scrollArea{
+	border:0;
+}
+
+QRadioButton[accessibleName=&quot;group:tab&quot;]{
+	min-width:100;
+	min-height:38;
+	max-width:100;
+	max-height:38;
+	color: #174060;
+	font: 11pt;
+	padding: 4 0 0 14;
+}
+
+QRadioButton[accessibleName=&quot;group:tab&quot;]:unchecked {
+	border-image: url(:/pluginDiagram/buttons/img/entry_normal.png);
+}
+QRadioButton[accessibleName=&quot;group:tab&quot;]:checked {
+	border-image: url(:/pluginDiagram/buttons/img/entry_down.png);
+}
+QRadioButton[accessibleName=&quot;group:tab&quot;]::indicator:unchecked {
+    width: 12;
+    height: 0;
+}
+QRadioButton[accessibleName=&quot;group:tab&quot;]::indicator:checked {
+    width: 12;
+    height: 13;
+	image: url(:/pluginDiagram/icons/img/entry_mark.png)
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="__containerTab" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="accessibleName">
+      <string notr="true">color:2d2d30</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout" columnstretch="0"/>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>249</width>
+        <height>758</height>
+       </rect>
+      </property>
+      <property name="accessibleName">
+       <string notr="true">color:252526</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="DragDropWidget" name="__containerBlock" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>641</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DragDropWidget</class>
+   <extends>QWidget</extends>
+   <header>dragdropwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="pluginDiagram.qrc"/>
+ </resources>
+ <connections/>
+</ui>

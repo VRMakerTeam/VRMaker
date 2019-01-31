@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PluginScreenplayToolbar</class>
+ <widget class="QWidget" name="PluginScreenplayToolbar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>733</width>
+    <height>56</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#__play{
+	border: 0px;
+	background-repeat: none;
+	background-position: center;
+	background-image: url(:/pluginScreenplay/button/img/play_normal.png);
+}
+QPushButton#__play::pressed{
+	border: 0px;
+	background-repeat: none;
+	background-position: center;
+	background-image: url(:/pluginScreenplay/button/img/play_down.png);
+}
+
+QPushButton#__publish{
+	border: 0px;
+	background-repeat: none;
+	background-position: center;
+	background-image: url(:/pluginScreenplay/button/img/publish_normal.png);
+}
+QPushButton#__publish::pressed{
+	border: 0px;
+	background-repeat: none;
+	background-position: center;
+	background-image: url(:/pluginScreenplay/button/img/publish_down.png);
+}
+
+QPushButton#__install{
+	border: 0px;
+	background-repeat: none;
+	background-position: center;
+	background-image: url(:/pluginScreenplay/button/img/install_normal.png);
+}
+QPushButton#__install::pressed{
+	border: 0px;
+	background-repeat: none;
+	background-position: center;
+	background-image: url(:/pluginScreenplay/button/img/install_down.png);
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>20</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QPushButton" name="__play">
+     <property name="minimumSize">
+      <size>
+       <width>231</width>
+       <height>56</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>231</width>
+       <height>56</height>
+      </size>
+     </property>
+     <property name="accessibleName">
+      <string notr="true">button:32x32</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="__publish">
+     <property name="minimumSize">
+      <size>
+       <width>231</width>
+       <height>56</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>231</width>
+       <height>56</height>
+      </size>
+     </property>
+     <property name="accessibleName">
+      <string notr="true">button:32x32</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="__install">
+     <property name="minimumSize">
+      <size>
+       <width>231</width>
+       <height>56</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>231</width>
+       <height>56</height>
+      </size>
+     </property>
+     <property name="accessibleName">
+      <string notr="true">button:32x32</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="pluginScreenplay.qrc"/>
+ </resources>
+ <connections/>
+</ui>

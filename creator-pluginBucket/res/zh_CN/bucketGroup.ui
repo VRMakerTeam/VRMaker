@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BucketGroupClass</class>
+ <widget class="QWidget" name="BucketGroupClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>191</width>
+    <height>549</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#BucketGroupClass{
+	background-color: #ffffff;
+	border: solid;
+	border-right-width:2px;
+	border-color: #094371;
+}
+
+QRadioButton[accessibleName=&quot;group:ugc&quot;]{
+	color: #0d436f;
+	font: 11pt;
+	padding: 5 0 0 20;
+	min-width: 153px;
+	max-width: 153px;
+}
+
+QRadioButton[accessibleName=&quot;group:ugc&quot;]::indicator {
+    width: 0;
+    height: 0;
+}
+
+QRadioButton[accessibleName=&quot;group:ugc&quot;]:unchecked{
+	border-image: url(:/pluginBucket/buttons/img/section_normal.png);
+}
+QRadioButton[accessibleName=&quot;group:ugc&quot;]:checked {
+	border-image: url(:/pluginBucket/buttons/img/section_down.png);
+}
+
+QPushButton#__import_sound
+{
+	border-image: url(:/pluginBucket/simple/img/import_sound.png);
+}
+QPushButton#__import_sound:pressed
+{
+	border-image: url(:/pluginBucket/simple/img/import_sound_down.png);
+}
+
+QPushButton#__import_image
+{
+	border-image: url(:/pluginBucket/simple/img/import_image.png);
+}
+QPushButton#__import_image:pressed
+{
+	border-image: url(:/pluginBucket/simple/img/import_image_down.png);
+}
+
+
+
+QScrollArea{
+	border: 0;
+}
+
+QTreeView {
+	background-color: transparent;
+	color: rgb(255, 255, 255);
+	font: 11pt;
+}
+
+QTreeView::item {
+    width: 173px;
+	height: 45px;
+	color: #0d436f;
+	font: 11pt;
+	padding: 5 0 0 20;
+	border-image: url(:/pluginBucket/buttons/img/section_normal.png);
+}
+
+QTreeView::item:selected {
+	border-image: url(:/pluginBucket/buttons/img/section_down.png);
+}
+
+QTreeView::branch
+{
+	border-image: none;
+	image: none;
+}
+
+
+
+QScrollBar:vertical {
+     border: 0;
+     background: #cddbe6;
+     width: 5px;
+ }
+ QScrollBar::handle:vertical {
+     background: #06447f;
+     min-height: 20px;
+ }
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTreeWidget" name="__container">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="showDropIndicator" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="textElideMode">
+      <enum>Qt::ElideRight</enum>
+     </property>
+     <property name="indentation">
+      <number>16</number>
+     </property>
+     <property name="rootIsDecorated">
+      <bool>false</bool>
+     </property>
+     <property name="uniformRowHeights">
+      <bool>false</bool>
+     </property>
+     <property name="itemsExpandable">
+      <bool>true</bool>
+     </property>
+     <property name="expandsOnDoubleClick">
+      <bool>false</bool>
+     </property>
+     <attribute name="headerVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="headerCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>新建项目</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>新建子项目</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>新建子项目</string>
+        </property>
+       </item>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>新建项目</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QRadioButton" name="__tpl">
+        <property name="minimumSize">
+         <size>
+          <width>173</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>173</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="accessibleName">
+         <string notr="true">group:ugc</string>
+        </property>
+        <property name="text">
+         <string>分组模板</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="__ugcsound">
+        <property name="minimumSize">
+         <size>
+          <width>173</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>173</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="accessibleName">
+         <string notr="true">group:ugc</string>
+        </property>
+        <property name="text">
+         <string>UGC/SOUND</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="__ugcimage">
+        <property name="minimumSize">
+         <size>
+          <width>173</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>173</width>
+          <height>45</height>
+         </size>
+        </property>
+        <property name="accessibleName">
+         <string notr="true">group:ugc</string>
+        </property>
+        <property name="text">
+         <string>UGC/IMAGE</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QPushButton" name="__import_image">
+           <property name="minimumSize">
+            <size>
+             <width>128</width>
+             <height>63</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>128</width>
+             <height>63</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="__import_sound">
+           <property name="minimumSize">
+            <size>
+             <width>128</width>
+             <height>63</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>128</width>
+             <height>63</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="pluginBucket.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RecorderBox</class>
+ <widget class="QWidget" name="RecorderBox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>254</width>
+    <height>206</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QCheckBox#__record{
+	min-width:121;
+	min-height:121;
+	max-width:121;
+	max-height:121;
+}
+QCheckBox#__record::indicator:unchecked {
+    width: 121;
+    height: 121;
+	border-image: url(:/pluginDiagram/buttons/img/green_recorder.png);
+}
+QCheckBox#__record::indicator:checked {
+    width: 121;
+    height: 121;
+	border-image: url(:/pluginDiagram/buttons/img/red_recorder.png);
+}
+
+QCheckBox#__play{
+	min-width:32;
+	min-height:32;
+	max-width:32;
+	max-height:32;
+}
+QCheckBox#__play::indicator:unchecked {
+    width: 32;
+    height: 32;
+	border-image: url(:/pluginDiagram/buttons/img/green_recorder.png);
+}
+QCheckBox#__play::indicator:checked {
+    width: 32;
+}
+
+QPushButton#__play {
+	width: 40;
+    height: 41;
+	border-image: url(:/pluginDiagram/buttons/img/play_normal.png);
+}
+QPushButton#__play:pressed {
+	border-image: url(:/pluginDiagram/buttons/img/play_down.png);
+}
+
+QPushButton#__stop {
+	width: 40;
+    height: 41;
+	border-image: url(:/pluginDiagram/buttons/img/stop_normal.png);
+}
+QPushButton#__stop:pressed {
+	border-image: url(:/pluginDiagram/buttons/img/stop_down.png);
+}
+
+
+QPushButton#__trash {
+	width: 40;
+    height: 41;
+	border-image: url(:/pluginDiagram/buttons/img/delete_40_normal.png);
+}
+
+QPushButton#__trash:pressed {
+	border-image: url(:/pluginDiagram/buttons/img/delete_40_down.png);
+}
+
+QCheckBox#__delete{
+	min-width:40;
+	min-height:41;
+	max-width:40;
+	max-height:41;
+}
+QCheckBox#__delete::indicator:unchecked {
+    width: 40;
+    height: 41;
+	border-image: url(:/pluginDiagram/buttons/img/remove_40_normal.png);
+}
+QCheckBox#__delete::indicator:checked {
+    width: 40;
+    height: 41;
+	border-image: url(:/pluginDiagram/buttons/img/remove_40_down.png);
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="__record">
+       <property name="minimumSize">
+        <size>
+         <width>121</width>
+         <height>121</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>121</width>
+         <height>121</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>CheckBox</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QWidget" name="__toolbar" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="__play">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="__stop">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="__trash">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="__delete">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="pluginDiagram.qrc"/>
+ </resources>
+ <connections/>
+</ui>

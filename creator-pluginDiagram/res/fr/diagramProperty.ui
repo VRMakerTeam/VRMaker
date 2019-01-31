@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UiDiagramProperty</class>
+ <widget class="QWidget" name="UiDiagramProperty">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>260</width>
+    <height>767</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#UiDiagramProperty{
+	background: #ffffff;
+}
+
+QLineEdit {
+    border: 2px solid #004882;
+    border-radius: 6px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}
+
+QComboBox {
+    border: 2px solid #004882;
+    border-radius: 6px;
+    padding: 1px 18px 1px 3px;
+}
+
+QComboBox:editable {
+    background: white;
+}
+
+QComboBox::drop-down {
+    width: 0px;
+}
+
+QWidget#pickerframe{
+	background: #004882;
+}
+
+
+
+
+
+
+QStackedWidget {
+	background-color: transparent;
+}
+
+QScrollArea{
+	background-color: transparent;
+}
+
+
+QScrollBar:vertical {
+     border: 0;
+     background: #cddbe6;
+     width: 5px;
+ }
+ QScrollBar::handle:vertical {
+     background: #06447f;
+     min-height: 20px;
+ }
+
+QWidget#areaScroll{
+	background-color: transparent;
+}
+
+QWidget#__blockToolbar {
+	background: #d0dae3;
+	border: solid;
+	border-top-width: 2px;
+	border-color: #114167;
+}
+
+
+QPushButton[accessibleName=&quot;button:blue&quot;]{
+	border-radius:5;
+	color: rgb(255, 255, 255);
+	font: 12pt;
+	background-color: rgb(85, 170, 255);
+	min-height:32;
+	max-height:32;
+}
+QPushButton[accessibleName=&quot;button:blue&quot;]:pressed{
+	background-color: rgb(62, 124, 186);
+}
+
+QPushButton[accessibleName=&quot;button:red&quot;]{
+	border-radius:5;
+	color: rgb(255, 255, 255);
+	font: 12pt;
+	background-color: rgb(255, 85, 127);
+	min-height:32;
+	max-height:32;
+}
+QPushButton[accessibleName=&quot;button:red&quot;]:pressed{
+	background-color: rgb(175, 58, 87);
+}
+
+QLabel[accessibleName=&quot;label:picker&quot;]{
+	max-width:220;
+	min-width:220;
+	min-height:124;
+	max-height:124;
+	background-color: rgb(127, 127, 127);
+}
+
+QLabel[accessibleName=&quot;label:field&quot;]{
+	font: 11pt;
+	max-width:86;
+	min-width:86;
+	min-height:32;
+	max-height:32;
+	color: #06447f;
+}
+
+QDoubleSpinBox[accessibleName=&quot;spinbox:field&quot;]{
+	font: 11pt;
+	max-height:32;
+	min-height:32;
+}
+
+
+QPushButton[accessibleName=&quot;button:28x28&quot;]{
+	min-width:28;
+	min-height:28;
+	max-width:28;
+	max-height:28;
+}
+
+QPushButton#__blockDelete{
+	border-image: url(:/pluginDiagram/buttons/img/Trash_normal.png);
+}
+QPushButton#__blockDelete:pressed{
+	border-image: url(:/pluginDiagram/buttons/img/Trash_down.png);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QStackedWidget" name="__pages">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="page_block">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QScrollArea" name="scrollArea">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="areaScroll">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>240</width>
+            <height>707</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QWidget" name="__blockInspector" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_5"/>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>710</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="__blockToolbar" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="accessibleName">
+          <string notr="true">color:333337</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>2</number>
+          </property>
+          <property name="leftMargin">
+           <number>6</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
+          </property>
+          <property name="rightMargin">
+           <number>6</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
+          </property>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>195</width>
+              <height>29</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="__blockDelete">
+            <property name="minimumSize">
+             <size>
+              <width>107</width>
+              <height>46</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>107</width>
+              <height>46</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_trigger">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="rightMargin">
+        <number>9</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="__triggerUUID">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="__triggerAliasField">
+           <property name="minimumSize">
+            <size>
+             <width>86</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>86</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="accessibleName">
+            <string notr="true">label:field</string>
+           </property>
+           <property name="text">
+            <string>alias</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="__triggerAliasInput">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>32</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QWidget" name="__groupGaze" native="true">
+         <layout class="QFormLayout" name="formLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="__gazeIconField">
+            <property name="minimumSize">
+             <size>
+              <width>86</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>86</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="accessibleName">
+             <string notr="true">label:field</string>
+            </property>
+            <property name="text">
+             <string>icon</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="__gazeIconSelect">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>64</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>64</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::WheelFocus</enum>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>48</width>
+              <height>48</height>
+             </size>
+            </property>
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="pluginDiagram.qrc">
+               <normaloff>:/pluginDiagram/icons/vr-trigger-0</normaloff>:/pluginDiagram/icons/vr-trigger-0</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="pluginDiagram.qrc">
+               <normaloff>:/pluginDiagram/icons/vr-trigger-1</normaloff>:/pluginDiagram/icons/vr-trigger-1</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="pluginDiagram.qrc">
+               <normaloff>:/pluginDiagram/icons/vr-trigger-2</normaloff>:/pluginDiagram/icons/vr-trigger-2</iconset>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="__gazeColorField">
+            <property name="minimumSize">
+             <size>
+              <width>86</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>86</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="accessibleName">
+             <string notr="true">label:field</string>
+            </property>
+            <property name="text">
+             <string>color</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QWidget" name="pickerframe" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>90</width>
+              <height>36</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>90</width>
+              <height>36</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>2</number>
+             </property>
+             <property name="topMargin">
+              <number>2</number>
+             </property>
+             <property name="rightMargin">
+              <number>2</number>
+             </property>
+             <property name="bottomMargin">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="__gazeColorPicker">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>86</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>86</width>
+                 <height>32</height>
+                </size>
+               </property>
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="default">
+                <bool>false</bool>
+               </property>
+               <property name="flat">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>668</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="pluginDiagram.qrc"/>
+ </resources>
+ <connections/>
+</ui>

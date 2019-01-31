@@ -25,7 +25,41 @@ private:
 void AppInternal::Initialize(QApplication* _application)
 {
 	AppCore::LoadTS("app");
+#if 0
+	QString language = appCore->Language();
+	if (language.compare("de") == 0) {
+		AppCore::LoadRCC("app_de");
+	}
+	else if (language.compare("jp") == 0) {
+		AppCore::LoadRCC("app_jp");
+	}
+	else if (language.compare("kr") == 0) {
+		AppCore::LoadRCC("app_kr");
+	}
+	else if (language.compare("it") == 0) {
+		AppCore::LoadRCC("app_it");
+	}
+	else if (language.compare("pt") == 0) {
+		AppCore::LoadRCC("app_pt");
+	}
+	else if (language.compare("sp") == 0) {
+		AppCore::LoadRCC("app_sp");
+	}
+	else if (language.compare("fr") == 0) {
+		AppCore::LoadRCC("app_fr");
+	}
+	else if (language.compare("ru") == 0) {
+		AppCore::LoadRCC("app_ru");
+	}
+	else if (language.compare("zh_CN") == 0) {
+		AppCore::LoadRCC("app_zh_CN");
+	}
+	else {
+		AppCore::LoadRCC("app");
+	}
+#else
 	AppCore::LoadRCC("app");
+#endif
 
 	//load Font
 	int loadedFontID = QFontDatabase::addApplicationFont(":/app/fonts/default");

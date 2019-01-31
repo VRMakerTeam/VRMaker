@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BeanToolbarClass</class>
+ <widget class="QWidget" name="BeanToolbarClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1222</width>
+    <height>103</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#BeanToolbarClass
+{
+	background-color: rgb(255,255,255);
+}
+
+QWidget#line
+{
+	background-color: #203e56;
+}
+
+
+QPushButton#__btnAddBean{
+	min-height: 56px;
+	max-height: 56px;
+	min-width: 178px;
+	max-width: 178px;
+	border-image: url(:/pluginBean/button/img/create_normal.png);
+}
+QPushButton#__btnAddBean::pressed{
+	border-image: url(:/pluginBean/button/img/create_down.png);
+}
+
+QPushButton#__btnPlayBean{
+	min-height: 84px;
+	max-height: 84px;
+	min-width: 159px;
+	max-width: 159px;
+	border-image: url(:/pluginBean/button/img/play_normal.png);
+}
+QPushButton#__btnPlayBean::pressed{
+	border-image: url(:/pluginBean/button/img/play_down.png);
+}
+
+QPushButton#__btnPublishBean{
+	min-height: 84px;
+	max-height: 84px;
+	min-width: 159px;
+	max-width: 159px;
+	border-image: url(:/pluginBean/button/img/publish_normal.png);
+}
+QPushButton#__btnPublishBean::pressed{
+	border-image: url(:/pluginBean/button/img/publish_downl.png);
+}
+
+QPushButton#__btnInstallBean{
+	min-height: 84px;
+	max-height: 84px;
+	min-width: 159px;
+	max-width: 159px;
+	border-image: url(:/pluginBean/button/img/install_normal.png);
+}
+QPushButton#__btnInstallBean::pressed{
+	border-image: url(:/pluginBean/button/img/install_down.png);
+}
+
+QPushButton#__btnDeleteBean{
+	min-height: 84px;
+	max-height: 84px;
+	min-width: 159px;
+	max-width: 159px;
+	border-image: url(:/pluginBean/button/img/delete_normal.png);
+}
+QPushButton#__btnDeleteBean::pressed{
+	border-image: url(:/pluginBean/button/img/delete_down.png);
+}
+
+QPushButton#__btnEditBean{
+	min-height: 84px;
+	max-height: 84px;
+	min-width: 159px;
+	max-width: 159px;
+	border-image: url(:/pluginBean/button/img/edit_normal.png);
+}
+QPushButton#__btnEditBean::pressed{
+	border-image: url(:/pluginBean/button/img/edit_down.png);
+}
+
+QPushButton#__btnExport{
+	min-height: 84px;
+	max-height: 84px;
+	min-width: 159px;
+	max-width: 159px;
+	border-image: url(:/pluginBean/button/img/publish_normal.png);
+}
+QPushButton#__btnExport::pressed{
+	border-image: url(:/pluginBean/button/img/publish_down.png);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="line" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>2</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>2</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>12</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="__btnAddBean">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>265</width>
+         <height>43</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="__btnEditBean">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="__btnPlayBean">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="__btnPublishBean">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="__btnInstallBean">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="__btnExport">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="__btnDeleteBean">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="pluginBean.qrc"/>
+ </resources>
+ <connections/>
+</ui>

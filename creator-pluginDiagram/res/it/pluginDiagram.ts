@@ -1,0 +1,12 @@
+﻿{
+    "en_US":{
+        "ui.diagramProperty.__triggerAliasField":"Alias",
+        "ui.diagramProperty.__gazeIconField":"Icon",
+        "ui.diagramProperty.__gazeColorField":"Color"
+    },
+    "zh_CN":{
+        "ui.diagramProperty.__triggerAliasField":"名称",
+        "ui.diagramProperty.__gazeIconField":"图标",
+        "ui.diagramProperty.__gazeColorField":"颜色"
+    } 
+}
