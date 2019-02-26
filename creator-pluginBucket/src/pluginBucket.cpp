@@ -55,7 +55,11 @@ PluginBucketInternal::~PluginBucketInternal()
 void PluginBucket::Initialize(AppCore* _appCore)
 {
 	AppCore::LoadTS("pluginBucket");
+#if 0
+	AppCore::LoadRCC("pluginBucket");
+#else
 	QString language = _appCore->Language();
+
 	if (language.compare("de") == 0) {
 		AppCore::LoadRCC("pluginBucket_de");
 	}
@@ -86,7 +90,7 @@ void PluginBucket::Initialize(AppCore* _appCore)
 	else {
 		AppCore::LoadRCC("pluginBucket");
 	}
-
+#endif
 
 	internal_ = new PluginBucketInternal();
 

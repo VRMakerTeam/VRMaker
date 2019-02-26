@@ -52,6 +52,7 @@ void Bean::PickerView::setupUI()
 	ui_->error = ui_->root->findChild<QLabel*>("__error");
 	ui_->sourceSwither = ui_->root->findChild<QStackedWidget*>("__sourcesSwitcher");
 
+	QString archetype = AppCore::Translate("ui.beanPicker.__rbArchetype");
 	ui_->archetype->setText(AppCore::Translate("ui.beanPicker.__rbArchetype"));
 	ui_->clone->setText(AppCore::Translate("ui.beanPicker.__rbClone"));
 	ui_->aliasInput->setPlaceholderText(AppCore::Translate("ui.beanPicker.__aliasInput"));

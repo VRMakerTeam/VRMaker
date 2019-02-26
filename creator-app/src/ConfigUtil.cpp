@@ -1,9 +1,11 @@
 #include <QFile>
+#include <QDir>
 #include <QDebug>
 #include <QJsonDocument>
 #include <QJsonObject>
 
 #include "ConfigUtil.h"
+#include "PathUtil.h"
 
 QHash<QString, QVariant> ConfigUtil::hash;
 
@@ -15,12 +17,22 @@ int ConfigUtil::Initialization()
 	QFile file;
 
 	// use config.json override configuration
-	file.setFileName("conf/config.json");
-	if (file.open(QIODevice::ReadOnly | QIODevice::Text))
+	if (!QDir(PathUtil::AppDataLocation() + "/conf/").exists()) {
+		QDir().mkdir(PathUtil::AppDataLocation() + "/conf/");
+	}
+
+	if (!QFile::exists(PathUtil::AppDataLocation() + "/conf/config_new.json"))
 	{
-		parse(file.readAll());
-		file.close();
-		result = 0;
+		QFile::copy("conf/config.json", PathUtil::AppDataLocation() + "/conf/config_new.json");
+	}
+	file.setFileName(PathUtil::AppDataLocation() + "/conf/config_new.json");
+	if (file.exists() ) {
+		if (file.open(QIODevice::ReadOnly | QIODevice::Text))
+		{
+			parse(file.readAll());
+			file.close();
+			result = 0;
+		}
 	}
 
 	return result;
@@ -147,7 +159,8 @@ void ConfigUtil::ChangeLanguage(const QString& _language) {
 }
 
 void ConfigUtil::WriteConfig() {
-	QFile fileOut("conf/config.json");
+
+	QFile fileOut(PathUtil::AppDataLocation() + "/conf/config_new.json");
 	if (fileOut.open(QIODevice::WriteOnly | QIODevice::Text))
 	{
 		QJsonDocument json = QJsonDocument::fromVariant(hash);
