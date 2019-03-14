@@ -30,6 +30,8 @@ void UnityWebSocketServerInternal::onNewConnection()
 void UnityWebSocketServerInternal::messageFromUnity(const QString& _message)
 {
 	LOGX_DEBUG(XC_PluginUnity, XL_MEDIMU_PluginUnity, QString("receive message from unity: %1").arg(_message));
+	///internal_->ptrAppCore->NotifyLoadingTip(AppCore::Translate("GetGameView"));
+
 
 	QString message = _message;
 	// get method

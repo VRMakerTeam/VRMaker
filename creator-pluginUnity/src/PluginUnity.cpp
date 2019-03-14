@@ -170,6 +170,8 @@ void PluginUnity::LoadH5()
 	QString webviewIndex = dir.absoluteFilePath("player/editor_web/index.html");
 	QUrl embeddedURI = QUrl::fromLocalFile(webviewIndex);
 	internal_->webView->setUrl(embeddedURI);
+	internal_->ptrAppCore->NotifyLoadingTip(AppCore::Translate(embeddedURI.toString()));
+
 #else
 	//选择OK需要用用caddy加上浏览器。选择cacle的话直接进首页，不加载Unity
 	if (QMessageBox::StandardButton::Ok != QMessageBox::information(0, "", "1.enter runpath\\player\\editor_web \n2. open cmd.exe and run caddy.exe \n3. use web browser access localhost:33168\n\nSelect cancel, will not load unity", QMessageBox::StandardButton::Ok, QMessageBox::StandardButton::Cancel))
@@ -185,6 +187,7 @@ void PluginUnity::LoadH5()
 QWidget* PluginUnity::GetGameView()
 {
 #ifndef _DEBUG
+	internal_->ptrAppCore->NotifyLoadingTip("GetGameView");
 	return internal_->webView;
 #else
 	return new QWidget();
