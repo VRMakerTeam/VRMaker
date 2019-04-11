@@ -64,8 +64,10 @@ void AppInternal::Initialize(QApplication* _application)
 	//load Font
 	int loadedFontID = QFontDatabase::addApplicationFont(":/app/fonts/default");
 	QStringList strList(QFontDatabase::applicationFontFamilies(loadedFontID));
-	QFont fontThis(strList.at(0));
-	_application->setFont(fontThis);
+	if (strList.size() > 0) {
+		QFont fontThis(strList.at(0));
+		_application->setFont(fontThis);
+	}
 
 	mainWindow = dynamic_cast<QMainWindow*>(AppCore::CreateUI("app"));
 	mainWindow->setWindowFlags(Qt::FramelessWindowHint);

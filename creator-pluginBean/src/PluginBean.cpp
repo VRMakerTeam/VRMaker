@@ -10,6 +10,7 @@
 #include "BeanCompositeCore.h"
 #include "BeanCompositePanel.h"
 #include "PluginBean/PluginBean.h"
+#include "BeanNotifyContent.h"
 
 class BeanLauncherUI
 {
@@ -69,6 +70,7 @@ void PluginBean::Initialize(AppCore* _appCore)
 	else {
 		AppCore::LoadRCC("pluginBean");
 	}
+	BeanNotifyContent::GetRoot(language);
 
 	BeanModel::Runtime::InitializeModel();
 

@@ -7,7 +7,7 @@ class BeanNotifyUI;
 class BeanNotifyContent
 {
 public:
-	static QWidget* GetRoot();
+	static QWidget* GetRoot(QString language = NULL);
 	static void SwitchWait();
 	static void SwitchOK();
 	static void SwitchNoneDevice();

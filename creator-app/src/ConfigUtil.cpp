@@ -15,16 +15,20 @@ int ConfigUtil::Initialization()
 	int result = 1;
 
 	QFile file;
-
+	QString path;
 	// use config.json override configuration
 	if (!QDir(PathUtil::AppDataLocation() + "/conf/").exists()) {
 		QDir().mkdir(PathUtil::AppDataLocation() + "/conf/");
+		path = PathUtil::AppDataLocation() + "/conf/";
 	}
 
 	if (!QFile::exists(PathUtil::AppDataLocation() + "/conf/config_new.json"))
 	{
 		QFile::copy("conf/config.json", PathUtil::AppDataLocation() + "/conf/config_new.json");
 	}
+
+	path = PathUtil::AppDataLocation() +"/conf/config_new.json";
+
 	file.setFileName(PathUtil::AppDataLocation() + "/conf/config_new.json");
 	if (file.exists() ) {
 		if (file.open(QIODevice::ReadOnly | QIODevice::Text))
