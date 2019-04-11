@@ -412,10 +412,15 @@ void AppCore::LoadTS(const QString& _translatorFile)
 QString AppCore::Translate(const QString& _txt)
 {
 	QString language = "";
+#if ONLY_CHINA_VER
+	language = "zh_CN";
+#else
 	if (!ConfigUtil::FindString("language", language))
 	{
 		language = QLocale::system().name();
 	}
+#endif
+
 
 	if (!AppCoreInternal::translator.contains(language))
 		return _txt;
@@ -431,10 +436,15 @@ QString AppCore::Translate(const QString& _txt)
 QString AppCore::Language()
 {
 	QString language = "";
+#if ONLY_CHINA_VER
+	language = "zh_CN";
+#else
 	if (!ConfigUtil::FindString("language", language))
 	{
 		language = QLocale::system().name();
 	}
+#endif
+
 	return language;
 }
 
@@ -512,7 +522,11 @@ void AppCore::ChangeLanguage(int _languageIndex )
 		break;
 	}
 
-	ConfigUtil::ChangeLanguage(language);	
+#if ONLY_CHINA_VER
+	ConfigUtil::ChangeLanguage("zh_CN");
+#else 
+	ConfigUtil::ChangeLanguage(language);
+#endif
 	ConfigUtil::WriteConfig();
 }
 

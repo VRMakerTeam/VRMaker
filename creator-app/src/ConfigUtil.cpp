@@ -6,6 +6,7 @@
 
 #include "ConfigUtil.h"
 #include "PathUtil.h"
+#include "AppCore.h"
 
 QHash<QString, QVariant> ConfigUtil::hash;
 
@@ -158,7 +159,11 @@ void ConfigUtil::parse(const QByteArray& _json)
 
 void ConfigUtil::ChangeLanguage(const QString& _language) {
 	if (hash["language"].type() == QVariant::String) {
-		hash.insert("language", _language );
+#if ONLY_CHINA_VER
+		hash.insert("language", "zh_CN");
+#else
+		hash.insert("language", _language);
+#endif
 	}
 }
 
@@ -178,10 +183,15 @@ void ConfigUtil::WriteConfig() {
 
 int ConfigUtil::GetLanguage() {
 	QString language = "";
+#if ONLY_CHINA_VER
+	language = "zh_CN";
+#else
 	if (!ConfigUtil::FindString("language", language))
 	{
 		language = QLocale::system().name();
 	}
+
+#endif
 
 	int _languageIndex = 0;
 	if (language.compare("zh_CN") == 0) {

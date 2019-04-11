@@ -7,6 +7,7 @@ extern "C" {
 #include "ConfigUtil.h"
 #include "SVM.h"
 #include "CoreAPI.h"
+#include "AppCore.h"
 
 int lua_translate(lua_State* _state)
 {
@@ -26,10 +27,14 @@ int lua_translate(lua_State* _state)
 	}
 
 	QString lang = "";
+#if ONLY_CHINA_VER
+	lang = "zh_CN";
+#else
 	if (!ConfigUtil::FindString("language", lang))
 	{
 		lang = QLocale::system().name();
 	}
+#endif
 
 	QHash<QString, QString> language;
 

@@ -69,7 +69,11 @@ void AppInternal::Initialize(QApplication* _application)
 		_application->setFont(fontThis);
 	}
 
+#if ONLY_CHINA_VER
+	mainWindow = dynamic_cast<QMainWindow*>(AppCore::CreateUI("app_zh_CN"));
+#else
 	mainWindow = dynamic_cast<QMainWindow*>(AppCore::CreateUI("app"));
+#endif
 	mainWindow->setWindowFlags(Qt::FramelessWindowHint);
 
 	HeaderWidget* titlebar = mainWindow->findChild<HeaderWidget*>("__titlebar");
@@ -97,13 +101,14 @@ void AppInternal::Initialize(QApplication* _application)
 		appCore->EnterHomePage();
 	});
 
+#if !ONLY_CHINA_VER
 	appCore->NotifyLoadingTip("connect language button");
 	QComboBox* comboLanguage = mainWindow->findChild<QComboBox*>("__combo_language");
 	comboLanguage->setCurrentIndex(ConfigUtil::GetLanguage());
 	QObject::connect(comboLanguage, &QComboBox::currentTextChanged, [=] {
 		appCore->ChangeLanguage(comboLanguage->currentIndex());
 	});
-
+#endif
 }
 
 
