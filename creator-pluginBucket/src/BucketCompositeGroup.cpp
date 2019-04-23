@@ -28,6 +28,10 @@ namespace Bucket
 //-----------------------------------------------------------------------
 void Bucket::GroupView::setupUI()
 {
+	if (ui_ != NULL) {
+		return;
+	}
+
 	ui_ = new GroupUI();
 	ui_->root = AppCore::CreateUI("bucketGroup");
 
