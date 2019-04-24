@@ -69,7 +69,7 @@ public:
 		{
 			QProcess process;
 			QStringList argv = QStringList() << "/C" << "mklink" << "/J" << QDir::toNativeSeparators(destDirUGC.path()) << QDir::toNativeSeparators(srcDirUGC.path());
-			process.execute("cmd.exe", argv);
+			int result = process.execute("cmd.exe", argv);
 		}
 #endif
 	}

@@ -38,6 +38,7 @@ Bucket::PickerView::~PickerView()
 //-----------------------------------------------------------------------
 void Bucket::PickerView::setupUI()
 {
+
 	ui_->root = AppCore::CreateUI("bucketPicker");
 	ui_->btnOK = ui_->root->findChild<QPushButton*>("__btnOK");
 	ui_->btnCancel = ui_->root->findChild<QPushButton*>("__btnCancel");
@@ -80,8 +81,7 @@ void Bucket::PickerView::OnCardSelect(const QString& _uuid)
 
 void Bucket::PickerView::Popup()
 {
-	QDialog* dialog = static_cast<QDialog*>(ui_->root);
-	dialog->exec();
+	ui_->root->show();
 }
 
 //////////////////////////////////////////////////////////////////////////

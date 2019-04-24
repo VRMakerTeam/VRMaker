@@ -118,9 +118,10 @@
     <ClCompile>
       <PreprocessorDefinitions>UNICODE;WIN32;QT_NO_DEBUG;NDEBUG;PLUGINUnity_LIB;QT_CORE_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB;QT_WEBSOCKETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(QTDIR)\include;.\..\..\obj\GeneratedFiles\$(ConfigurationName);.\..\..\obj\GeneratedFiles;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtWebEngineWidgets;..\..\inc;.\..\..\..\creator-app\inc\interface;$(QTDIR)\include\QtWebSockets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DebugInformationFormat />
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
