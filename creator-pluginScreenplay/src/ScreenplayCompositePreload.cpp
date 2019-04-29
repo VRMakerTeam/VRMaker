@@ -103,7 +103,7 @@ void Screenplay::PreloadView::onUpdate(const QString& _tag)
 		{
 			if (assetGUID.contains(".jpg") || assetGUID.contains(".png"))
 			{
-				QString imgPath = PathUtil::AppDataLocation() + "/ugc/" + assetGUID;
+				QString imgPath = PathUtil::PackageLocation() + "/ugc/" + assetGUID;
 				ui_->pick->setIcon(QPixmap(imgPath));
 			}
 			else
