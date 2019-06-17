@@ -52,7 +52,8 @@ void AppInternal::Initialize(QApplication* _application)
 		AppCore::LoadRCC("app_ru");
 	}
 	else if (language.compare("zh_CN") == 0) {
-		AppCore::LoadRCC("app_zh_CN");
+		///AppCore::LoadRCC("app_zh_CN");
+		AppCore::LoadRCC("res");
 	}
 	else {
 		AppCore::LoadRCC("app");
@@ -70,7 +71,8 @@ void AppInternal::Initialize(QApplication* _application)
 	}
 
 #if ONLY_CHINA_VER
-	mainWindow = dynamic_cast<QMainWindow*>(AppCore::CreateUI("app_zh_CN"));
+	///mainWindow = dynamic_cast<QMainWindow*>(AppCore::CreateUI("app_zh_CN"));
+	mainWindow = dynamic_cast<QMainWindow*>(AppCore::CreateUI("App_China"));
 #else
 	mainWindow = dynamic_cast<QMainWindow*>(AppCore::CreateUI("app"));
 #endif

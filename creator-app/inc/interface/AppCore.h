@@ -9,7 +9,7 @@ class AppCoreInternal;
 class QApplication;
 class SVM;
 
-#define ONLY_CHINA_VER 0
+#define ONLY_CHINA_VER 1
 
 class AppCore
 {
