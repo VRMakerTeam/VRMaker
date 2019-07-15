@@ -1,5 +1,9 @@
 # VRMaker
-- The purpose of this project is create user own vr navigation environment. You can import your own vr scenes in a few simple steps, or use the built-in assets to place your own design scene objects and support the camera control. transfer scene effects and music effects, even in tandem between multiple scenes to form a complete vr navigation program
+- The purpose of this project is to create your own vr content. You can import your own vr scenes in a few simple steps, or use the built-in assets to place your own design scene objects.  VRMaker supports the camera control, scene effects, music effects, and even in tandem between multiple scenes to form a complete vr navigation program.
+
+- VRMaker enables children to think, design, and create content for virtual reality devices by visual programming in a real-time rendered  3D environment. Built with 3D art assets and 360-photos, children can express themselves with pictures and sound in a virtual world with links to create virtual reality stories where you can move and explore your surroundings. VRMaker makes the content creation process very simple, and the children can focus on creative storytelling.
+
+- VRMaker includes a PC software called VRMaker, and a mobile application for Android-based phones called VRMaker Player. VRMaker is the creation tool, in which the 3D art assets,  360 photographs and other media such as music, sound, and text can be combined with simple programming using functional blocks, generating a virtual reality content. The completed content can then be viewed in the VRMaker Player on an Android-based phone, or the content can be uploaded to a private or public cloud, using our server-side publishing software, for easy access on other devices. The variety of digital assets that can be used and the block programming makes it very easy for the children to create everything from stories, education content to games.
 
 ## Features
 - preview scene.
