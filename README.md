@@ -24,9 +24,9 @@
 - For detailed information on how to get started with this plugin visit the [Wiki](https://github.com/VRMakerTeam/VRMaker/wiki).
 
 ## Deployment
-- Download release [install file](https://github.com/VRMakerTeam/VRMaker/releases/download/v1.0/VRMaker-UNICEF-v1.0.7z)
-- ADB install -r vplayer.apk into android mobile phone
-- 
+- Download release [install file](https://github.com/VRMakerTeam/VRMaker/releases/download/v1.0/VRMaker-UNICEF-v1.0.7z).
+- ADB install -r vplayer.apk into android mobile phone.
+- Start VRMaker and start edit your own project.
 
 ## Contributors
 - [chimerakang](https://github.com/chimerakang)
