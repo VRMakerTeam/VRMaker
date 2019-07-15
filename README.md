@@ -1,3 +1,13 @@
+# Introduction
+
+# Features
+
+
+# Platforms
+
+# Getting Started
+- For detailed information on how to get started with this plugin visit the (Wiki)
+
 # 初始化环境 | Environment Initialization
 - 设置环境变量QT_ROOT，例如C:\qt-580-msvc2015-x86\5.8\msvc2015.
 - Set the environment variable QT_ROOT, Eg: C:\qt-580-msvc2015-x86\5.8\msvc2015.
