@@ -28,6 +28,11 @@
 - ADB install -r vplayer.apk into android mobile phone.
 - Start VRMaker and start edit your own project.
 
+## Contributing
+We welcome contributions to VRMaker!
+- 📥 Pull requests and 🌟 Stars are always welcome.
+- Read our [contributing guide](CONTRIBUTING.md) to get started, we're will take the time to guide you.
+
 ## Contributors
 - [chimerakang](https://github.com/chimerakang)
 - [crenovator](https://github.com/crenovator)
