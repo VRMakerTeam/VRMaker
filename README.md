@@ -42,3 +42,15 @@ We welcome contributions to VRMaker!
 - [crenovator](https://github.com/crenovator)
 - [cyrilselasi](https://github.com/cyrilselasi)
 - [easlee](https://github.com/easlee)
+
+## Change Log
+```
+- 1.6 add multi language support
+- 1.5 fix gaze bugs
+- 1.4 add resources tags
+- 1.3 change unity streaming assets path
+- 1.2 support dynamic load scripts and assets from StreamingAssets
+- 1.1 add model assets picker
+- 1.0 New UI 
+```
+
