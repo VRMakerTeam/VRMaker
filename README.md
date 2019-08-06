@@ -13,7 +13,7 @@
 - support 8 languages.
 
 ## Platforms
-- Compatible with Windows Desktop, Mac OSX. VPlayer compatible with Android 
+- Compatible with Windows Desktop, VPlayer compatible with Android 
 
 ## Dependencies
 - [QT 5.9](https://download.qt.io/official_releases/qt/5.9/5.9.0/)
